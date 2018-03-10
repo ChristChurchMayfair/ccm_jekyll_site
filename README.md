@@ -28,11 +28,11 @@ Variations: May have children. May be recently married.
 
 Here in London to work or improve their English. May have been to International Café. Either from a wealthy family who could afford to send them or they're working crazy hours in a Pret in the west end just to pay the rent.
 
-####Young Christian
+#### Young Christian
 
 They are new to London, having moved here for work after graduating. They've grown up in a Christian home but are not perhaps not very discerning. They are not UK Con Ev mafia. They don't have an opinion on esoteric theological matters and have little clue about who's a good Bible teacher and what that means.
 
-####"Discerning" Christian
+#### "Discerning" Christian
 
 They are new to London, having recently graduated. They went to a great summer camp and thanks to that they know they're looking for a church who take Bible teaching seriously. They may even have been recommended CCM by the person who lead the helpers at their posh sounding summer camp.
 
