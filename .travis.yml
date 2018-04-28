@@ -1,3 +1,14 @@
 script:
-  - cd jekyllversion/ccmsite
-  - ./build
+- cd jekyllversion/ccmsite
+- "./build"
+deploy:
+  provider: s3
+  access_key_id: AKIAJXOE27XI2QQ5DYDQ
+  secret_access_key:
+    secure: AMQA3grlssrZmDdKjh/iTKJxh948NbBmXtg8y7q6auqeT7YF3br1nRuDWAb97GAQEjlnphc/x6Sf5f24lkOTCU1TLYcpJdYN7fMPKCiQIbPNzDdmqd4gDRPEaqy7Z5xRYWO+B8vWv5tSuSYT5JxaP2RoXnL8af4Rn/Kk6ebex1dStNqlmQd7jkAfvj9Bz23zY774E7uG1Kd4rkJnKUX7qn91afFmTFtWsAzGWjCUEHwELnhq1ARQEGFjCiPvw7/W3mACK6lt5GpbnES2p0UK+EBy0L6eU5UTsOzsq414yP6r/Jq0OIsnLAj6pMJo8gr6P0TQTeCb/UnBhiq1Ffj+rW4ffLqInNXHH5eWGQftQuTJYSt4uQ8AtQ6/Iiy2A7yXXXS2S9Tfj1s2m7vbUVs1s1Y+Kz0iK6zFQ4uJ4qRgM13h/lAJcQ/8fT8Eqp0MO12rNzW7sM4rXUQCr4PVrukTU7ZB1pzh8P++kkkwzvqVT0uhMZzLjokoq5cckSRXrPZFaI+LG+hLD/rxiXh4jINvuhDduasP8d34NYzWzDl8wwSfEZAEZngl9eqqb9QIpU4+YA8+qQC3kE5iIxWkttWtUfnvoUkURSRlMxo4BWQewPF3cOoFMOzQhrQxOmTp40TGDOP7uzhG6zJ+kuxZUbGY3EHiD5eElTj2T+alexLJpT8=
+  bucket: ccmsite-sandbox
+  local-dir: public
+  acl: public_read
+  skip_cleanup: true
+  on:
+    repo: tomduckering/ccmsite
