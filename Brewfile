@@ -1,1 +1,2 @@
 brew 'graphviz'
+brew 'hugo'
