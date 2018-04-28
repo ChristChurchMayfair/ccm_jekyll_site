@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div>
+  {%- if page.title -%}
+    <h1>{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <h2>Staff</h2>
+  <ul>
+    {% for staff_member in site.data.people.staff %}
+  <li> {{ staff_member.name }} - {{ staff_member.role }}</li>
+{% endfor %}
+  </ul>
+  <h2>Trainees</h2>
+  <ul>
+    {% for trainee in site.data.people.trainees %}
+  <li> {{ trainee.name }}</li>
+{% endfor %}
+  </ul>
+
+  <h2>Elders</h2>
+  <ul>
+    {% for elder in site.data.people.elders %}
+  <li> {{ elder.name }}</li>
+{% endfor %}
+  </ul>
+
+</div>

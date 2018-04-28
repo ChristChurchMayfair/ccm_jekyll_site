@@ -1,0 +1,14 @@
+staff:
+- name: Matt Fuller
+  role: Senior Minister
+  email: matt.fuller@christchurchmayfair.org
+- name: Phil Allcock
+  role: Assistant Minister
+- name: Pete Snow
+  role: Assistant Minister
+trainees:
+  - name: Ben Savjani
+  - name: Brian Mak
+elders:
+  - name: Marc Döring
+  - name: Tom Duckering
