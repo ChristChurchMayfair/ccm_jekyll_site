@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Klinic Slab';
+  src: url(klinicslabmedium.otf);
+}
+
+body {
+  font-family: 'Klinic Slab';
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0px auto 0px auto;
+  min-width: 320px;
+}
+
+.mobile-btn-left {
+  background-color: white;
+  width: 42.5vw;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-right:  2.5vw;
+}
+
+.mobile-btn-right {
+  background-color: white;
+  width: 42.5vw;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-left:  2.5vw;
+}
+
+.mobile-btn-container {
+  position: absolute;
+  bottom: 0;
+  margin: 5vw;
+}
