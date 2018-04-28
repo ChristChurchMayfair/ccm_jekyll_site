@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Children
+title: Students
 ---
-Some content for the children's page!
+Some content for the student's page!

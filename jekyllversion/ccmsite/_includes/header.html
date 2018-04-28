@@ -1,6 +1,9 @@
 <header>
+  <h1>Christ Church Mayfair</h1>
+  <h2>Pages</h2>
   <ul>
-  <li>header things<li>
-  <li>site menus etc?</li>
-</ul>
+  {% for p in site.pages %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+  {% endfor %}
+  </ul>
 </header>

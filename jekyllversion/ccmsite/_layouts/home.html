@@ -28,6 +28,15 @@ layout: default
     {% endfor %}
   </ul>
 
+  {% assign events = site.events | where: "status", "live" %}
+
+  {% for event in events %}
+  <div class="event">
+    <h2>{{ event.name }}</h2>
+    {{ event.content }}
+  </div>
+  {% endfor %}
+
 </div>
 
 <script src="assets/js/navigation.js"></script>

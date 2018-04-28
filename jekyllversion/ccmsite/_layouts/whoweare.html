@@ -9,7 +9,7 @@ layout: default
 
   {{ content }}
 
-  <h1>People</h1>
+  <h1>Staff</h1>
 
   {% assign staff = site.people | where: "type", "staff" %}
 
@@ -20,5 +20,22 @@ layout: default
   {% endfor %}
 
   <hr/>
+  <h1>Trainees</h1>
+
+  {% assign trainees = site.people | where: "type", "trainee" %}
+
+  {% for trainee in trainees %}
+  <h2>{{ trainee.name }}</h2>
+  <img src="assets/headshots/{{staff_member.headshot}}">
+  {% endfor %}
+
+  <hr/>
+  <h1>Elders</h1>
+  {% assign elders = site.people | where: "type", "elder" %}
+
+  {% for elder in elders %}
+  <h2>{{ elder.name }}</h2>
+  <img src="assets/headshots/{{staff_member.headshot}}">
+  {% endfor %}
 
 </div>
