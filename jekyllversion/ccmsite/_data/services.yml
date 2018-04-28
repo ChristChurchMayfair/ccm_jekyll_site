@@ -1,0 +1,4 @@
+- name: Morning Service
+  time: 10:15 AM
+- name: Evening Service
+  time: 18:00 PM

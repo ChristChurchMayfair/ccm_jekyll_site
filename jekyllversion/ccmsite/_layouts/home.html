@@ -9,4 +9,15 @@ layout: default
 
   {{ content }}
 
+  <a href="#" id="directions-link">Directions</a>
+
+  <h2>Services</h2>
+  <ul>
+    {% for service in site.data.services %}
+  <li> {{ service.name }} - {{ service.time }}</li>
+    {% endfor %}
+  </ul>
+
 </div>
+
+<script src="assets/js/navigation.js"></script>
