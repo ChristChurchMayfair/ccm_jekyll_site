@@ -1,0 +1,16 @@
+body {
+  min-width: 320px;
+}
+
+.navbar {
+  background-color: blue;
+  padding: 10px;
+}
+
+#navbar-logo {
+  height: 20vw;
+}
+
+.mobile-btn-container {
+  display: none;
+}

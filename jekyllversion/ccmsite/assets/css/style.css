@@ -5,13 +5,12 @@
 
 body {
   font-family: 'Klinic Slab';
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   background-color: #ffffff;
-  color: white;
+  color: #333333;
   margin: 0px auto 0px auto;
   min-width: 320px;
-
 }
 
 .mobile-btn-left {
@@ -38,4 +37,5 @@ body {
   position: absolute;
   bottom: 0;
   margin: 5vw;
+  color: #333333;
 }

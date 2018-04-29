@@ -2,41 +2,70 @@
 layout: default
 ---
 
-<div>
-  {%- if page.title -%}
-    <h1>{{ page.title }}</h1>
-  {%- endif -%}
+{% assign events = site.events | where: "status", "live" %}
 
-  {{ content }}
-
-  <div>
-    Our Location:
-    Christ Church Mayfair
-    Down Street,
-    London
-    W1J 7AN
-    <div style="display:none" id="directions">
-      Directions:
-      <a href="#" id="directions-link">Directions</a>
+<section id="home-1">
+  <header class="navbar">
+    <img id="navbar-logo" src="assets/images/ccm-logo-full.svg">
+    <div id="hamburger-mobile"></div>
+  </header>
+  <div id="main-container">
+    <img id="main-banner-image" src="http://via.placeholder.com/400x150">
+    <div id="content">
+      {{ content }}
     </div>
   </div>
 
-  <h2>Services</h2>
-  <ul>
-    {% for service in site.data.services %}
-  <li> {{ service.name }} - {{ service.time }}</li>
-    {% endfor %}
-  </ul>
+  <div class="mobile-btn-container">
+    <span id="directions-button" class="mobile-btn-left" style="float: left;">Directions</span>
+    <a href="#home-3"><span id="services-button" class="mobile-btn-right" style="float: right;">Services</span><a>
+  </div>
+</section>
 
-  {% assign events = site.events | where: "status", "live" %}
+<section id="home-2">
+    <h1>
+      This is awesome.
+    </h1>
+      <article>
+    <p>This is a paragraph of text that explains why Church is so awesome.</p>
+    <p>
+      My word, it's pretty amazing how much we love the Lord Jesus. He is almight and all powerful.
+    </p>
+  </article>
+  <div>
+  <div class="mobile-btn" style="background-color:black;">
+    Learn more >
+  </div>
+  </div>
+  </div>
+</section>
 
-  {% for event in events %}
+<section id="home-3">
+    <h1>
+      Services
+    </h1>
+      <article>
+          {% for service in site.data.services %}
+          <h2>{{ service.name }} - {{ service.time }}</h2>
+          <p>
+            {{ service.description }}
+          </p>
+          {% endfor %}
+        </ul>
+  </article>
+</section>
+
+
+
+{% for event in events %}
+  <section class="event-section">
   <div class="event">
-    <h2>{{ event.name }}</h2>
+    <h1>{{ event.name }}</h1>
     {{ event.content }}
   </div>
+</section>
   {% endfor %}
 
 </div>
 
-<script src="assets/js/navigation.js"></script>
+<script src="assets/js/maps.js"></script>

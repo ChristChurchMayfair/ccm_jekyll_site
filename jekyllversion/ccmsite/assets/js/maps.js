@@ -15,8 +15,8 @@ function mapsSelector() {
   }
 }
 
-var directions = document.getElementById("directions");
-directions.style.display = "block"
+// var directions = document.getElementById("directions-button");
+// directions.style.display = "block"
 
-var directionsLink = document.getElementById('directions-link');
+var directionsLink = document.getElementById('directions-button');
 directionsLink.onclick = mapsSelector;
