@@ -4,6 +4,7 @@ body {
 
 #wrapper {
   grid-template-columns: 50% 50%;
+  grid-template-rows: 15vh auto 10vh;
   grid-template-areas:
       "header header"
       "content content"
@@ -22,10 +23,37 @@ body {
 
 #home-1 {
   grid-area: content;
-  height: 90vh;
-  background-image: url(../images/top-bg.jpg);
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 10vh 10vh;
+  grid-template-areas:
+    "main main"
+    "left-button right-button"
+    "chevron chevron";
+
+  height: 85vh;
+  /*background-image: url(../images/top-bg.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.mobile-btn-left {
+  grid-area: left-button;
+  justify-self: center;
+  align-self: center;
+}
+
+.mobile-btn-right {
+  grid-area: right-button;
+  justify-self: center;
+  align-self: center;
+}
+
+#chevron-container {
+  grid-area: chevron;
+  justify-self: center;
+  align-self: center;
 }
 
 #content {
@@ -44,7 +72,7 @@ body {
 }
 
 #services-header {
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 #services {
@@ -76,7 +104,7 @@ body {
 
 footer {
   grid-column: 1 / span 2;
-  height: 10vh;
+  /* height: 10vh; */
   background-color: var(--dark);
   padding: 20px;
   font-size: 0.7em;

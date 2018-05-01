@@ -33,31 +33,31 @@ body {
   display: grid;
 }
 
-
-
-.mobile-btn-left {
+.mobile-btn {
   background-color: var(--light);
   width: 42.5vw;
+  height: 30px;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 400;
   border-radius: 4px;
   margin-right:  2.5vw;
 }
 
-.mobile-btn-right {
-  background-color: var(--light);
-  width: 42.5vw;
-  text-align: center;
-  font-size: 1.6em;
-  font-weight: 400;
-  border-radius: 4px;
-  margin-left:  2.5vw;
+.mobile-btn-left {
 }
 
-.mobile-btn-container {
-  position: absolute;
-  bottom: 0;
+.mobile-btn-right {
+}
+
+/* .mobile-btn-container {
+  /*position: absolute;
+  bottom: 0;*/
   margin: 5vw;
   color: var(--dark);
-}
+} */
+
+/* #chevron-container {
+  position: absolute;
+  bottom: 0;
+} */

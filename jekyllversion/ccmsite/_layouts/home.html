@@ -4,19 +4,21 @@ layout: default
 
 {% assign events = site.events | where: "status", "live" %}
 
-
+<style>
+#home-1 {
+        background-image: url("{{ page.mainImage }}");
+}
+</style>
 
 <section id="home-1">
 
-  <div id="main-container">
-    <div id="content">
-      {{ content }}
-    </div>
-  </div>
+  <!-- <div class="mobile-btn-container"> -->
+    <span id="directions-button" class="mobile-btn mobile-btn-left">Directions</span>
+    <span id="services-button" class="mobile-btn mobile-btn-right"><a href="#services">Services</a></span>
+  <!-- </div> -->
 
-  <div class="mobile-btn-container">
-    <span id="directions-button" class="mobile-btn-left" style="float: left;">Directions</span>
-    <a href="#services"><span id="services-button" class="mobile-btn-right" style="float: right;">Services</span></a>
+  <div id="chevron-container">
+    <img src="assets/images/three-chevrons-down.svg"/>
   </div>
 </section>
 
