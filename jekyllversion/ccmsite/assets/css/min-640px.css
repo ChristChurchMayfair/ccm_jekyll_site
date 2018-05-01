@@ -2,7 +2,16 @@ body {
   min-width: 320px;
 }
 
+#wrapper {
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+      "header header"
+      "content content"
+      "footer footer";
+}
+
 .navbar {
+  grid-area: header;
   background-color: blue;
   padding: 10px;
 }

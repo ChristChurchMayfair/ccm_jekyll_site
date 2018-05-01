@@ -1,20 +1,42 @@
+:root {
+  --dark: #333333;
+  --light: white;
+}
+
 @font-face {
   font-family: 'Klinic Slab';
   src: url(../fonts/KlinicSlabMedium.otf);
 }
 
-body {
+html {
+  box-sizing: border-box;
   font-family: 'Klinic Slab';
   font-size: 20px;
   line-height: 1.5;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: var(--light);
+  color: var(--dark);
   margin: 0px auto 0px auto;
   min-width: 320px;
 }
 
+body {
+  margin: 0;
+}
+
+/* *,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+
+#wrapper {
+  display: grid;
+}
+
+
+
 .mobile-btn-left {
-  background-color: white;
+  background-color: var(--light);
   width: 42.5vw;
   text-align: center;
   font-size: 1.6em;
@@ -24,7 +46,7 @@ body {
 }
 
 .mobile-btn-right {
-  background-color: white;
+  background-color: var(--light);
   width: 42.5vw;
   text-align: center;
   font-size: 1.6em;
@@ -37,5 +59,5 @@ body {
   position: absolute;
   bottom: 0;
   margin: 5vw;
-  color: #333333;
+  color: var(--dark);
 }

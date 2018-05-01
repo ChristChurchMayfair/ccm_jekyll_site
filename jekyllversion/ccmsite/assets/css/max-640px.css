@@ -2,8 +2,18 @@ body {
   min-width: 320px;
 }
 
+#wrapper {
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+      "header header"
+      "content content"
+      "footer footer";
+}
+
 .navbar {
   padding: 20px;
+  grid-area: header;
+  background-color: var(--dark);
 }
 
 #navbar-logo {
@@ -11,7 +21,8 @@ body {
 }
 
 #home-1 {
-  height: 100vh;
+  grid-area: content;
+  height: 90vh;
   background-image: url(../images/top-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,29 +39,48 @@ body {
 }
 
 #home-2 {
+  grid-column: 1 / span 2;
   height: 100vh;
 }
 
-#home-3 {
-  height: 100vh;
+#services-header {
+  height: 10vh;
 }
 
-#home-3 {
-  background-color: red;
+#services {
+  background-color: white;
   padding: 20px;
+  grid-column: 1 / span 2;
+}
+
+.service {
+  height: 30vh;
+  padding: 20px;
+  grid-column: 1 / span 2;
+}
+
+.service-day {
+  background-color: var(--light);
+}
+
+.service-night {
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .event-section {
+  grid-column: 1 / span 2;
   height: 100vh;
   padding: 20px;
 }
 
 footer {
+  grid-column: 1 / span 2;
   height: 10vh;
-  background-color: black;
+  background-color: var(--dark);
   padding: 20px;
   font-size: 0.7em;
-  color: white;
+  color: var(--light);
 }
 
 #hamburger-mobile {
@@ -72,7 +102,6 @@ h1 {
 }
 
 #home-2 article {
-  width: 60vw;
   font-size: 16pt;
   line-height: 20pt;
 }

@@ -4,13 +4,11 @@ layout: default
 
 {% assign events = site.events | where: "status", "live" %}
 
+
+
 <section id="home-1">
-  <header class="navbar">
-    <img id="navbar-logo" src="assets/images/ccm-logo-full.svg">
-    <div id="hamburger-mobile"></div>
-  </header>
+
   <div id="main-container">
-    <img id="main-banner-image" src="http://via.placeholder.com/400x150">
     <div id="content">
       {{ content }}
     </div>
@@ -18,7 +16,7 @@ layout: default
 
   <div class="mobile-btn-container">
     <span id="directions-button" class="mobile-btn-left" style="float: left;">Directions</span>
-    <a href="#home-3"><span id="services-button" class="mobile-btn-right" style="float: right;">Services</span><a>
+    <a href="#services"><span id="services-button" class="mobile-btn-right" style="float: right;">Services</span></a>
   </div>
 </section>
 
@@ -28,44 +26,30 @@ layout: default
     </h1>
       <article>
     <p>This is a paragraph of text that explains why Church is so awesome.</p>
-    <p>
-      My word, it's pretty amazing how much we love the Lord Jesus. He is almight and all powerful.
-    </p>
+    <p>My word, it's pretty amazing how much we love the Lord Jesus. He is almight and all powerful.</p>
   </article>
   <div>
-  <div class="mobile-btn" style="background-color:black;">
-    Learn more >
-  </div>
-  </div>
+    <div class="mobile-btn" style="background-color:black;"> Learn more > </div>
   </div>
 </section>
 
-<section id="home-3">
-    <h1>
-      Services
-    </h1>
-      <article>
-          {% for service in site.data.services %}
-          <h2>{{ service.name }} - {{ service.time }}</h2>
-          <p>
-            {{ service.description }}
-          </p>
-          {% endfor %}
-        </ul>
-  </article>
+<section id="services">
+    <h1>Services</h1>
 </section>
 
-
+{% for service in site.services %}
+<section class="service service-{{service.type}}">
+  <h2>{{ service.title }} - {{ service.time }}</h2>
+  <p>{{ service.content }}</p>
+</section>
+{% endfor %}
 
 {% for event in events %}
-  <section class="event-section">
+<section class="event-section">
   <div class="event">
     <h1>{{ event.name }}</h1>
-    {{ event.content }}
+    <p>{{ event.content }}</p>
   </div>
 </section>
-  {% endfor %}
-
-</div>
-
+{% endfor %}
 <script src="assets/js/maps.js"></script>

@@ -27,6 +27,7 @@ github_username:  jekyll
 collections:
 - people
 - events
+- services
 
 # Build settings
 markdown: kramdown
