@@ -1,50 +1,50 @@
 body {
-  min-width: 320px;
+  margin:0;
+  width: 100vw;
 }
 
-.navbar {
-  padding: 20px;
+#main {
+  width: 100vw;
+  display: grid;
+  background-color: red;
+  grid-template-rows: auto 10vh;
 }
 
-#navbar-logo {
-  height: 50px;
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: yellow;
+  display: none;
 }
 
-#home-1 {
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(0,0,255,0.2);
+}
+
+#content {
+  grid-row: 1;
+}
+
+section {
+  width: 100vw;
   height: 100vh;
-  background-image: url(../images/top-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: purple;
 }
 
-#home-2 {
-  height: 100vh;
+section:first-of-type {
+  background-color: orange;
+  margin-top: 10vh;
 }
 
-#hamburger-mobile {
-  height: 50px;
-  width: 45px;
-  background-image: url(../images/hamburger.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: right;
-}
-
-h1 {
-  font-size: 10vw;
-  margin: 0px;
-}
-
-#home-2 {
-  padding: 5vw;
-}
-
-#home-2 article {
-  width: 60vw;
-  font-size: 16pt;
-  line-height: 20pt;
-}
-
-.cta-btn {
-
+footer {
+  grid-row: 2;
+  background-color: green;
 }
