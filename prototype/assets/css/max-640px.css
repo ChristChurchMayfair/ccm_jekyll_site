@@ -40,7 +40,7 @@ h1 {
 }
 
 #main {
-  width: 100vw;
+  /* width: 100vw; */
   display: grid;
   background-color: white;
   grid-template-rows: auto var(--footer-height);
@@ -118,7 +118,7 @@ header #open-menu-button {
 
 section {
   padding: var(--general-padding);
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   background-color: purple;
   border-bottom: 1px;
