@@ -1,41 +1,179 @@
+:root {
+  --general-padding: 15px;
+  --header-vertical-padding: var(--general-padding);
+  --horizontal-padding: var(--general-padding);
+  --menu-button-size: 40px;
+  --header-height: var(--menu-button-size);
+  --nav-height: 50vh;
+  --footer-height: 40vh;
+  --button-height: 30px;
+
+  --dark-colour: black;
+  --light-colour: white;
+  --header-background-colour: rgba(0,0,0,0.2);
+  --navigation-background-colour: rgba(255,255,255,1);
+  --button-colour: white;
+}
+
 @font-face {
   font-family: 'Klinic Slab';
   src: url(../fonts/KlinicSlabMedium.otf);
 }
 
 body {
+  margin:0;
+  width: 100vw;
+  min-width: 320px;
   font-family: 'Klinic Slab';
   font-size: 16px;
   line-height: 1.5;
-  background-color: #ffffff;
-  color: white;
-  margin: 0px auto 0px auto;
-  min-width: 320px;
-
+  color: var(--light-colour);
 }
 
-.mobile-btn-left {
+#menu-content {
+  color: var(--dark-colour);
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+#main {
+  /* width: 100vw; */
+  display: grid;
   background-color: white;
-  width: 42.5vw;
-  text-align: center;
-  font-size: 1.6em;
-  font-weight: 400;
-  border-radius: 4px;
-  margin-right:  2.5vw;
+  grid-template-rows: auto var(--footer-height);
 }
 
-.mobile-btn-right {
-  background-color: white;
-  width: 42.5vw;
-  text-align: center;
-  font-size: 1.6em;
-  font-weight: 400;
-  border-radius: 4px;
-  margin-left:  2.5vw;
-}
-
-.mobile-btn-container {
+nav {
   position: absolute;
-  bottom: 0;
-  margin: 5vw;
+  top: 0;
+  left: 0;
+  width: calc(100vw - calc(var(--horizontal-padding) * 2));
+  height: 50vh;
+  background-color: var(--navigation-background-colour);
+  display: none;
+
+  padding-top: var(--header-vertical-padding);
+  padding-bottom: var(--header-vertical-padding);
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
+
+  grid-template-columns: auto var(--menu-button-size);
+  grid-template-rows: var(--header-height) auto;
+  column-gap: 15px;
+  align-items: center;
+}
+
+nav #logo {
+  position: relative;
+  height: 40px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+nav #close-menu-button {
+  width: calc(var(--menu-button-size) - 10px);
+  grid-column: 2;
+  grid-row: 1;
+  justify-content: right;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - calc(var(--horizontal-padding) * 2));
+  height: var(--header-height);
+  background-color: rgba(0,0,0,0.2);
+
+  padding-top: var(--header-vertical-padding);
+  padding-bottom: var(--header-vertical-padding);
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
+
+  display: grid;
+  grid-template-columns: auto var(--menu-button-size);
+  column-gap: 15px;
+  align-items: center;
+}
+
+header #logo {
+  position: relative;
+  height: 40px;
+  grid-column: 1;
+
+}
+
+header #open-menu-button {
+  width: calc(var(--menu-button-size) - 10px);
+  grid-column: 2;
+  justify-content: right;
+}
+
+#content {
+  grid-row: 1;
+}
+
+section {
+  padding: var(--general-padding);
+  /* width: 100vw; */
+  height: 100vh;
+  background-color: purple;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-color: green;
+  border-style: solid;
+}
+
+/* Special first one with padding to pull content below the header */
+section:first-of-type {
+  /* background-color: orange; */
+  background-image: url("../images/top-bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
+  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
+  display: grid;
+  grid-template-columns: calc(50vw - 15px) calc(50vw - 15px);
+  grid-template-rows: auto calc(var(--button-height) + 10px);
+}
+
+footer {
+  grid-row: 2;
+  background-color: green;
+  padding: var(--general-padding);
+}
+
+.button {
+  color:black;
+  background-color: var(--button-colour);
+  width: 40vw;
+  height: var(--button-height);
+  padding: 4px;
+  border-radius: 4px;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: var(--button-height);
+}
+
+/* Mobile index top section button styling */
+
+.index-top-section-btn {
+  width: auto;
+  margin: 0px 10px;
+}
+
+.index-top-section-btn:nth-of-type(1) {
+  grid-column: 1;
+}
+
+.index-top-section-btn:nth-of-type(2) {
+  grid-column: 2;
 }
