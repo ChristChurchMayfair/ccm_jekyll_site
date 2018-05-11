@@ -30,6 +30,7 @@ body {
   color: var(--light-colour);
 }
 
+
 #menu-content {
   color: var(--dark-colour);
 }
@@ -64,6 +65,7 @@ nav {
   grid-template-rows: var(--header-height) auto;
   column-gap: 15px;
   align-items: center;
+
 }
 
 nav #logo {
@@ -78,6 +80,8 @@ nav #close-menu-button {
   grid-column: 2;
   grid-row: 1;
   justify-content: right;
+  margin: auto;
+
 }
 
 header {
@@ -110,6 +114,7 @@ header #open-menu-button {
   width: calc(var(--menu-button-size) - 10px);
   grid-column: 2;
   justify-content: right;
+  margin: auto;
 }
 
 #content {

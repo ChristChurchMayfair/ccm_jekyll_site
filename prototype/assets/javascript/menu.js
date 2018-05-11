@@ -3,6 +3,7 @@ function openMenuButtonClicked() {
   var header = document.getElementById("header");
   header.style.display = "none";
 
+
   var menu = document.getElementById("menu");
   menu.style.display = "grid";
 }
