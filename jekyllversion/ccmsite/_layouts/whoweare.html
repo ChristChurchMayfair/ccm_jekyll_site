@@ -1,22 +1,17 @@
 ---
 layout: default
 ---
-
-<div>
-  {%- if page.title -%}
-    <h1>{{ page.title }}</h1>
-  {%- endif -%}
-
+<section>
   {{ content }}
-
-  <h1>Staff</h1>
-
+</section>
   {% assign staff = site.people | where: "type", "staff" %}
 
   {% for staff_member in staff %}
+  <section>
   <h2>{{ staff_member.name }}</h2>
   <p>{{ staff_member.role }}</p>
   <img src="assets/headshots/{{staff_member.headshot}}">
+  </section>
   {% endfor %}
 
   <hr/>
@@ -25,17 +20,20 @@ layout: default
   {% assign trainees = site.people | where: "type", "trainee" %}
 
   {% for trainee in trainees %}
+  <section>
   <h2>{{ trainee.name }}</h2>
   <img src="assets/headshots/{{staff_member.headshot}}">
+  </section>
   {% endfor %}
 
-  <hr/>
   <h1>Elders</h1>
   {% assign elders = site.people | where: "type", "elder" %}
 
   {% for elder in elders %}
+  <section>
   <h2>{{ elder.name }}</h2>
   <img src="assets/headshots/{{staff_member.headshot}}">
+</section>
   {% endfor %}
 
-</div>
+</section>

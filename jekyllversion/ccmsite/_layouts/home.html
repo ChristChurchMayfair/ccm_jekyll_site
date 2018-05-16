@@ -5,38 +5,29 @@ layout: default
 {% assign events = site.events | where: "status", "live" %}
 
 <style>
-#home-1 {
+#full-bleed {
         background-image: url("{{ page.mainImage }}");
 }
 </style>
 
-<section id="home-1">
-
-  <!-- <div class="mobile-btn-container"> -->
-    <span id="directions-button" class="mobile-btn mobile-btn-left">Directions</span>
-    <span id="services-button" class="mobile-btn mobile-btn-right"><a href="#services">Services</a></span>
-  <!-- </div> -->
-
-  <div id="chevron-container">
-    <img src="assets/images/three-chevrons-down.svg"/>
-  </div>
+<section id="full-bleed">
+  <h2>No copy here. Just full bleed image and some action buttons for critical info.</h2>
+  <a class="button index-top-section-btn">
+    Directions
+  </a>
+  <a class="button index-top-section-btn">
+    Services
+  </a>
 </section>
 
-<section id="home-2">
-    <h1>
-      This is awesome.
-    </h1>
-      <article>
-    <p>This is a paragraph of text that explains why Church is so awesome.</p>
-    <p>My word, it's pretty amazing how much we love the Lord Jesus. He is almight and all powerful.</p>
-  </article>
-  <div>
-    <div class="mobile-btn" style="background-color:black;"> Learn more > </div>
-  </div>
+<section>
+  <h1>A Title.</h1>
+  <p>Some more words.</p>
 </section>
 
-<section id="services">
-    <h1>Services</h1>
+<section>
+  <h1>A Title.</h1>
+  <p>Even more words.</p>
 </section>
 
 {% for service in site.services %}
@@ -54,4 +45,4 @@ layout: default
   </div>
 </section>
 {% endfor %}
-<script src="assets/js/maps.js"></script>
+<script src="assets/javascript/maps.js"></script>

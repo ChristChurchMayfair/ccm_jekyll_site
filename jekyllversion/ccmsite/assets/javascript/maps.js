@@ -1,6 +1,25 @@
+export    getMapsURLForLatLongPlatform: function(latitude,longitude,platform) {
+      var isMac = platform.toUpperCase().indexOf('MAC') >= 0;
+      var isiPhone = platform.indexOf("iPhone") >= 0;
+      var isiPad = platform.indexOf("iPad") >= 0;
+      var isiPod = platform.indexOf("iPod") >= 0;
+      var isiOS = isiPhone || isiPad || isiPod;
+
+      var protocol = "https"
+
+      if (isiOS) {
+        protocol = "maps"
+      }
+      return `${protocol}://maps.google.com/maps?daddr=${latitude},${longitude}&amp;ll=`
+    }
+
+
+
+var latitude = 51.505263;
+var longitude = -0.148704;
+
 function mapsSelector() {
-  var latitude = 51.505263;
-  var longitude = -0.148704;
+
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   if /* if we're on iOS, open in Apple Maps */
     ((navigator.platform.indexOf("iPhone") != -1) ||
@@ -17,6 +36,3 @@ function mapsSelector() {
 
 // var directions = document.getElementById("directions-button");
 // directions.style.display = "block"
-
-var directionsLink = document.getElementById('directions-button');
-directionsLink.onclick = mapsSelector;

@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<div>
+<section>
   {%- if page.title -%}
     <h1>{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
-
-  <h1>Talks</h1>
 
   <div style="display:none" id="podcast-link">
     <a href="pcast://{{ page.podcastURL }}">Podcast Link</a>
@@ -19,6 +17,6 @@ layout: default
     talks!!!!
   </div>
 
-</div>
+</section>
 
 <script src="assets/js/talks.js"></script>
