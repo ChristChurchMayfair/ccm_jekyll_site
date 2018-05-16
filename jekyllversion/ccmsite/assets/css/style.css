@@ -31,21 +31,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--light-colour);
+  display: grid;
+  background-color: white;
+  grid-template-rows: auto var(--footer-height);
 }
-
-
-
 
 h1 {
   font-size: 2em;
   margin-top: 0;
-}
-
-#main {
-  /* width: 100vw; */
-  display: grid;
-  background-color: white;
-  grid-template-rows: auto var(--footer-height);
 }
 
 nav {
