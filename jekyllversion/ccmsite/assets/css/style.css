@@ -2,6 +2,7 @@
   --general-padding: 15px;
   --header-vertical-padding: var(--general-padding);
   --horizontal-padding: var(--general-padding);
+  --ios-bottom-furniture-padding: 100px;
   --menu-button-size: 40px;
   --header-height: var(--menu-button-size);
   --nav-height: 100vh;
@@ -175,13 +176,15 @@ section {
 }
 
 /* Special first one with padding to pull content below the header */
+/* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
   /* background image comes from the content system */
   background-color: var(--theme-colour); /*backup color!*/
   background-size:cover;
   background-repeat: no-repeat;
   padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
-  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
+  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--ios-bottom-furniture-padding));
+  padding-bottom: var(--ios-bottom-furniture-padding);
   display: grid;
   grid-template-columns: calc(50vw - 15px) calc(50vw - 15px);
   grid-template-rows: auto calc(var(--button-height) + 10px);
