@@ -2,7 +2,7 @@
   --general-padding: 15px;
   --header-vertical-padding: var(--general-padding);
   --horizontal-padding: var(--general-padding);
-  --ios-bottom-furniture-padding: 140px;
+  --ios-bottom-furniture-padding: 140px; /*This is tuned for iPhone X only!*/
   --menu-button-size: 40px;
   --header-height: var(--menu-button-size);
   --nav-height: 100vh;
