@@ -17,7 +17,7 @@
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 203, 66);
 
-  --menu-transition-time: 0.5s;
+  --menu-transition-time: 0.2s;
 }
 
 @font-face {
@@ -48,15 +48,14 @@ nav {
   top: 0;
   left: 0;
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
-  /* height: var(--nav-height); */
-  height: 0px;
+  height: var(--nav-height);
+  /* height: 0px; */
   background-color: var(--navigation-background-colour);
   display: grid;
+  opacity: 0;
 
-  /* padding-top: var(--header-vertical-padding); */
-  /* padding-bottom: var(--header-vertical-padding); */
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: var(--header-vertical-padding);
+  padding-bottom: var(--header-vertical-padding);
 
   padding-left: var(--horizontal-padding);
   padding-right: var(--horizontal-padding);
@@ -70,10 +69,8 @@ nav {
   align-items: center;
   overflow: hidden;
 
-  transition: height var(--menu-transition-time) ease-in-out, padding-top var(--menu-transition-time) ease-in-out, padding-bottom var(--menu-transition-time) ease-in-out;
-  /* -moz-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Firefox 4 */
-  /* -webkit-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Safari and Chrome */ */
-  /* -o-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Opera */ */ */
+  transition: opacity var(--menu-transition-time);
+  -webkit-transition: opacity var(--menu-transition-time);
 }
 
 nav #logo {

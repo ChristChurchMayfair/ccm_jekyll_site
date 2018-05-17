@@ -6,17 +6,13 @@ function openMenuButtonClicked() {
 
   var menu = document.getElementById("menu");
   //menu.style.display = "grid";
-  menu.style.height = "90vh";
-  menu.style.paddingTop = "15px";
-  menu.style.paddingBottom = "15px";
+  menu.style.opacity = 1;
 }
 
 function closeMenuButtonClicked() {
   var menu = document.getElementById("menu");
   //menu.style.display = "none";
-  menu.style.height = "0px";
-  menu.style.paddingTop = "0px";
-  menu.style.paddingBottom = "0px";
+  menu.style.opacity = 0;
 
   var header = document.getElementById("header");
   header.style.display = "grid";
