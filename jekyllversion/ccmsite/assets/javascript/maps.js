@@ -1,17 +1,17 @@
-export    getMapsURLForLatLongPlatform: function(latitude,longitude,platform) {
-      var isMac = platform.toUpperCase().indexOf('MAC') >= 0;
-      var isiPhone = platform.indexOf("iPhone") >= 0;
-      var isiPad = platform.indexOf("iPad") >= 0;
-      var isiPod = platform.indexOf("iPod") >= 0;
-      var isiOS = isiPhone || isiPad || isiPod;
-
-      var protocol = "https"
-
-      if (isiOS) {
-        protocol = "maps"
-      }
-      return `${protocol}://maps.google.com/maps?daddr=${latitude},${longitude}&amp;ll=`
-    }
+// export    getMapsURLForLatLongPlatform: function(latitude,longitude,platform) {
+//       var isMac = platform.toUpperCase().indexOf('MAC') >= 0;
+//       var isiPhone = platform.indexOf("iPhone") >= 0;
+//       var isiPad = platform.indexOf("iPad") >= 0;
+//       var isiPod = platform.indexOf("iPod") >= 0;
+//       var isiOS = isiPhone || isiPad || isiPod;
+//
+//       var protocol = "https"
+//
+//       if (isiOS) {
+//         protocol = "maps"
+//       }
+//       return `${protocol}://maps.google.com/maps?daddr=${latitude},${longitude}&amp;ll=`
+//     }
 
 
 
@@ -34,5 +34,11 @@ function mapsSelector() {
   }
 }
 
-// var directions = document.getElementById("directions-button");
-// directions.style.display = "block"
+function addHandlerToDirectionsButton() {
+var directionsButton = document.getElementById("directions-button");
+directionsButton.onclick = mapsSelector;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  addHandlerToDirectionsButton();
+});
