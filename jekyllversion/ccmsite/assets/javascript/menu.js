@@ -5,13 +5,13 @@ function openMenuButtonClicked() {
 
 
   var menu = document.getElementById("menu");
-  //menu.style.display = "grid";
+  menu.style.visibility = "visible";
   menu.style.opacity = 1;
 }
 
 function closeMenuButtonClicked() {
   var menu = document.getElementById("menu");
-  //menu.style.display = "none";
+  menu.style.visibility = "hidden";
   menu.style.opacity = 0;
 
   var header = document.getElementById("header");

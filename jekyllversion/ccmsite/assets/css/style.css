@@ -47,24 +47,25 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  padding-left: var(--horizontal-padding);
+  padding-right: var(--horizontal-padding);
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
   height: var(--nav-height);
-  /* height: 0px; */
+
   background-color: var(--navigation-background-colour);
+
   display: grid;
+  visibility: hidden;
   opacity: 0;
 
   padding-top: var(--header-vertical-padding);
   padding-bottom: var(--header-vertical-padding);
 
-  padding-left: var(--horizontal-padding);
-  padding-right: var(--horizontal-padding);
-
   grid-template-columns: auto var(--menu-button-size);
   grid-template-rows: var(--header-height) auto;
   grid-template-areas:
-  "logo menu-button"
-  "menu-content menu-content";
+    "logo menu-button"
+    "menu-content menu-content";
   column-gap: 15px;
   align-items: center;
   overflow: hidden;
@@ -73,7 +74,7 @@ nav {
   -webkit-transition: opacity var(--menu-transition-time);
 }
 
-nav #logo {
+nav .logo {
   position: relative;
   height: 40px;
   grid-area: logo;
@@ -138,7 +139,7 @@ header {
   align-items: center;
 }
 
-header #logo {
+header .logo {
   position: relative;
   height: 40px;
   grid-column: 1;
