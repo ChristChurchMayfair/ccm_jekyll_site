@@ -48,7 +48,6 @@ nav {
   top: 0;
   left: 0;
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
-  /* height: var(--nav-height); */
   height: 0px;
   background-color: var(--navigation-background-colour);
   display: grid;
@@ -70,10 +69,28 @@ nav {
   align-items: center;
   overflow: hidden;
 
-  transition: height var(--menu-transition-time) ease-in-out, padding-top var(--menu-transition-time) ease-in-out, padding-bottom var(--menu-transition-time) ease-in-out;
-  /* -moz-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Firefox 4 */
-  /* -webkit-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Safari and Chrome */ */
-  /* -o-transition: height 2s, padding-top 2s, padding-bottom 2s; /* Opera */ */ */
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-duration: var(--menu-transition-time);
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes navOpen {
+  0% {
+    height: 400px;
+    opacity: 1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  100% {
+    height: 400px;
+    opacity: 0;
+    padding-top: var(--general-padding);
+    padding-bottom: var(--general-padding);
+
+  }
 }
 
 nav #logo {
