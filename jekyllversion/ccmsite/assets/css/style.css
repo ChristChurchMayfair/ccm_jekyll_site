@@ -189,6 +189,20 @@ section:first-of-type {
   grid-template-rows: auto calc(var(--button-height) + 10px);
 }
 
+section.service {
+  height: 50vh;
+}
+
+section.service-day {
+  background-color: var(--light-colour);
+  color: var(--dark-colour);
+}
+
+section.service-night {
+  background-color: var(--dark-colour);
+  color: var(--light-colour);
+}
+
 footer {
   grid-row: 2;
   background-color: var(--dark-colour);
