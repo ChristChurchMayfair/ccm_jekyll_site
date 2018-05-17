@@ -26,14 +26,13 @@ layout: default
   <p>A continuation.</p>
 </section>
 
-<div id="services">
+<a name="services"></a>
 {% for service in site.services %}
 <section class="service service-{{service.type}}">
   <h2>{{ service.title }} - {{ service.time }}</h2>
   <p>{{ service.content }}</p>
 </section>
 {% endfor %}
-</div>
 
 {% for event in events %}
 <section class="event-section">
