@@ -1,5 +1,5 @@
 ---
-name: Traditional Christmas Carols
+name: Carol Services
 status: live
 ---
 Carol Service blurb
