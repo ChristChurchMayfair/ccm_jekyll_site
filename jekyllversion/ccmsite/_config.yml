@@ -28,6 +28,8 @@ collections:
 - people
 - events
 - services
+- music_releases
+- sheet_music
 
 # Build settings
 markdown: kramdown
