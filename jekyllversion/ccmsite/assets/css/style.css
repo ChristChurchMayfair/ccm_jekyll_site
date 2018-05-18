@@ -5,15 +5,16 @@
   --ios-bottom-furniture-padding: 140px; /*This is tuned for iPhone X only!*/
   --menu-button-size: 40px;
   --header-height: var(--menu-button-size);
-  --nav-height: 100vh;
+  --nav-height: auto;
   --footer-height: 35vh;
   --button-height: 30px;
 
-  --dark-colour: black;
+  --dark-colour: rgb(50,50,50);
   --light-colour: white;
   --header-background-colour: rgba(0,0,0,0.2);
   --navigation-background-colour: rgba(255,255,255,1);
   --button-colour: white;
+  --button-push-colour: rgb(200,255,200);
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 203, 66);
 
@@ -67,6 +68,7 @@ nav {
     "logo menu-button"
     "menu-content menu-content";
   column-gap: 15px;
+  grid-row-gap: 15px;
   align-items: center;
   overflow: hidden;
 
@@ -242,6 +244,16 @@ footer a {
   text-align: center;
   vertical-align: middle;
   line-height: var(--button-height);
+  transition: transform 0.05s, background-color 0.05s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: var(--button-push-colour);
 }
 
 /* Mobile index top section button styling */
