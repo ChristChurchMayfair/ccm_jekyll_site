@@ -137,7 +137,7 @@ header {
 
   display: grid;
   grid-template-columns: auto var(--menu-button-size);
-  column-gap: 15px;
+  column-gap: var(--general-padding);
   align-items: center;
 }
 
@@ -232,7 +232,7 @@ footer a {
 
 .button {
   display: block;
-  color:black;
+  color: var(--dark-colour);
   background-color: var(--button-colour);
   width: 40vw;
   height: var(--button-height);
@@ -242,6 +242,7 @@ footer a {
   justify-content: center;
   font-size: 1.5em;
   text-align: center;
+  text-decoration: none;
   vertical-align: middle;
   line-height: var(--button-height);
   transition: transform 0.05s, background-color 0.05s;
