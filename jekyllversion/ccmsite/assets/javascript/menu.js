@@ -1,3 +1,6 @@
+const VISIBLE = 1;
+const INVISIBLE = 0;
+
 function openMenuButtonClicked() {
 
   var header = document.getElementById("header");
@@ -6,7 +9,7 @@ function openMenuButtonClicked() {
 
   var menu = document.getElementById("menu");
   menu.style.visibility = "visible";
-  menu.style.opacity = 1;
+  menu.style.opacity = VISIBLE;
 }
 
 function closeMenuButtonClicked() {
@@ -19,7 +22,7 @@ function closeMenuButtonClicked() {
     event.target.removeEventListener("transitionend");
   });
 
-  menu.style.opacity = 0;
+  menu.style.opacity = INVISIBLE;
 
   var header = document.getElementById("header");
   header.style.display = "grid";
