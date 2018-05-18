@@ -11,7 +11,7 @@
 
   --dark-colour: rgb(50,50,50);
   --light-colour: white;
-  --header-background-colour: rgba(0,0,0,0.2);
+  --header-background-colour: rgba(0,0,0,0);
   --navigation-background-colour: rgba(255,255,255,1);
   --button-colour: white;
   --button-push-colour: rgb(200,255,200);
@@ -128,7 +128,7 @@ header {
   left: 0;
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
   height: var(--header-height);
-  background-color: rgba(0,0,0,0.2);
+  background-color: var(--header-background-colour);
 
   padding-top: var(--header-vertical-padding);
   padding-bottom: var(--header-vertical-padding);
