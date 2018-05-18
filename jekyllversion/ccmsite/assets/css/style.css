@@ -9,12 +9,14 @@
   --footer-height: 35vh;
   --button-height: 30px;
 
+  --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+
   --dark-colour: rgb(50,50,50);
   --light-colour: white;
   --header-background-colour: rgba(0,0,0,0);
   --navigation-background-colour: rgba(255,255,255,1);
   --button-colour: white;
-  --button-push-colour: rgb(200,255,200);
+  --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 203, 66);
 
@@ -71,6 +73,8 @@ nav {
   grid-row-gap: 15px;
   align-items: center;
   overflow: hidden;
+
+  box-shadow: var(--standard-shadow);
 
   transition: opacity var(--menu-transition-time);
   -webkit-transition: opacity var(--menu-transition-time);
@@ -247,6 +251,7 @@ footer a {
   line-height: var(--button-height);
   transition: transform 0.05s, background-color 0.05s;
   -webkit-transition: transform 0.05s, background-color 0.05s;
+  box-shadow: var(--standard-shadow);
 }
 
 .button:hover {
