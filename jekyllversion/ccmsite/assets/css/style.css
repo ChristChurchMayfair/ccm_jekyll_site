@@ -189,10 +189,30 @@ section:first-of-type {
   background-repeat: no-repeat;
   padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
   height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--ios-bottom-furniture-padding));
-  padding-bottom: var(--ios-bottom-furniture-padding);
+  padding-bottom: var(--general-padding);
   display: grid;
   grid-template-columns: calc(50vw - 15px) calc(50vw - 15px);
   grid-template-rows: auto calc(var(--button-height) + 10px);
+}
+
+@media only screen and (min-width: 640px) {
+  section:first-of-type {
+    padding-bottom: var(--general-padding);
+    height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto calc(var(--button-height) + 10px);
+  }
+}
+
+section p {
+  margin-top: 0px;
+  font-size: 1em;
+  grid-column: 1/-1;
+}
+
+section.music_release, section.music_resource {
+  height: 40vh;
 }
 
 section.service {
