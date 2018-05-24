@@ -21,6 +21,9 @@
   --highlight-colour: rgb(244, 203, 66);
 
   --menu-transition-time: 0.2s;
+
+  --heading-font: 'Klinic Slab';
+  --body-font: 'Nunito';
 }
 
 @font-face {
@@ -28,22 +31,46 @@
   src: url(../fonts/KlinicSlabMedium.otf);
 }
 
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
+}
+
 body {
   margin:0;
   width: 100vw;
   min-width: 320px;
-  font-family: 'Klinic Slab';
+  font-family: var(--body-font);
   font-size: 16px;
   line-height: 1.5;
   color: var(--light-colour);
   display: grid;
-  background-color: white;
+  background-color: var(--theme-colour);
   grid-template-rows: auto var(--footer-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
 }
 
 h1 {
   font-size: 2em;
   margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 nav {
@@ -264,6 +291,7 @@ footer a {
   border-radius: 4px;
   align-content: center;
   justify-content: center;
+  font-family: var(--heading-font);
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
