@@ -1,5 +1,6 @@
 ---
 title: Evening
+dayOfWeek: Sunday
 type: night
 time: "18:00"
 ---

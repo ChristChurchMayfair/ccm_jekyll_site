@@ -1,5 +1,6 @@
 ---
 title: Morning
+dayOfWeek: Sunday
 type: day
 time: "10:15"
 ---
