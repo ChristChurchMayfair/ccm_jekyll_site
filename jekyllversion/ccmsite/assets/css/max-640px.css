@@ -1,7 +1,0 @@
-/* Mobile specific screen styling */
-
-h2 {
-  line-height: 1.2em;
-  font-size: 1.8em;
-  grid-column-end: span 2;
-}

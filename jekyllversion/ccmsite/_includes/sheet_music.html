@@ -1,12 +1,12 @@
 {% for resource in site.sheet_music %}
-<section class="sheet-music">
+<h1>Resources</h1>
+<section class="music_resource">
   <h2>{{ resource.title }}</h2>
+  <p>{{ resource.content }}</p>
   {% for download in resource.downloads %}
   <div>
-    <h3>{{ download.title }}</h3>
+    <a href="{{ download.link }}">{{ download.title }}</a>
   </div>
   {% endfor %}
-
-  <p>{{ resource.content }}</p>
 </section>
 {% endfor %}

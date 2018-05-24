@@ -159,7 +159,7 @@ header #open-menu-button {
   margin: auto;
 }
 
-#content {
+main {
   grid-row: 1;
 }
 
