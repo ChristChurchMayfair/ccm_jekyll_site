@@ -132,6 +132,12 @@ nav #close-menu-button {
   column-gap: var(--general-padding);
 }
 
+@media only screen and (min-width: 640px) {
+  #menu-content {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
 #menu-content h2 {
   display: block;
   font-size: 1.3em;
