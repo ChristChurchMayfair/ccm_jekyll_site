@@ -275,13 +275,14 @@ footer ul {
 }
 
 footer ul li {
-  display: inline;
+  /* display: inline; */
   font-size: 0.8em;
+  margin-bottom: 0.5em;
 }
 
-footer ul li + li:before {
+/* footer ul li + li:before {
     content: " | ";
-}
+} */
 
 footer a {
   color: var(--highlight-colour);
