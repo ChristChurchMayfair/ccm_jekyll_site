@@ -301,7 +301,6 @@ footer a {
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
   line-height: var(--button-height);
   transition: transform 0.05s, background-color 0.05s;
   -webkit-transition: transform 0.05s, background-color 0.05s;
