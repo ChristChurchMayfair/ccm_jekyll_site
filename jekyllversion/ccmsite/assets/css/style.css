@@ -6,7 +6,7 @@
   --menu-button-size: 40px;
   --header-height: var(--menu-button-size);
   --nav-height: auto;
-  --footer-height: 45vh;
+  --footer-height: auto;
   --button-height: 30px;
 
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
@@ -263,6 +263,7 @@ section.service-night {
 }
 
 footer {
+  color: var(--light-colour);
   grid-row: 2;
   background-color: var(--dark-colour);
   padding: var(--general-padding);
@@ -275,14 +276,9 @@ footer ul {
 }
 
 footer ul li {
-  /* display: inline; */
   font-size: 0.8em;
   margin-bottom: 0.5em;
 }
-
-/* footer ul li + li:before {
-    content: " | ";
-} */
 
 footer a {
   color: var(--highlight-colour);
