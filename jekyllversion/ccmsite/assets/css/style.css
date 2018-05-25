@@ -198,8 +198,7 @@ main {
 
 section {
   padding: var(--general-padding);
-  height: 100vh;
-
+  height: auto;
 
   /* These settings are only for making the sections visible! */
   background-color: var(--light-colour);
@@ -211,6 +210,10 @@ section {
   border-style: solid;
   /* end */
 
+}
+
+#full-page {
+  height: 100vh;
 }
 
 /* Special first one with padding to pull content below the header */

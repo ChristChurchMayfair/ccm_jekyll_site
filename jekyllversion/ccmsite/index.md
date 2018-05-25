@@ -6,6 +6,8 @@ mainImage: assets/images/Sundays.jpg
 
 Welcome
 =======
-We're a church in the heart of London who blah blah blah.
+We're a church in the heart of London. We believe that God, the creator of everything, has revealed himself to humanity through the Bible.
+
+So we meet on Sundays and during the week to study the Bible.
 
 Another para.
