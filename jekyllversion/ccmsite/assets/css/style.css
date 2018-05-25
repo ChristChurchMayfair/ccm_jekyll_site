@@ -12,10 +12,10 @@
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
   --dark-colour: rgb(50,50,50);
-  --light-colour: white;
-  --header-background-colour: rgba(0,0,0,0);
-  --navigation-background-colour: rgba(255,255,255,1);
-  --button-colour: white;
+  --light-colour: rgb(246,246,255);
+  --header-background-colour: rgba(0,0,0,0.2);
+  --navigation-background-colour: var(--light-colour);
+  --button-colour: var(--light-colour);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 203, 66);
@@ -57,9 +57,9 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--light-colour);
+  color: var(--dark-colour);
   display: grid;
-  background-color: var(--theme-colour);
+  background-color: var(--light-colour);
   grid-template-rows: auto var(--footer-height);
 }
 
@@ -128,7 +128,7 @@ nav #close-menu-button {
 
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: var(--general-padding);
 }
 
@@ -202,12 +202,12 @@ section {
 
 
   /* These settings are only for making the sections visible! */
-  background-color: purple;
+  background-color: var(--light-colour);
   border-bottom: 1px;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  border-color: green;
+  border-color: rgba(0,0,0,0.1);
   border-style: solid;
   /* end */
 
