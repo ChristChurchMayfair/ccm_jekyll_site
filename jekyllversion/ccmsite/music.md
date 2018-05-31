@@ -2,6 +2,7 @@
 layout: music
 title: Music
 mainImage: assets/images/music-hero.jpg
+overlayCaption: Praise the LORD!
 ---
 Music.
 ======

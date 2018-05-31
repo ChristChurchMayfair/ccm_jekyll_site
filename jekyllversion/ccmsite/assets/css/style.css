@@ -124,6 +124,7 @@ header svg{
 
 nav {
   fill: var(--dark-colour);
+  z-index: 2;
 }
 
 nav #close-menu-button {
@@ -148,7 +149,7 @@ nav #close-menu-button {
 
 @media only screen and (min-width: 640px) {
   #menu-content {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -174,6 +175,7 @@ nav #close-menu-button {
 }
 
 header {
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
@@ -230,24 +232,81 @@ section {
 /* Special first one with padding to pull content below the header */
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
+  padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
+}
+
+section.full-bleed {
   background-size:cover;
   background-repeat: no-repeat;
-  padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
   height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--ios-bottom-furniture-padding));
   padding-bottom: var(--general-padding);
+}
+
+section.home-full-bleed {
   display: grid;
-  grid-template-columns: calc(50vw - 15px) calc(50vw - 15px);
-  grid-template-rows: auto calc(var(--button-height) + 10px);
+  grid-template-columns: auto 600px auto;
+  grid-template-rows: 100px 200px auto;
+  grid-template-areas: ". . ."
+  ". overlay ."
+  ". . .";
+}
+
+@media only screen and (max-width: 640px) {
+  section.home-full-bleed {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "."
+    "overlay";
+  }
+}
+
+section.home-full-bleed .overlay {
+  grid-area: overlay;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "caption caption"
+  "button-left button-right";
 }
 
 @media only screen and (min-width: 640px) {
-  section:first-of-type {
+  section.full-bleed {
     padding-bottom: var(--general-padding);
     height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto calc(var(--button-height) + 10px);
   }
+}
+
+.event-overlay {
+  position: absolute;
+  bottom: 0;
+  width: calc(100vw - var(--general-padding) - var(--general-padding));
+  height: auto;
+  background-color: var(--highlight-colour);
+  padding: var(--general-padding);
+}
+
+@media only screen and (min-width: 640px) {
+  .event-overlay {
+    text-align: center;
+  }
+}
+
+.caption-overlay {
+grid-area: caption;
+}
+
+@media only screen and (max-width: 640px) {
+  .caption-overlay {
+    display: none;
+  }
+}
+
+.caption-overlay h1 {
+  font-size: 4em;
+  color: white;
+  text-align: center;
 }
 
 section p {
@@ -300,6 +359,10 @@ footer a {
   color: var(--highlight-colour);
 }
 
+.button-overlay {
+  background-color: orange;
+}
+
 .button {
   display: block;
   color: var(--dark-colour);
@@ -336,11 +399,12 @@ footer a {
 }
 
 .index-top-section-btn:nth-of-type(1) {
-  grid-column: 1;
+  grid-area: button-left;
   margin: 0px 7.5px 0px 0px;
 }
 
 .index-top-section-btn:nth-of-type(2) {
+  grid-area: button-right;
   grid-column: 2;
   margin: 0px 0px 0px 7.5px;
 }

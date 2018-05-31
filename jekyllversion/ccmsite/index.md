@@ -2,6 +2,7 @@
 layout: home
 title: Christ Church Mayfair
 mainImage: assets/images/Sundays.jpg
+overlayCaption: Welcome to CCM.
 ---
 
 Welcome
