@@ -1,6 +1,7 @@
 ---
 layout: music
 title: Music
+mainImage: assets/images/music-hero.jpg
 ---
 Music.
 ======
