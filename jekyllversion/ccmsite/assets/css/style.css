@@ -230,8 +230,6 @@ section {
 /* Special first one with padding to pull content below the header */
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
-  /* background image comes from the content system */
-  background-color: var(--theme-colour); /*backup color!*/
   background-size:cover;
   background-repeat: no-repeat;
   padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
