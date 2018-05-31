@@ -240,9 +240,6 @@ section.full-bleed {
   background-repeat: no-repeat;
   height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--ios-bottom-furniture-padding));
   padding-bottom: var(--general-padding);
-}
-
-section.home-full-bleed {
   display: grid;
   grid-template-columns: auto 600px auto;
   grid-template-rows: 100px 200px auto;
@@ -252,7 +249,7 @@ section.home-full-bleed {
 }
 
 @media only screen and (max-width: 640px) {
-  section.home-full-bleed {
+  section.full-bleed {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas: "."
@@ -260,7 +257,7 @@ section.home-full-bleed {
   }
 }
 
-section.home-full-bleed .overlay {
+section.full-bleed .overlay {
   grid-area: overlay;
 
   display: grid;
