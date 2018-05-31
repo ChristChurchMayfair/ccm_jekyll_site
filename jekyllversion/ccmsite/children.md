@@ -1,5 +1,5 @@
 ---
-layout: blurb
+layout: basic
 title: Children
 ---
 

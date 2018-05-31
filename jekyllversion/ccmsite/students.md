@@ -1,5 +1,5 @@
 ---
-layout: blurb
+layout: basic
 title: Students
 mainImage: assets/images/StudentBanner.jpg
 ---

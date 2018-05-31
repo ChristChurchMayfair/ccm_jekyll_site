@@ -1,5 +1,5 @@
 ---
-layout: blurb
+layout: basic
 title: Our Beliefs
 ---
 #Christ Church Mayfair Statement of Faith
