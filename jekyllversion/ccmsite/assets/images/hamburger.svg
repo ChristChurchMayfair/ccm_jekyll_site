@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg fill="#FFFFFF" width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <path d="m22.141 25.922h56.5v7h-56.5z"/>
-  <path d="m22.141 45h56.5v7h-56.5z"/>
-  <path d="m22.141 64.078h56.5v7h-56.5z"/>
- </g>
+<svg id="hamburger" width="100px" height="100px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect class="bar" x="10" y="18" width="80" height="12"/>
+  <rect class="bar" x="10" y="44" width="80" height="12"/>
+  <rect class="bar" x="10" y="70" width="80" height="12"/>
 </svg>

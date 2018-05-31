@@ -113,11 +113,20 @@ nav .logo {
   grid-area: logo;
 }
 
+header {
+  fill: var(--light-colour);
+}
+
+nav {
+  fill: var(--dark-colour);
+}
+
 nav #close-menu-button {
   width: calc(var(--menu-button-size) - 10px);
   grid-area: menu-button;
   justify-content: right;
   margin: auto;
+  fill: var(--dark-colour);
 }
 
 #menu-content {
