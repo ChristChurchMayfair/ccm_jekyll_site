@@ -2,7 +2,7 @@
 layout: textonly
 title: Privacy Policy
 ---
-CHRIST CHURCH MAYFAIR GENERAL PRIVACY NOTICE
+Christ Church Mayfair General Privacy Notice
 ============================================
 
 Your personal data – what is it?
