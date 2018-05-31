@@ -107,13 +107,18 @@ nav {
   -webkit-transition: opacity var(--menu-transition-time);
 }
 
-nav .logo {
+.logo {
+  display: inline-block;
   position: relative;
   height: 40px;
+  width: 180px;
+}
+
+nav .logo {
   grid-area: logo;
 }
 
-header {
+header svg{
   fill: var(--light-colour);
 }
 
@@ -188,10 +193,7 @@ header {
 }
 
 header .logo {
-  position: relative;
-  height: 40px;
   grid-column: 1;
-
 }
 
 header #open-menu-button {
