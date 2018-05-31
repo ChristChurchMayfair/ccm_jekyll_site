@@ -283,6 +283,10 @@ footer {
   padding: var(--general-padding);
 }
 
+address {
+  font-style: unset;
+}
+
 footer ul {
   list-style-type: none;
   padding: 0;
