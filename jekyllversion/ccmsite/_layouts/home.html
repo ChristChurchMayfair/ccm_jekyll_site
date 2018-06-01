@@ -11,12 +11,14 @@ layout: default
 }
 </style>
 
-<div class="event-overlay">
+{%- if events.size > 0 -%}
+<div class="promotion-overlay">
     {% for event in events %}
     <h1 >{{ event.overlayCaption }}</h1>
         <p>&gt;&gt; Find out more &lt;&lt;</p>
     {% endfor %}
 </div>
+{%- endif -%}
 
 <section class="full-bleed home-full-bleed">
    
