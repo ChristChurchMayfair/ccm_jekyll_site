@@ -369,12 +369,12 @@ footer a {
   display: block;
   color: var(--dark-colour);
   background-color: var(--button-colour);
-  /* width: var(--button-width); */
-  min-width: 120px;
+  min-width: 100px;
   padding-left: var(--general-padding);
   padding-right: var(--general-padding);
   height: var(--button-height);
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border-radius: 4px;
   align-content: center;
   justify-content: center;
@@ -388,6 +388,12 @@ footer a {
   box-shadow: var(--standard-shadow);
 }
 
+@media only screen and (min-width: 640px) {
+  .button {
+    min-width: 200px;
+  }
+}
+
 .button:hover {
   transform: scale(1.05);
 }
@@ -399,9 +405,9 @@ footer a {
 
 /* Mobile index top section button styling */
 
-.index-top-section-btn {
+/* .index-top-section-btn {
   max-width: var(--button-width);
-}
+} */
 
 .index-top-section-btn:nth-of-type(1) {
   grid-area: button-left;
