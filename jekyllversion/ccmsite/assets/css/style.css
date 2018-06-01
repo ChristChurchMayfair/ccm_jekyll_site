@@ -15,6 +15,7 @@
   --light-colour: rgb(246,246,255);
   --header-background-colour: rgba(0,0,0,0.2);
   --navigation-background-colour: var(--light-colour);
+  --button-width: 200px;
   --button-colour: var(--light-colour);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
@@ -266,6 +267,9 @@ section.full-bleed .overlay {
   grid-template-rows: auto auto;
   grid-template-areas: "caption caption"
   "button-left button-right";
+  grid-column-gap: var(--general-padding);
+  /* align-items: center; */
+  justify-items: center;
 }
 
 @media only screen and (min-width: 640px) {
@@ -364,7 +368,10 @@ footer a {
   display: block;
   color: var(--dark-colour);
   background-color: var(--button-colour);
-  width: 40vw;
+  /* width: var(--button-width); */
+  min-width: 120px;
+  padding-left: var(--general-padding);
+  padding-right: var(--general-padding);
   height: var(--button-height);
   padding: 4px;
   border-radius: 4px;
@@ -392,16 +399,13 @@ footer a {
 /* Mobile index top section button styling */
 
 .index-top-section-btn {
-  width: auto;
+  max-width: var(--button-width);
 }
 
 .index-top-section-btn:nth-of-type(1) {
   grid-area: button-left;
-  margin: 0px 7.5px 0px 0px;
 }
 
 .index-top-section-btn:nth-of-type(2) {
   grid-area: button-right;
-  grid-column: 2;
-  margin: 0px 0px 0px 7.5px;
 }
