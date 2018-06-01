@@ -113,6 +113,15 @@ nav {
   position: relative;
   height: 40px;
   width: 180px;
+  transition: transform 0.1s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo:active {
+  transform: scale(0.9);
 }
 
 nav .logo {
@@ -134,6 +143,15 @@ nav #close-menu-button {
   justify-content: right;
   margin: auto;
   fill: var(--dark-colour);
+  transition: transform, 0.1s;
+}
+
+nav #close-menu-button:hover {
+  transform: scale(1.1);
+}
+
+nav #close-menu-button:active {
+  transform: scale(0.9);
 }
 
 #menu-content {
@@ -205,6 +223,15 @@ header #open-menu-button {
   grid-column: 2;
   justify-content: right;
   margin: auto;
+  transition: transform, 0.1s;
+}
+
+header #open-menu-button:hover {
+  transform: scale(1.1);
+}
+
+header #open-menu-button:active {
+  transform: scale(0.9);
 }
 
 main {
