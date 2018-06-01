@@ -141,6 +141,7 @@ nav #close-menu-button {
   color: var(--dark-colour);
   grid-area: menu-content;
   width: calc(100vw - calc(var(--general-padding) * 2));
+  justify-items: center;
 
   display: grid;
 
