@@ -7,16 +7,7 @@ layout: default
 </section>
 
 {% assign events = site.events | where: "status", "live" %}
+{% assign services = site.services %}
 
 <a name="services"></a>
 {%- include services.html -%}
-
-{% for event in events %}
-<section class="event-section">
-  <div class="event">
-    <h1>{{ event.name }}</h1>
-    <p>{{ event.content }}</p>
-  </div>
-</section>
-{% endfor %}
-<script src="assets/javascript/maps.js"></script>
