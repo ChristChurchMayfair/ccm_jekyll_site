@@ -12,11 +12,10 @@ layout: default
 </style>
 
 {%- if events.size > 0 -%}
-<div class="promotion-overlay">
-    {% for event in events %}
+{% assign event = events.first %}
+<div class="promotion-overlay" style="background-color:{{ event.backgroundColour }}; color: {{event.textColour}};">
     <h1 >{{ event.overlayCaption }}</h1>
-        <p>&gt;&gt; Find out more &lt;&lt;</p>
-    {% endfor %}
+    <p>&gt;&gt; Find out more &lt;&lt;</p>
 </div>
 {%- endif -%}
 
@@ -28,10 +27,10 @@ layout: default
         </div>
         
         <a id="directions-button" class="button index-top-section-btn" href="#">
-          Directions
+          Find Us
         </a>
         <a id="services-button"   class="button index-top-section-btn" href="#services">
-          Services
+          Our Meetings
         </a>
     </div>
 </section>
