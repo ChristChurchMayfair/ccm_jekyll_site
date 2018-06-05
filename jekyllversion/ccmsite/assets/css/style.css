@@ -64,6 +64,12 @@ body {
   grid-template-rows: auto var(--footer-height);
 }
 
+@media only screen and (min-width: 640px) {
+  body {
+    text-align: center;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
 }
