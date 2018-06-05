@@ -4,6 +4,8 @@ layout: default
 
 {% assign events = site.events | where: "status", "live" %}
 
+{% assign services = site.services | where: "type", "service" %}
+
 <!-- Allow the background image to be set from jekyll -->
 <style>
 .full-bleed {
@@ -39,9 +41,6 @@ layout: default
   {{ content }}
 </section>
 
-<a name="services"></a>
-{%- include services.html -%}
-
 {% for event in events %}
 <section class="event-section">
   <div class="event">
@@ -50,4 +49,9 @@ layout: default
   </div>
 </section>
 {% endfor %}
+
+<a name="services"></a>
+{%- include services.html -%}
+
+
 <script src="assets/javascript/maps.js"></script>

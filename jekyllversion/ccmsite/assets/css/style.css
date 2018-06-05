@@ -358,12 +358,12 @@ section.service {
   height: 50vh;
 }
 
-section.service-day {
+section.day-service {
   background-color: var(--light-colour);
   color: var(--dark-colour);
 }
 
-section.service-night {
+section.evening-service {
   background-color: var(--dark-colour);
   color: var(--light-colour);
 }

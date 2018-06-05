@@ -2,8 +2,8 @@
 <h1>Our Meetings.</h1>
 Our main meetings are on Sundays. We have two services, morning and evening.
 </section>
-{% for service in site.services %}
-<section class="service service-{{service.type}}">
+{% for service in services %}
+<section class="service {{service.timeOfDay}}-service">
   <h2>{{ service.title }} - {{ service.time }}</h2>
   <p>{{ service.content }}</p>
 </section>
