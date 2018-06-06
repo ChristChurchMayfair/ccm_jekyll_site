@@ -224,7 +224,7 @@ header .logo {
   grid-column: 1;
 }
 
-header #open-menu-button {
+header #open-menu {
   width: calc(var(--menu-button-size) - 10px);
   grid-column: 2;
   justify-content: right;
@@ -232,11 +232,11 @@ header #open-menu-button {
   transition: transform, 0.1s;
 }
 
-header #open-menu-button:hover {
+header #open-menu:hover {
   transform: scale(1.1);
 }
 
-header #open-menu-button:active {
+header #open-menu:active {
   transform: scale(0.9);
 }
 

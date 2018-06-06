@@ -29,10 +29,10 @@ function closeMenuButtonClicked() {
 }
 
 function addHandlerToMenuButtons() {
-var openMenuButton = document.getElementById("open-menu-button");
+var openMenuButton = document.getElementById("open-menu");
 openMenuButton.onclick = openMenuButtonClicked;
 
-var closeMenuButton = document.getElementById("close-menu-button");
+var closeMenuButton = document.getElementById("close-menu");
 closeMenuButton.onclick = closeMenuButtonClicked;
 }
 
