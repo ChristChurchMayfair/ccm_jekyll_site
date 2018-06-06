@@ -8,6 +8,8 @@ image: assets/images/family.jpg
 ---
 Relaxed family worship, childrens' teaching and sunday schools.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
+
+Cu commodo propriae lucilius pri, wisi movet fabellas an qui. Abhorreant reprimique quo an. Fuisset consequuntur ne qui, oporteat delicata.
 
 Link to [children's work](/children.html).
