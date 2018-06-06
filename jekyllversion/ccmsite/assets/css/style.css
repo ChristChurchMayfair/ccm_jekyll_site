@@ -273,7 +273,7 @@ section:first-of-type {
 section.full-bleed {
   background-size:cover;
   background-repeat: no-repeat;
-  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--ios-bottom-furniture-padding));
+  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
   padding-bottom: var(--general-padding);
   display: grid;
   grid-template-columns: auto 600px auto;
