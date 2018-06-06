@@ -9,6 +9,8 @@
   --footer-height: auto;
   --button-height: 30px;
 
+  --base-font-size: 20px;
+
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
   --dark-colour: rgb(50,50,50);
@@ -56,7 +58,7 @@ body {
   width: 100vw;
   min-width: 320px;
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: var(--base-font-size);
   line-height: 1.5;
   color: var(--dark-colour);
   display: grid;
@@ -332,7 +334,7 @@ section.full-bleed .overlay {
 }
 
 .promotion h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 640px) {
@@ -352,7 +354,7 @@ grid-area: caption;
 }
 
 .caption-overlay h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   color: white;
   text-align: center;
 }
