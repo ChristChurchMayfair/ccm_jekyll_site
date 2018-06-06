@@ -2,6 +2,7 @@
 layout: aboutus
 title: About Us
 mainImage: assets/images/biblestudy.jpg
+overlayCaption: What kind of church is CCM?
 ---
 What kind of church are we?
 ===========================
