@@ -502,3 +502,32 @@ footer a {
 .index-top-section-btn:nth-of-type(2) {
   grid-area: button-right;
 }
+
+section.person {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title"
+  "photo bio";
+  justify-items: center;
+}
+
+section.person:nth-of-type(even) {
+  grid-template-areas: "title title"
+  "bio photo";
+}
+
+section.person .title {
+  grid-area: title;
+}
+
+section.person img {
+  grid-area: photo;
+  border-radius: 50%;
+  width: 210px;
+  width: 210px;
+}
+
+section.person .bio {
+  grid-area: bio;
+}

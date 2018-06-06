@@ -13,11 +13,14 @@ layout: default
 </section>
   {% assign staff = site.people | where: "type", "staff" %}
 
-  {% for staff_member in staff %}
-  <section>
-  <h2>{{ staff_member.name }}</h2>
-  <p>{{ staff_member.role }}</p>
-  <img src="assets/headshots/{{staff_member.headshot}}">
+  {% for person in staff %}
+  <section class="person staff">
+    <div class="title">
+  <h1>{{ person.name }}</h1>
+  <p class="role">{{ person.role }}</p>
+</div>
+  <img src="assets/headshots/{{person.headshot}}">
+  <div class="bio">{{ person.content }}</div>
   </section>
   {% endfor %}
 
@@ -26,21 +29,25 @@ layout: default
 
   {% assign trainees = site.people | where: "type", "trainee" %}
 
-  {% for trainee in trainees %}
-  <section>
-  <h2>{{ trainee.name }}</h2>
-  <img src="assets/headshots/{{staff_member.headshot}}">
-  </section>
+  {% for person in trainees %}
+  <section class="person trainee">
+      <div class="title">
+    <h1>{{ person.name }}</h1>
+  </div>
+    <img src="assets/headshots/{{person.headshot}}">
+    </section>
   {% endfor %}
 
   <h1>Elders</h1>
   {% assign elders = site.people | where: "type", "elder" %}
 
-  {% for elder in elders %}
-  <section>
-  <h2>{{ elder.name }}</h2>
-  <img src="assets/headshots/{{staff_member.headshot}}">
-</section>
+  {% for person in elders %}
+  <section class="person elder">
+      <div class="title">
+    <h1>{{ person.name }}</h1>
+  </div>
+    <img src="assets/headshots/{{person.headshot}}">
+    </section>
   {% endfor %}
 
 </section>
