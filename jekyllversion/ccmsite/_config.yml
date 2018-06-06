@@ -29,7 +29,7 @@ collections:
 - events
 - services
 - music_releases
-- sheet_music
+- music_resources
 
 # Build settings
 markdown: kramdown
