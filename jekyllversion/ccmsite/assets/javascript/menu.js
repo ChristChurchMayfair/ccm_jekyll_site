@@ -15,13 +15,6 @@ function openMenuButtonClicked() {
 function closeMenuButtonClicked() {
   var menu = document.getElementById("menu");
 
-  /* we need to ensure the visibility is set to hidden *after* the transition ends! */
-  menu.addEventListener("transitionend",function(event) {
-    event.target.visiblility = "hidden";
-    /* and remove the listener too! */
-    event.target.removeEventListener("transitionend");
-  });
-
   menu.style.opacity = INVISIBLE;
 
   var header = document.getElementById("header");
