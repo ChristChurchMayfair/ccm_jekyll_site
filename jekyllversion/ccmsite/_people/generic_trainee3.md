@@ -1,7 +1,7 @@
 ---
 role: Trainee
 type: trainee
-name: Ben Savjani
+name: A Trainee 
 email: ben.savjani@christchurchmayfair.org
 headshot: genericheadshot.jpg
 ---

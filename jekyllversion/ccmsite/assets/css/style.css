@@ -531,3 +531,26 @@ section.person img {
 section.person .bio {
   grid-area: bio;
 }
+
+section.people {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title title title"
+  ". . . ."
+}
+
+/* section.people .person {
+  grid-row: 2;
+} */
+
+section.people h1 {
+  grid-area: title;
+}
+
+section.people img {
+  grid-area: photo;
+  border-radius: 50%;
+  width: 210px;
+  width: 210px;
+}

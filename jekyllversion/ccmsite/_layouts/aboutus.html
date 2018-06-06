@@ -6,15 +6,18 @@ layout: default
     background-image: url("{{ page.mainImage }}");
   }
 </style>
+
 <section class="full-bleed">
 </section>
+
 <section>
   {{ content }}
 </section>
-  {% assign staff = site.people | where: "type", "staff" %}
 
-  {% for person in staff %}
-  <section class="person staff">
+{% assign staff = site.people | where: "type", "staff" %}
+
+{% for person in staff %}
+<section class="person staff">
     <div class="title">
   <h1>{{ person.name }}</h1>
   <p class="role">{{ person.role }}</p>
@@ -23,31 +26,32 @@ layout: default
   <div class="bio">{{ person.content }}</div>
   </section>
   {% endfor %}
-
-  <hr/>
+  
+<section id="trainees" class="people">
   <h1>Trainees</h1>
-
   {% assign trainees = site.people | where: "type", "trainee" %}
 
   {% for person in trainees %}
-  <section class="person trainee">
-      <div class="title">
-    <h1>{{ person.name }}</h1>
-  </div>
+  <div class="person trainee">
+    <div class="title">
+      <h2>{{ person.name }}</h2>
+    </div>
     <img src="assets/headshots/{{person.headshot}}">
-    </section>
+  </div>
   {% endfor %}
+</section>
 
+<section id="elders" class="people">
   <h1>Elders</h1>
   {% assign elders = site.people | where: "type", "elder" %}
 
   {% for person in elders %}
-  <section class="person elder">
-      <div class="title">
-    <h1>{{ person.name }}</h1>
-  </div>
+  <div class="person elder">
+    <div class="title">
+      <h2>{{ person.name }}</h2>
+    </div>
     <img src="assets/headshots/{{person.headshot}}">
-    </section>
+  </div>
   {% endfor %}
 
 </section>
