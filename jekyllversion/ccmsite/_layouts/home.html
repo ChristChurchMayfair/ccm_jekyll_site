@@ -13,28 +13,26 @@ layout: default
 }
 </style>
 
-{%- if events.size > 0 -%}
-{% assign event = events.first %}
-<div class="promotion-overlay" style="background-color:{{ event.backgroundColour }}; color: {{event.textColour}};">
+<section class="full-bleed home-full-bleed"> 
+  <div class="overlay">
+    <div class="caption-overlay">
+      <h1>{{ page.overlayCaption }}</h1>
+    </div>
+        
+    <a id="directions-button" class="button index-top-section-btn" href="#">
+      Find Us
+    </a>
+    <a id="services-button"   class="button index-top-section-btn" href="#services">
+      Our Meetings
+    </a>
+  </div>
+  {%- if events.size > 0 -%}
+  {% assign event = events.first %}
+  <div class="promotion" style="background-color:{{ event.backgroundColour }}; color: {{event.textColour}};">
     <h1 >{{ event.overlayCaption }}</h1>
     <p>&gt;&gt; Find out more &lt;&lt;</p>
-</div>
-{%- endif -%}
-
-<section class="full-bleed home-full-bleed">
-   
-      <div class="overlay">
-        <div class="caption-overlay">
-            <h1>{{ page.overlayCaption }}</h1>
-        </div>
-        
-        <a id="directions-button" class="button index-top-section-btn" href="#">
-          Find Us
-        </a>
-        <a id="services-button"   class="button index-top-section-btn" href="#services">
-          Our Meetings
-        </a>
-    </div>
+  </div>
+  {%- endif -%}  
 </section>
 
 <section>
