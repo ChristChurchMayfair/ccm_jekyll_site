@@ -505,7 +505,7 @@ address {
 
 section.person {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.618fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
   "photo bio";
@@ -515,6 +515,7 @@ section.person {
 section.person:nth-of-type(even) {
   grid-template-areas: "title title"
   "bio photo";
+  grid-template-columns: 1.618fr 1fr;
 }
 
 section.person .title {
