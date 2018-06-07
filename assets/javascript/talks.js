@@ -53,7 +53,7 @@ function updatePageWithSermons(sermon_data) {
 }
 
 //Location of the sermon data.
-var sermon_data_url = "https://s3-eu-west-1.amazonaws.com/ccmtalkstest/sermondata.json";
+var sermon_data_url = "http://ccmtalkstest.s3-website-eu-west-1.amazonaws.com/sermondata.json";
 if (document.URL.includes("localhost")) {
   sermon_data_url = "/sermondata.json";
 }
