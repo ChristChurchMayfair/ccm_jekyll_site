@@ -1,8 +1,20 @@
 ---
 layout: default
 ---
+<style>
+  .full-bleed {
+    background-image: url("{{ page.mainImage }}");
+  }
+</style>
+<section class="full-bleed">
+  <div class="overlay">
+    <div class="caption-overlay">
+      <h1>{{ page.overlayCaption }}</h1>
+    </div>
+  </div>
+</section>
 
-<section>
+<section id="intro">
   {%- if page.title -%}
     <h1>{{ page.title }}</h1>
   {%- endif -%}
@@ -16,7 +28,26 @@ layout: default
   <div style="display:none" id="talk-list">
     talks!!!!
   </div>
-
 </section>
 
-<script src="assets/js/talks.js"></script>
+<section id="sermons">
+</section>
+
+<template id="sermon_template">
+  <div class="sermon">
+    <h1 class="sermon-title"></h1>
+    <div class="sermon-info">
+    <div class="sermon-speaker"></div>
+    <div class="sermon-passage"></div>
+    <div class="sermon-series"></div>
+    <div class="sermon-service"></div>
+    <div class="sermon-date"></div>
+  </div>
+    <img class="sermon-graphic"/>
+    
+    <audio class="sermon-player" controls preload="none"> Sorry. Your browser does not support the <code>audio</code> element.</audio>
+    <a class="sermon-download" download>Download</a>
+  </div>
+</template>
+
+<script src="assets/javascript/talks.js"></script>
