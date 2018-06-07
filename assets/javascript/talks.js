@@ -54,7 +54,9 @@ function updatePageWithSermons(sermon_data) {
 
 //Location of the sermon data.
 var sermon_data_url = "https://s3-eu-west-1.amazonaws.com/ccmtalkstest/sermondata.json";
-var sermon_data_url = "/sermondata.json";
+if (document.URL.includes("localhost")) {
+  sermon_data_url = "/sermondata.json";
+}
 
 //Fetch the data and pass it to the function to draw it into the page.
 var sermon_data = fetch(sermon_data_url)

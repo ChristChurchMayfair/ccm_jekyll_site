@@ -542,7 +542,7 @@ section.people {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title title title"
-  ". . . ."
+  ". . . .";
 }
 
 /* section.people .person {
@@ -633,26 +633,21 @@ h1.sermon-title {
 
 .sermon-series::before {
   content: "Series: ";
-  font-style: bold;
 }
 
 .sermon-speaker::before {
   content: "Speaker: ";
-  font-style: bold;
 }
 
 .sermon-passage::before {
   content: "Passage: ";
-  font-style: bold;
 }
 
 .sermon-service::before {
   content: "Service: ";
-  font-style: bold;
 }
 
 .sermon-date::before {
   content: "Date: ";
-  font-style: bold;
 }
 
