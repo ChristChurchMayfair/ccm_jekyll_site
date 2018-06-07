@@ -1,2 +1,0 @@
-brew 'graphviz'
-brew 'hugo'
