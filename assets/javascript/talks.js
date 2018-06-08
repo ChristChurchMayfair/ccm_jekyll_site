@@ -1,7 +1,7 @@
 'use strict';
 function showPodcastLink() {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
-  if /* if we're on iOS, open in Apple Maps */
+  if /* if we're on iOS, show the podcast links */
     (isMac ||
      (navigator.platform.indexOf("iPhone") != -1) ||
      (navigator.platform.indexOf("iPad") != -1) ||
