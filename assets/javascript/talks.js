@@ -1,3 +1,4 @@
+'use strict';
 function showPodcastLink() {
   var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
   if /* if we're on iOS, open in Apple Maps */
@@ -13,10 +14,25 @@ function showPodcastLink() {
 
 showPodcastLink();
 
-var talkList = document.getElementById("talk-list");
-talkList.style.display = "block"
-
 function updatePageWithSermons(sermon_data) {
+  addIndividualSermons(sermon_data);
+  addSermonSeries(sermon_data);
+}
+
+function addSermonSeries(sermon_data) {
+  var allSeries = sermon_data.map(sermon => sermon.series);
+  var uniqueSeriesNames = [...new Set(allSeries)];
+
+  var sermonSeriesSection = document.getElementById("sermon-series");
+  var seriesName;
+  for (seriesName of uniqueSeriesNames) {
+    var seriesEl = document.createElement("div");
+    seriesEl.textContent = seriesName;
+    sermonSeriesSection.appendChild(seriesEl);
+  }
+}
+
+function addIndividualSermons(sermon_data) {
 
   //Grab the sermon section...
   var sermonSection = document.getElementById("sermons");
@@ -25,6 +41,7 @@ function updatePageWithSermons(sermon_data) {
   var sermonTemplate = document.getElementById('sermon_template');
   
   //Iterate over the sermon data...
+  var sermon;
   for (sermon of sermon_data) {
 
     //Copy the template into a new isntance
@@ -44,7 +61,7 @@ function updatePageWithSermons(sermon_data) {
     sermonDiv.querySelector(".sermon-series").textContent = sermon.series;
     sermonDiv.querySelector(".sermon-service").textContent = sermon.service;
     sermonDiv.querySelector(".sermon-date").textContent = dateString;
-    sermonDiv.querySelector(".sermon-graphic").setAttribute("src",sermon.imageURL);
+    sermonDiv.querySelector(".sermon-graphic").setAttribute("style",`background-image: url(${sermon.imageURL});`);
     sermonDiv.querySelector(".sermon-download").setAttribute("href",sermon.audioFileURL);
     sermonDiv.querySelector(".sermon-player").setAttribute("src",sermon.audioFileURL);
 
@@ -63,4 +80,7 @@ var sermon_data = fetch(sermon_data_url)
   .then(function(response) {
     return response.json();
   })
-  .then(updatePageWithSermons);
+  .then(updatePageWithSermons)
+  .catch(function(rejection){
+    console.log(rejection);
+  });
