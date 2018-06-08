@@ -295,6 +295,7 @@ section.full-bleed {
   grid-template-areas: ". . ."
   ". overlay ."
   ". . .";
+  border-bottom: 0px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -328,10 +329,8 @@ section.full-bleed .overlay {
 }
 
 .promotion {
-  position: absolute;
-  bottom: 0;
-  width: calc(100vw - var(--general-padding) - var(--general-padding));
-  height: auto;
+  /* width: calc(100vw - var(--general-padding) - var(--general-padding)); */
+  height: var(--next-section-peek);
   background-color: var(--highlight-colour);
   padding: var(--general-padding);
 }

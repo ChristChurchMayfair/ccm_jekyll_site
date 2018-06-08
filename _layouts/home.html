@@ -26,14 +26,15 @@ layout: default
       Our Meetings
     </a>
   </div>
-  {%- if events.size > 0 -%}
-  {% assign event = events.first %}
-  <div class="promotion" style="background-color:{{ event.backgroundColour }}; color: {{event.textColour}};">
-    <h1 >{{ event.overlayCaption }}</h1>
-    <p>&gt;&gt; Find out more &lt;&lt;</p>
-  </div>
-  {%- endif -%}  
 </section>
+
+{%- if events.size > 0 -%}
+{% assign event = events.first %}
+<section class="promotion" style="background-color:{{ event.backgroundColour }}; color: {{event.textColour}};">
+  <h1 >{{ event.overlayCaption }}</h1>
+  <p>&gt;&gt; Find out more &lt;&lt;</p>
+</section>
+{%- endif -%}  
 
 <section>
   {{ content }}
