@@ -570,7 +570,7 @@ section.people img {
 
 section#sermons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: calc(var(--general-padding) * 5);
   grid-row-gap: calc(var(--general-padding) * 5);
 }
