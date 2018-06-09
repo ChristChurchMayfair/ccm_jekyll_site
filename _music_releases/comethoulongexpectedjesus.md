@@ -1,7 +1,7 @@
 ---
-title: Making All Things New
-type: EP
-coverImage: assets/images/Making All Things New - EP.jpg
+title: Come Thou Long Expected Jesus
+type: Single
+coverImage: assets/images/Come, Thou Long-Expected Jesus - Single.jpg
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
 

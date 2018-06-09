@@ -1,5 +1,8 @@
 ---
 title: The Glory and The Crown
 type: EP
+coverImage: assets/images/The Glory and the Crown - EP.jpg
 ---
-Some blurb about the EP.
+Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
+
+Cu commodo propriae lucilius pri, wisi movet fabellas an qui. Abhorreant reprimique quo an. Fuisset consequuntur ne qui, oporteat delicata.
