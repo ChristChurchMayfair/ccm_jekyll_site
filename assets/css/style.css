@@ -670,3 +670,42 @@ h1.sermon-title {
   opacity: 0.6;
 }
 
+.music-release-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title"
+  ". .";
+  grid-row-gap: 100px;
+}
+
+.music-release {
+  display: grid;
+  grid-template-columns: 1fr 1.618fr;
+  grid-template-areas: "cover details";
+}
+
+.music-release:nth-of-type(even) {
+  grid-template-columns: 1.618fr 1fr;
+  grid-template-areas: "details cover";
+}
+
+.music-release-cover {
+  grid-area: cover;
+  width: 250px;
+  height: 250px;
+  border-color: var(--dark-colour);
+  border-style: solid;
+  border-width: 1px;
+  justify-self: center
+}
+
+.music-release-details {
+  grid-area: details;
+}
+
+.music-release-details p {
+  font-size: 0.8em;
+  margin-left: 0px;
+  margin-right: 0px;
+}

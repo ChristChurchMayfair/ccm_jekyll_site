@@ -1,6 +1,17 @@
+<section class="music-releases">
+  <H1>Our Releases</H1>
+  <div class="music-release-list">
 {% for release in site.music_releases %}
-<section class="music_release release-{{release.type}}">
-  <h2>{{ release.title }}</h2>
-  <p>{{ release.content }}</p>
-</section>
+<div class="music-release release-{{release.type}}">
+  <img class="music-release-cover" src="{{ release.coverImage }}"/>
+  <div class="music-release-details">
+    <h2>{{ release.title }}</h2>
+    <p>{{ release.content }}</p>
+    <a>Spotify</a>
+    <a>iTunes Store</a>
+    <a>Apple Music</a>
+  </div>
+</div>
 {% endfor %}
+</div>
+</section>
