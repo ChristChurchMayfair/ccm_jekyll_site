@@ -6,6 +6,8 @@
 
   --next-section-peek: 175px;
 
+  --body-margin: 15vw;
+
   --menu-button-size: 40px;
   --header-height: var(--menu-button-size);
   --nav-height: auto;
@@ -260,7 +262,8 @@ main {
 
 section {
   padding: var(--general-padding);
-  height: auto;
+  padding-left: var(--body-margin);
+  padding-right: var(--body-margin);
 
   /* These settings are only for making the sections visible! */
   background-color: var(--light-colour);
@@ -296,6 +299,14 @@ section.full-bleed {
   ". overlay ."
   ". . .";
   border-bottom: 0px;
+  box-shadow: var(--standard-shadow);
+}
+
+@media only screen and (min-width: 640px) {
+  section.full-bleed {
+    padding-bottom: var(--general-padding);
+    height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding) - var(--next-section-peek));
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -321,12 +332,7 @@ section.full-bleed .overlay {
   justify-items: center;
 }
 
-@media only screen and (min-width: 640px) {
-  section.full-bleed {
-    padding-bottom: var(--general-padding);
-    height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding) - var(--next-section-peek));
-  }
-}
+
 
 .promotion {
   /* width: calc(100vw - var(--general-padding) - var(--general-padding)); */
