@@ -18,15 +18,15 @@
 
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
-  --dark-colour: rgb(50,50,50);
+  --dark-colour: rgb(21, 6, 66);
   --light-colour: rgb(246,246,255);
   --header-background-colour: rgba(0,0,0,0.2);
   --navigation-background-colour: var(--light-colour);
   --button-width: 200px;
-  --button-colour: var(--light-colour);
+  --button-colour: var(--highlight-colour);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
-  --highlight-colour: rgb(244, 203, 66);
+  --highlight-colour: rgb(244, 66, 92);
 
   --menu-transition-time: 0.2s;
 
