@@ -381,49 +381,6 @@ section.service {
   height: auto;
 }
 
-@media only screen and (min-width: 640px) {
-  section.service {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: 1fr 1.618fr;
-    grid-template-areas: "image servicecontent";
-    padding-left: 0px;
-    /* padding-top: 0px; */
-    /* padding-bottom: 0px; */
-  }
-
-  section.service:nth-of-type(even) {
-    grid-template-areas: "servicecontent image";
-    grid-template-columns: 1.618fr 1fr;
-    padding-left: var(--general-padding);
-    padding-right: 0px;
-  }
-
-  section.service .service-info {
-    padding-left: var(--general-padding);
-  }
-
-  section.service:nth-of-type(even) .service-info {
-    padding-right: var(--general-padding);
-  }
-}
-
-section.service img {
-  height: 50vh;
-  grid-area: image;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 640px) {
-  section.service img {
-    width: calc(100vw - var(--general-padding) - var(--general-padding));
-  }
-}
-
-section.service .service-info {
-  grid-area: servicecontent;
-}
-
 section.day-service {
   background-color: var(--light-colour);
   color: var(--dark-colour);

@@ -1,13 +1,18 @@
 <section>
-<h1>Our Meetings.</h1>
-<p>Our main meetings are on Sundays. We have two services, morning and evening. We also meet for midweek Bible studies, a monthly prayer meeting and run a lunch time service in Mayfair.</p>
+    <p>Our main meetings are on Sundays. We have two services, morning and evening. We also meet for midweek Bible studies, a monthly prayer meeting and run a lunch time service in Mayfair.</p>
 </section>
 {% for service in services %}
+<section class="full-bleed" style="background-image: url({{ service.image }});">
+    <div class="overlay">
+      <div class="caption-overlay">
+        <h1>{{ service.title }}</h1>
+      </div>
+    </div>
+  </section>
 <section class="service {{service.timeOfDay}}-service">
   <div class="service-info">
   <h1>{{ service.title }} // {{ service.time }}</h1>
   <p>{{ service.content }}</p>
 </div>
-  <img src="{{ service.image }}"/>
 </section>
 {% endfor %}
