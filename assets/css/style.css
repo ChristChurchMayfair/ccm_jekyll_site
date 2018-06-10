@@ -568,112 +568,65 @@ section.people img {
   width: 200px;
 }
 
-section#sermons {
+#sermon-series-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: calc(var(--general-padding) * 5);
-  grid-row-gap: calc(var(--general-padding) * 5);
+  grid-template-columns: 1fr;
+  grid-row-gap: 100px;
 }
 
-.sermon {
+.sermon-series {
   display: grid;
-  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1.618fr;
+  grid-template-rows: auto auto;
   grid-template-areas: "title title"
-  "graphic details"
-  "download player";
-  grid-row-gap: var(--general-padding);
-  grid-column-gap: var(--general-padding);
-  justify-items: center;
-  /* padding: var(--general-padding); */
+  "image sermons";
 }
 
-.sermon-graphic {
-  grid-area: graphic;
-  width: 100px;
-  height: 100px;
+.sermon-series:nth-of-type(even) {
+  grid-template-columns: 1.618fr 1fr;
+  grid-template-areas: "title title"
+  "sermons image";
+}
+
+.series-heading {
+  grid-area: title;
+}
+
+.series-info {
+  grid-area: details;
+}
+
+.series-graphic {
+  grid-area: image;
+  width: 180px;
+  height: 180px;
   border-color: var(--dark-colour);
   border-style: solid;
   border-width: 1px;
   background-size: contain;
+  justify-self: center;
   /* background-color: var(--light-colour); */
 }
 
-@media only screen and (max-width: 640px) {
-  section#sermons {
-    grid-template-columns: 1fr;
-    grid-row-gap: var(--general-padding);
-  }
-
-  .sermon {
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1.618fr;
-    grid-template-areas: "title title"
-    "graphic details";
-  }
-
-  .sermon-graphic {
-    width: 120px;
-    height: 120px;
-  }
-
-  .sermon-player {
-    display: none
-  }
+.sermon-list {
+  grid-area: sermons;
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 0.8em;
 }
 
-.sermon-title {
-  grid-area: title;
+.sermon {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.sermon-download svg{
+  width: 30px;
+  height: 30px;
 }
 
 .sermon-player {
-  grid-area: player;
-}
-
-.sermon-download {
-  grid-area: download;
-}
-
-.sermon-info {
-  grid-area: details;
-  font-size: 0.8em;
-  width: 100%;
-}
-
-h1.sermon-title {
-  font-size: 1.5em;
-}
-
-@media only screen and (min-width: 640px) {
-  .sermon-series::before {
-    content: "Series: ";
-  }
-
-  .sermon-speaker::before {
-    content: "Speaker: ";
-  }
-
-  .sermon-passage::before {
-    content: "Passage: ";
-  }
-
-  .sermon-service::before {
-    content: "Service: ";
-  }
-
-  .sermon-date::before {
-    content: "Date: ";
-  }
-}
-
-.sermon-download svg {
-  fill: var(--light-colour);
-  opacity: 0.2;
-  transition: opacity 0.1s;
-}
-
-.sermon-download svg:hover {
-  opacity: 0.6;
+  display: none;
 }
 
 .music-release-list {

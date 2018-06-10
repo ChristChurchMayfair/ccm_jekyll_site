@@ -22,30 +22,38 @@ layout: default
   </div>
 </section>
 
-<section id="sermon-series">
+<section>
 <h1>Talk Series</h1>
+<div id="sermon-series-list">
+
+</div>
 </section>
+
+<template id="sermon_series_template">
+    <div class="sermon-series">
+      <h1 class="series-heading"><span class="series-book"></span> - <span class="series-title"></span></h1>
+      <div class="series-info">
+        
+      </div>
+      <div class="series-graphic"></div>
+      <div class="sermon-list"></div>
+    </div>
+  </template>
 
 <section id="sermons">
 </section>
 
 <template id="sermon_template">
   <div class="sermon">
-    <h1 class="sermon-title"></h1>
-    <div class="sermon-info">
+    <div class="sermon-title"></div>
     <div class="sermon-speaker"></div>
     <div class="sermon-passage"></div>
-    <div class="sermon-series"></div>
-    <div class="sermon-service"></div>
     <div class="sermon-date"></div>
-  </div>
-    <div class="sermon-graphic">
-        <a class="sermon-download" download>
-          <svg viewbox="0 0 100 100">
-            <use xlink:href="assets/images/downloadicon.svg#download-icon" />
-          </svg>
-        </a>
-    </div>
+    <a class="sermon-download" download>
+      <svg viewbox="0 0 100 100">
+        <use xlink:href="assets/images/downloadicon.svg#download-icon" />
+      </svg>
+    </a>
     <audio class="sermon-player" controls preload="none"> Sorry. Your browser does not support the <code>audio</code> element.</audio>
   </div>
 </template>

@@ -15,57 +15,47 @@ function showPodcastLink() {
 showPodcastLink();
 
 function updatePageWithSermons(sermon_data) {
-  addIndividualSermons(sermon_data);
   addSermonSeries(sermon_data);
 }
 
 function addSermonSeries(sermon_data) {
-  var allSeries = sermon_data.map(sermon => sermon.series);
-  var uniqueSeriesNames = [...new Set(allSeries)];
+  var sermonSeriesSection = document.getElementById("sermon-series-list");
 
-  var sermonSeriesSection = document.getElementById("sermon-series");
-  var seriesName;
-  for (seriesName of uniqueSeriesNames) {
-    var seriesEl = document.createElement("div");
-    seriesEl.textContent = seriesName;
-    sermonSeriesSection.appendChild(seriesEl);
-  }
-}
-
-function addIndividualSermons(sermon_data) {
-
-  //Grab the sermon section...
-  var sermonSection = document.getElementById("sermons");
-
-  //Grab the template from the page...
+  var sermonSeriesTemplate = document.getElementById('sermon_series_template');
   var sermonTemplate = document.getElementById('sermon_template');
+  var series;
   
-  //Iterate over the sermon data...
-  var sermon;
-  for (sermon of sermon_data) {
+  for (series of sermon_data.series) {
 
-    //Copy the template into a new isntance
-    var sermonDiv = document.importNode(sermonTemplate.content, true);
+    var sermonsForSeries = sermon_data.episodes.filter(sermon => sermon.seriesId == series.id)
 
-    var sermonDate = new Date(Date.parse(sermon.date));
-    // console.log(sermonDate);
-    var dateString = sermonDate.toLocaleDateString();
-    // console.log(dateString);
+    var sermonSeriesDiv = document.importNode(sermonSeriesTemplate.content, true);
+    
 
-    //var dateString = Date.parse(sermon.date).toLocaleDateString();
+    sermonSeriesDiv.querySelector(".series-title").textContent = series.title;
+    sermonSeriesDiv.querySelector(".series-book").textContent = series.mainBook;
+    //sermonSeriesDiv.querySelector(".series-service").textContent = series.service;
+    sermonSeriesDiv.querySelector(".series-graphic").setAttribute("style",`background-image: url(${series.imageURL});`);
 
-    //Set the values
-    sermonDiv.querySelector(".sermon-title").textContent = sermon.title;
-    sermonDiv.querySelector(".sermon-speaker").textContent = sermon.speaker;
-    sermonDiv.querySelector(".sermon-passage").textContent = sermon.passage;
-    sermonDiv.querySelector(".sermon-series").textContent = sermon.series;
-    sermonDiv.querySelector(".sermon-service").textContent = sermon.service;
-    sermonDiv.querySelector(".sermon-date").textContent = dateString;
-    sermonDiv.querySelector(".sermon-graphic").setAttribute("style",`background-image: url(${sermon.imageURL});`);
-    sermonDiv.querySelector(".sermon-download").setAttribute("href",sermon.audioFileURL);
-    sermonDiv.querySelector(".sermon-player").setAttribute("src",sermon.audioFileURL);
+    var sermonList = sermonSeriesDiv.querySelector(".sermon-list");
+    
+    var sermon;
+    for (sermon of sermonsForSeries) {
+      var sermonDiv = document.importNode(sermonTemplate.content, true);
 
-    sermonSection.appendChild(sermonDiv);
+      var dateString = new Date(Date.parse(sermon.date)).toLocaleDateString();
+
+      sermonDiv.querySelector(".sermon-title").textContent = sermon.title;
+      sermonDiv.querySelector(".sermon-speaker").textContent = sermon.speaker;
+      sermonDiv.querySelector(".sermon-passage").textContent = sermon.passage;
+      sermonDiv.querySelector(".sermon-date").textContent = dateString;
+      sermonDiv.querySelector(".sermon-download").setAttribute("href",sermon.audioFileURL);
+      sermonDiv.querySelector(".sermon-player").setAttribute("src",sermon.audioFileURL);
+
+      sermonList.appendChild(sermonDiv);
+    }
+
+    sermonSeriesSection.appendChild(sermonSeriesDiv);
   }
 }
 
