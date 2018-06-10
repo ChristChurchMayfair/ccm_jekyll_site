@@ -12,8 +12,6 @@ function showPodcastLink() {
     }
 }
 
-showPodcastLink();
-
 function updatePageWithSermons(sermon_data) {
   addSermonSeries(sermon_data);
 }
@@ -65,12 +63,21 @@ if (document.URL.includes("localhost")) {
   sermon_data_url = "/fakesermondata.json";
 }
 
-//Fetch the data and pass it to the function to draw it into the page.
-var sermon_data = fetch(sermon_data_url)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(updatePageWithSermons)
-  .catch(function(rejection){
-    console.log(rejection);
-  });
+function loadSermons(sermon_data_url) {
+  //Fetch the data and pass it to the function to draw it into the page.
+  fetch(sermon_data_url)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(updatePageWithSermons)
+    .catch(function(rejection){
+      console.log(rejection);
+    });
+}
+
+
+//Do things when the DOM content has loaded so that we can safely manipulate the DOM.
+document.addEventListener("DOMContentLoaded", function() {
+  showPodcastLink();
+  loadSermons(sermon_data_url);
+});
