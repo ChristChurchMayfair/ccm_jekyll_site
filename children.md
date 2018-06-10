@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: children
 title: Children
 mainImage: assets/images/childrenplaceholder.jpg
 overlayCaption: Kids at CCM.

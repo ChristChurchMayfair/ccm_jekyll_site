@@ -2,10 +2,14 @@
 layout: default
 ---
 
-<section>
-  A first section for a nice photo
+<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
+    <div class="overlay">
+      <div class="caption-overlay">
+        <h1>{{ page.overlayCaption }}</h1>
+      </div>
+    </div>
 </section>
-
+  
 {% assign events = site.events | where: "status", "live" %}
 {% assign services = site.services %}
 

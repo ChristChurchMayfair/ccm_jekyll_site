@@ -1,6 +1,7 @@
 ---
 layout: basic
 title: Little Lambs
+section: children
 mainImage: assets/images/childrenplaceholder.jpg
 overlayCaption: Little Lambs, parent and child group.
 ---

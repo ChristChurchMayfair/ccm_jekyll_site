@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
+  <div class="overlay">
+    <div class="caption-overlay">
+      <h1>{{ page.overlayCaption }}</h1>
+    </div>
+  </div>
+</section>
+<section>
+  {{ content }}
+</section>
+{% assign childrenspages = site.pages | where: 'section', 'children' %}
+{% for subpage in childrenspages %}
+<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
+        <div class="overlay">
+          <div class="caption-overlay">
+            <h1>{{ subpage.overlayCaption }}</h1>
+          </div>
+        </div>
+      </section>
+<section>
+   {{ subpage.content }}
+</section>
+{% endfor %}

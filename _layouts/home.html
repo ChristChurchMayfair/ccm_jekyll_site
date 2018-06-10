@@ -7,13 +7,7 @@ layout: default
 {% assign services = site.services | where: "type", "service" %}
 
 <!-- Allow the background image to be set from jekyll -->
-<style>
-.full-bleed {
-  background-image: url("{{ page.mainImage }}");
-}
-</style>
-
-<section class="full-bleed home-full-bleed"> 
+<section class="full-bleed home-full-bleed" style="background-image: url({{ page.mainImage }});"> 
   <div class="overlay">
     <div class="caption-overlay">
       <h1>{{ page.overlayCaption }}</h1>
