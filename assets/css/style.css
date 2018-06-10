@@ -479,14 +479,14 @@ section.person {
   display: grid;
   grid-template-columns: 1fr 1.618fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "title title"
+  grid-template-areas: "photo title"
   "photo bio";
   justify-items: center;
   align-items: center;
 }
 
 section.person:nth-of-type(even) {
-  grid-template-areas: "title title"
+  grid-template-areas: "title photo"
   "bio photo";
   grid-template-columns: 1.618fr 1fr;
 }
