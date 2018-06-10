@@ -262,9 +262,6 @@ main {
 
 section {
   padding: var(--general-padding);
-  padding-left: var(--body-margin);
-  padding-right: var(--body-margin);
-
   /* These settings are only for making the sections visible! */
   background-color: var(--light-colour);
   border-bottom: 1px;
@@ -274,7 +271,13 @@ section {
   border-color: rgba(0,0,0,0.1);
   border-style: solid;
   /* end */
+}
 
+@media only screen and (min-width: 640px) {
+  section {
+    padding-left: var(--body-margin);
+    padding-right: var(--body-margin);
+  }
 }
 
 #full-page {
@@ -401,12 +404,13 @@ footer {
 
 footer div.item {
   display: inline;
+  margin-bottom: var(--general-padding);
 }
 
 @media only screen and (min-width: 640px) {
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
