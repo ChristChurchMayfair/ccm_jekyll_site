@@ -24,6 +24,7 @@
   --navigation-background-colour: var(--light-colour);
   --button-width: 200px;
   --button-colour: var(--highlight-colour);
+  --button-text-colour: var(--light-colour);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 66, 92);
@@ -448,7 +449,7 @@ address {
 
 .button {
   display: block;
-  color: var(--dark-colour);
+  color: var(--button-text-colour);
   background-color: var(--button-colour);
   min-width: 100px;
   padding-left: var(--general-padding);
