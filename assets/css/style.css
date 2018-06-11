@@ -666,3 +666,12 @@ section.map iframe {
   height: 50vh;
   border: 0;
 }
+
+#home p {
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+#home strong {
+  color: var(--highlight-colour);
+}
