@@ -30,6 +30,8 @@
 
   --menu-transition-time: 0.2s;
 
+  --beta-banner-colour: rgba(244,66,92,0.5);
+
   --heading-font: 'Klinic Slab';
   --body-font: 'Nunito';
 }
@@ -56,6 +58,28 @@
   font-style: normal;
   font-weight: 700;
   src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
+}
+
+body:after{
+  content: "draft";
+  position: fixed;
+  z-index: 3;
+  width: 80px;
+  height: 25px;
+  background: var(--beta-banner-colour);
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--light-colour);
+  line-height: 27px;
+  
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
 }
 
 body {
