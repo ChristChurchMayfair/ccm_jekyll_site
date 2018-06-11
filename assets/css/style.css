@@ -654,3 +654,15 @@ section.people img {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+section.map {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+section.map iframe {
+  width: 100%;
+  height: 50vh;
+  border: 0;
+}
