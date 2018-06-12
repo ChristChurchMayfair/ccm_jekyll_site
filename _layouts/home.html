@@ -47,10 +47,16 @@ layout: default
 <h1>Our Sunday Services</h1>
 {%- include services.html -%}
   
-<section class="find-us">
-  <h1> Find Us</h1>
-  <p>You can find us at: <address>Down Street, London, W1J 7AN.</address></p>
-  <p>Our closest tube stations are Green Park and Hyde Park Corner.</p>
+<h1> Find Us</h1>
+<section class="findus">
+  
+  <div>
+    <p>You can find us at: <address><img class="map-pin" src="assets/images/mappin.svg"/>Down Street, London, W1J 7AN.</address></p>
+  </div>
+  <div>
+  <p>Our closest tube stations are:</p>
+  <p><img class="tube-roundel" src="assets/images/roundel.svg"/><span class="tube-station">Green Park</span> and <img class="tube-roundel" src="assets/images/roundel.svg"/><span class="tube-station"></span>Hyde Park Corner</span>.</p>
+  </div>
 </section>
 <section class="map">
   <iframe
