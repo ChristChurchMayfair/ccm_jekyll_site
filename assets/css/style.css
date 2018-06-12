@@ -62,14 +62,14 @@
 }
 
 body:after{
-  content: "draft";
+  content: "Work in Progress";
   position: fixed;
   z-index: 3;
-  width: 80px;
+  width: 180px;
   height: 25px;
   background: var(--beta-banner-colour);
-  top: 7px;
-  left: -20px;
+  top: 40px;
+  left: -35px;
   text-align: center;
   font-size: 13px;
   font-family: sans-serif;
@@ -554,14 +554,14 @@ section.people img {
 
 .sermon-series {
   display: grid;
-  grid-template-columns: 1fr 1.618fr;
+  grid-template-columns: 180px 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
   "image sermons";
 }
 
 .sermon-series:nth-of-type(even) {
-  grid-template-columns: 1.618fr 1fr;
+  grid-template-columns: 1fr 180px;
   grid-template-areas: "title title"
   "sermons image";
 }
@@ -596,6 +596,11 @@ section.people img {
 .sermon {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
+  line-height: 1em;
+}
+
+.sermon div {
+  display: inline-block;
 }
 
 .sermon-download svg{
