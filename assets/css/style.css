@@ -502,6 +502,7 @@ address {
 
 section.person {
   display: grid;
+  grid-column-gap: var(--general-padding);
   grid-template-columns: 1fr 1.618fr;
   grid-template-rows: auto auto;
   grid-template-areas: "photo title"
@@ -533,6 +534,7 @@ section.person .bio {
 
 section.people {
   display: grid;
+  grid-column-gap: var(--general-padding);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title title title"
