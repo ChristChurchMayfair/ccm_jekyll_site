@@ -134,7 +134,6 @@ nav {
 
   display: grid;
   visibility: hidden;
-  opacity: 0;
 
   padding-top: var(--header-vertical-padding);
   padding-bottom: var(--header-vertical-padding);
@@ -148,6 +147,9 @@ nav {
   grid-row-gap: 15px;
   align-items: center;
   overflow: hidden;
+
+  fill: var(--dark-colour);
+  z-index: 2;
 
   box-shadow: var(--standard-shadow);
 
@@ -177,11 +179,6 @@ nav .logo {
 
 header svg{
   fill: var(--light-colour);
-}
-
-nav {
-  fill: var(--dark-colour);
-  z-index: 2;
 }
 
 nav #close-menu-button {
