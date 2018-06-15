@@ -122,8 +122,8 @@ a:hover {
 }
 
 nav {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 0px;
   left: 0;
   padding-left: var(--horizontal-padding);
   padding-right: var(--horizontal-padding);
@@ -250,7 +250,7 @@ nav #close-menu-button:active {
 
 header {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
