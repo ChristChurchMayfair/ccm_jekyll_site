@@ -205,6 +205,8 @@ nav #close-menu-button:active {
   width: calc(100vw - calc(var(--general-padding) * 2));
   justify-items: center;
 
+  margin-top: var(--general-padding);
+
   display: grid;
 
   grid-template-columns: 1fr;
