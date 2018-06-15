@@ -148,13 +148,16 @@ nav {
   align-items: center;
   overflow: hidden;
 
-  fill: var(--dark-colour);
   z-index: 2;
 
   box-shadow: var(--standard-shadow);
 
   transition: opacity var(--menu-transition-time);
   -webkit-transition: opacity var(--menu-transition-time);
+}
+
+nav svg {
+  fill: var(--dark-colour);
 }
 
 .logo {
