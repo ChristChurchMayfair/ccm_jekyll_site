@@ -181,7 +181,7 @@ header svg{
   fill: var(--light-colour);
 }
 
-nav #close-menu-button {
+nav #close-menu-icon {
   width: calc(var(--menu-button-size) - 10px);
   grid-area: menu-button;
   justify-content: right;
@@ -190,11 +190,11 @@ nav #close-menu-button {
   transition: transform, 0.1s;
 }
 
-nav #close-menu-button:hover {
+nav #close-menu-icon:hover {
   transform: scale(1.1);
 }
 
-nav #close-menu-button:active {
+nav #close-menu-icon:active {
   transform: scale(0.9);
 }
 
