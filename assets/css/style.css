@@ -21,7 +21,7 @@
   --dark-colour: rgb(21, 6, 66);
   --light-colour: rgb(246,246,255);
   --header-background-colour: rgba(0,0,0,0.2);
-  --navigation-background-colour: var(--light-colour);
+  --navigation-background-colour: rgba(246,246,255, 0.95);
   --button-width: 200px;
   --button-colour: var(--highlight-colour);
   --button-text-colour: var(--light-colour);
