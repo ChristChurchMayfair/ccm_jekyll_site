@@ -561,27 +561,38 @@ section.people img {
   grid-row-gap: 100px;
 }
 
-#sermon-series-list #loading {
+#loading {
   display: none;
 }
 
-#sermon-series-list #loading svg {
+#loading svg {
   width: 100px;
   height: 100px;
 }
 
-#sermon-series-list #loading svg path,
-#sermon-series-list #loading svg rect{
+#loading svg path,
+#loading svg rect{
   fill: var(--highlight-colour);
 }
 
-#sermon-series-list #loading-error {
+#loading-error {
   display: none;
+}
+
+.pagelink {
+  display: inline-block;
+  width:30px;
+  padding: 2px;
+  border: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
 }
 
 .sermon-series {
   display: grid;
   grid-template-columns: 180px 1fr;
+  grid-column-gap: var(--general-padding);
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
   "image sermons";
@@ -622,20 +633,69 @@ section.people img {
 
 .sermon {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: 300px 200px 200px auto 30px;
+  grid-template-rows: 40px;
+  grid-template-areas: "title speaker passage date download";
+  grid-column-gap: var(--general-padding);
   line-height: 1em;
+  padding: var(--general-padding);
+  height: 30px;
+  justify-content: center;
+  /* border: 1px;
+  border-style: solid;
+  border-color: black; */
+  /* height: 20px; */
+}
+
+.sermon:nth-of-type(even) {
+  background: rgba(16, 14, 40,0.03);
+}
+
+/* .sermon-title,
+.sermon-speaker,
+.sermon-date,
+.sermon-passage,
+.sermon-download,
+.sermon-player {
+  border: 1px;
+  border-style: dashed;
+  border-color:red;
+} */
+
+.sermon-title {
+  grid-area: title;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sermon-speaker {
+  grid-area: speaker;
+}
+
+.sermon-passage {
+  grid-area: passage;
+}
+
+.sermon-date {
+  grid-area: date;
 }
 
 .sermon div {
   display: inline-block;
 }
 
+.sermon-download {
+  grid-area: download;
+}
+
 .sermon-download svg{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .sermon-player {
+  grid-area: player;
   display: none;
 }
 

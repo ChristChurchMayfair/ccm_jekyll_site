@@ -15,6 +15,29 @@ function showPodcastLink() {
 
 function updatePageWithSermons(sermon_data) {
   addSermonSeries(sermon_data);
+  drawPageLinks(sermon_data);
+}
+
+function gotoPage(pageNumber) {
+  console.log(pageNumber);
+  loadPage(pageNumber);
+}
+
+function drawPageLinks(sermon_data) {
+  console.log(sermon_data);
+  console.log(seriesPerPage);
+  var numberOfPages = Math.ceil(sermon_data.data._allSeriesMeta.count / seriesPerPage);
+  console.log(numberOfPages);
+  document.querySelectorAll('.pagelinks').forEach(function(pageLinksDiv) {
+    var pageNumber;
+    for (pageNumber = 1; pageNumber <= numberOfPages; pageNumber++) {
+      var pageLinkElement = document.createElement('div');
+      pageLinkElement.className = "pagelink";
+      pageLinkElement.innerHTML = `<a href="#" onclick="gotoPage(${pageNumber});return false;">${pageNumber.toString()}</a>`;
+      pageLinksDiv.appendChild(pageLinkElement);
+    }
+  });
+
 }
 
 function addSermonSeries(sermon_data) {
@@ -69,12 +92,15 @@ function queryGraphCool(url, query) {
   .then(response => response.json()) // parses response to JSON
 }
 
-function getTalksFromGraphCool(serviceID) {
+var seriesPerPage = 4;
+
+function getTalksFromGraphCool(serviceID,pageNumber,pageSize) {
   var graphCoolURL = `https://api.graph.cool/simple/v1/${serviceID}`;
   console.log(graphCoolURL);
   var query = {"query":
   `query {
-    allSeries(first: 4) {
+    _allSeriesMeta {count}
+    allSeries(first: ${pageSize} skip: ${(pageNumber - 1) * pageSize}) {
       name
       image3x2Url
       sermons {
@@ -120,11 +146,23 @@ function sleep (time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
 
+function clearDiv() {
+  document.getElementById("sermon-series-list").innerHTML = "";
+  document.querySelectorAll('.pagelinks').forEach(function(pageLinksDiv) {
+    pageLinksDiv.innerHTML = "";
+  });
+}
+
+function loadPage(pageNumber) {
+  clearDiv()
+  showLoading();
+  sleep(50).then(() => {
+    getTalksFromGraphCool(serviceID,pageNumber,seriesPerPage);
+  }); 
+}
+
 //Do things when the DOM content has loaded so that we can safely manipulate the DOM.
 document.addEventListener("DOMContentLoaded", function() {
   showPodcastLink();
-  showLoading();
-  sleep(500).then(() => {
-    getTalksFromGraphCool(serviceID);
-  }); 
+  loadPage(1);
 });
