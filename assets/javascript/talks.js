@@ -81,6 +81,7 @@ function getTalksFromGraphCool(serviceID) {
         name
         preachedAt
         url
+        passage
         speakers {
           name
         }
