@@ -90,15 +90,34 @@ function getTalksFromGraphCool(serviceID) {
 
   queryGraphCool(graphCoolURL,query)
   .then(updatePageWithSermons)
+  .then(hideLoading)
   .catch(function(rejection){
+    hideLoading();
+    showLoadingError();
     console.log(rejection);
   });
 }
 
 var serviceID = "cjhoh936q44gz0181840a6nlj"
 
+function showLoading() {
+  var loadingDiv = document.getElementById("loading");
+  loadingDiv.style.display = "block";
+}
+
+function hideLoading() {
+  var loadingDiv = document.getElementById("loading");
+  loadingDiv.style.display = "none";
+}
+
+function showLoadingError() {
+  var loadingErrorDiv = document.getElementById("loading-error");
+  loadingErrorDiv.style.display = "block";
+}
+
 //Do things when the DOM content has loaded so that we can safely manipulate the DOM.
 document.addEventListener("DOMContentLoaded", function() {
   showPodcastLink();
+  showLoading();
   getTalksFromGraphCool(serviceID); 
 });
