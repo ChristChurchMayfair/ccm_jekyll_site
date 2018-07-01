@@ -565,6 +565,16 @@ section.people img {
   display: none;
 }
 
+#sermon-series-list #loading svg {
+  width: 100px;
+  height: 100px;
+}
+
+#sermon-series-list #loading svg path,
+#sermon-series-list #loading svg rect{
+  fill: var(--highlight-colour);
+}
+
 #sermon-series-list #loading-error {
   display: none;
 }

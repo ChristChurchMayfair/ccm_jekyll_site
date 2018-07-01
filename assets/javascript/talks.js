@@ -115,9 +115,15 @@ function showLoadingError() {
   loadingErrorDiv.style.display = "block";
 }
 
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 //Do things when the DOM content has loaded so that we can safely manipulate the DOM.
 document.addEventListener("DOMContentLoaded", function() {
   showPodcastLink();
   showLoading();
-  getTalksFromGraphCool(serviceID); 
+  sleep(500).then(() => {
+    getTalksFromGraphCool(serviceID);
+  }); 
 });
