@@ -1,10 +1,9 @@
 ---
-role: Associate Minister
+role: Childrens Worker
 type: staff
-name: Phil Allcock
-email: phil.allcock@christchurchmayfair.org
+name: James Kight
+email: james.kight@christchurchmayfair.org
 headshot: genericheadshot.jpg
-order: 2
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
 

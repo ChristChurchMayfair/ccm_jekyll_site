@@ -13,14 +13,14 @@ layout: default
   {{ content }}
 </section>
 
-{% assign staff = site.people | where: "type", "staff" %}
+{% assign staff = site.people | where: "type", "staff" | sort: "order" %}
 <section>
   <h1>Leadership, Staff and Trainees</h1>
   Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
 </section>
 
 {% for person in staff %}
-<section class="person staff">
+<section id="{{ person.name | replace: " ", "_" }}" class="person staff">
     <div class="title">
   <h1>{{ person.name }}</h1>
   <p class="role">{{ person.role }}</p>
@@ -35,7 +35,7 @@ layout: default
   {% assign trainees = site.people | where: "type", "trainee" %}
 
   {% for person in trainees %}
-  <div class="person trainee">
+  <div id="{{ person.name | replace: " ", "_" }}" class="person trainee">
     <div class="title">
       <h2>{{ person.name }}</h2>
     </div>
@@ -49,7 +49,7 @@ layout: default
   {% assign elders = site.people | where: "type", "elder" %}
 
   {% for person in elders %}
-  <div class="person elder">
+  <div id="{{ person.name | replace: " ", "_" }}" class="person elder">
     <div class="title">
       <h2>{{ person.name }}</h2>
     </div>

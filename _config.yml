@@ -36,6 +36,13 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: ""
+      type: people
+    values:
+      order: 999
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
