@@ -26,6 +26,7 @@ layout: default
   <p class="role">{{ person.role }}</p>
 </div>
   <img src="assets/headshots/{{person.headshot}}">
+  <a class="email" href="mailto:{{ person.email }}">Email</a>
   <div class="bio">{{ person.content }}</div>
   </section>
   {% endfor %}
