@@ -583,10 +583,14 @@ section.people img {
   display: inline-block;
   width:30px;
   padding: 2px;
+}
+
+.current-pagelink {
+  /* font-weight: bold; */
   border: 1px;
   border-style: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: var(--highlight-colour);
 }
 
 .sermon-series {
@@ -760,6 +764,28 @@ section.map iframe {
 section.findus {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "title title"
+  "address tube"
+  "directions directions";
+}
+
+#directions-button {
+  grid-area: directions;
+  width: 400px;
+  justify-content: center;
+}
+
+section.findus h1 {
+  grid-area: title;
+}
+
+#address {
+  grid-area: address;
+}
+
+#tube {
+  grid-area: tube;
 }
 
 @media only screen and (max-width: 640px) {
