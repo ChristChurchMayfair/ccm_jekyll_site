@@ -103,7 +103,7 @@ function getTalksFromGraphCool(serviceID,pageNumber,pageSize) {
     allSeries(first: ${pageSize} skip: ${(pageNumber - 1) * pageSize}) {
       name
       image3x2Url
-      sermons {
+      sermons(orderBy: preachedAt_ASC) {
         name
         preachedAt
         url
