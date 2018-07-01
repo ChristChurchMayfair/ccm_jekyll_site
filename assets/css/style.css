@@ -561,6 +561,14 @@ section.people img {
   grid-row-gap: 100px;
 }
 
+#sermon-series-list #loading {
+  display: none;
+}
+
+#sermon-series-list #loading-error {
+  display: none;
+}
+
 .sermon-series {
   display: grid;
   grid-template-columns: 180px 1fr;
