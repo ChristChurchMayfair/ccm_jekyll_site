@@ -18,9 +18,9 @@
 
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
-  --dark-colour: rgb(21, 6, 66);
+  --dark-colour: rgb(16, 14, 40);
   --light-colour: rgb(246,246,255);
-  --header-background-colour: rgba(0,0,0,0.2);
+  --header-background-colour: rgba(16,14,40,0.2);
   --navigation-background-colour: rgba(246,246,255, 0.95);
   --button-width: 200px;
   --button-colour: var(--highlight-colour);
