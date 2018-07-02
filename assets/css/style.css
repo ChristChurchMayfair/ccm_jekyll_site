@@ -550,7 +550,6 @@ section.person img {
   grid-area: photo;
   border-radius: 50%;
   width: 300px;
-  width: 300px;
 }
 
 section.person .bio {
@@ -573,7 +572,6 @@ section.people h1 {
 section.people img {
   grid-area: photo;
   border-radius: 50%;
-  width: 200px;
   width: 200px;
 }
 
