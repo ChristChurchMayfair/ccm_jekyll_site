@@ -1,4 +1,5 @@
 <section>
+  <h1>Our Sunday Services</h1>
     <p>Our main meetings are on Sundays. We have two services, morning and evening. We also meet for midweek Bible studies, a monthly prayer meeting and run a lunch time service in Mayfair.</p>
 </section>
 {% for service in services %}
@@ -12,7 +13,7 @@
 <section class="service {{service.timeOfDay}}-service">
   <div class="service-info">
   <h1>{{ service.title }} - {{ service.time }}</h1>
-  <p>{{ service.content }}</p>
+  {{ service.content }}
 </div>
 </section>
 {% endfor %}

@@ -907,10 +907,19 @@ section.map iframe {
 section.findus {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
   grid-template-areas: "title title"
   "address tube"
   "directions directions";
+}
+
+@media only screen and (max-width: 640px) {
+  section.findus {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title"
+    "address"
+    "tube"
+    "directions";
+  }
 }
 
 #directions-button {
@@ -931,26 +940,38 @@ section.findus h1 {
   grid-area: tube;
 }
 
-@media only screen and (max-width: 640px) {
-  section.findus {
-    grid-template-columns: 1fr;
-  }
+p.location-detail {
+  font-size: 1.3em;
 }
 
-img.tube-roundel {
+svg#roundel {
   display:inline-block;
   width: 20px;
   height: 20px;
-  vertical-align: -10%;
+  vertical-align: -5%;
   margin-right: 0.2em;
+  fill: var(--highlight-colour);
+  stroke: var(--highlight-colour);
 }
 
-img.map-pin {
+svg#map-pin {
   display:inline-block;
   width: 30px;
   height: 30px;
-  vertical-align: -20%;
+  vertical-align: -15%;
   margin-right: 0.2em;
+  fill: var(--highlight-colour);
+}
+
+@media only screen and (max-width: 640px) {
+  svg#map-pin,
+  svg#roundel {
+    display: none;
+  }
+  p.location-detail {
+    font-size: 1em;
+    display: inline;
+  }
 }
 
 #home p {
