@@ -30,6 +30,7 @@ collections:
 - services
 - music_releases
 - music_resources
+- music_videos
 
 # Build settings
 markdown: kramdown

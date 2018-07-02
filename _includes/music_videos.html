@@ -1,0 +1,11 @@
+
+<section>
+  <h1>Training Videos</h1>
+  <p>Some blurb about training videos.</p>
+  {% for video in site.music_videos %}
+  <div class="music_video">
+    <h2>{{ video.title }}</h2>
+    <iframe src="https://player.vimeo.com/video/{{ video.vimeoId }}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+  </div>
+  {% endfor %}
+</section>

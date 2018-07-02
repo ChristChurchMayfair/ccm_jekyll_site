@@ -410,8 +410,33 @@ section p {
   grid-column: 1/-1;
 }
 
-section.music_release, section.music_resource {
+section.music_release {
   height: 40vh;
+}
+
+.music_resource {
+  display: grid;
+  grid-template-columns: 1fr 1.618fr;
+  grid-template-areas: "title resources";
+  border-width: 1px;
+  border-color: red;
+  border-style: solid;
+}
+
+.music_resource h2 {
+  grid-area: title;
+}
+
+.music_resource .downloads {
+  display: grid;
+  grid-template-columns: auto;
+  border-width: 1px;
+  border-color: blue;
+  border-style: solid;
+}
+
+.music_resource .downloads .download {
+  display: block;
 }
 
 section.service {
