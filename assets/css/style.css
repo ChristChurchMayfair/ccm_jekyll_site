@@ -625,7 +625,7 @@ section.people img {
 
 .sermon-series {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr 5fr;
   grid-column-gap: var(--general-padding);
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
@@ -634,7 +634,7 @@ section.people img {
 }
 
 .sermon-series:nth-of-type(even) {
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 5fr 1fr;
   grid-template-areas: "title title"
   "details details"
   "sermons image";
@@ -668,13 +668,14 @@ section.people img {
 .sermon-list {
   grid-area: sermons;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   font-size: 0.8em;
 }
 
 .sermon {
   display: grid;
-  grid-template-columns: 300px 200px 200px auto 30px;
+  /* grid-template-columns: 200px 200px 200px auto 30px; */
+  grid-template-columns: 2fr 1fr 1fr 1fr 30px;
   grid-template-rows: 40px;
   grid-template-areas: "title speaker passage date download";
   grid-column-gap: var(--general-padding);
@@ -703,6 +704,10 @@ section.people img {
   border-color:red;
 } */
 
+.sermon div {
+  text-align: left;
+}
+
 .sermon-title {
   grid-area: title;
   white-space: nowrap; 
@@ -712,22 +717,22 @@ section.people img {
 
 .sermon-speaker {
   grid-area: speaker;
+  display: inline-block;
 }
 
 .sermon-passage {
   grid-area: passage;
+  display: inline-block;
 }
 
 .sermon-date {
   grid-area: date;
-}
-
-.sermon div {
   display: inline-block;
 }
 
 .sermon-download {
   grid-area: download;
+  display: inline-block;
 }
 
 .sermon-download svg{
@@ -738,6 +743,62 @@ section.people img {
 .sermon-player {
   grid-area: player;
   display: none;
+}
+
+@media only screen /*and (min-width: 640px)*/ and (max-width: 1290px) {
+  .sermon {
+    grid-template-columns: 2fr 1fr 1fr 30px;
+    grid-template-areas: "title speaker passage download";
+  }
+
+  .sermon-date {
+    display: none;
+  }
+}
+
+@media only screen /*and (min-width: 640px)*/ and (max-width: 1140px) {
+  .sermon {
+    grid-template-columns: 2fr 1fr 30px;
+    grid-template-areas: "title passage download";
+  }
+
+  .sermon-speaker {
+    display: none;
+  }
+}
+
+@media only screen /*and (min-width: 640px)*/ and (max-width: 890px) {
+
+  .sermon-series,
+  .sermon-series:nth-of-type(even) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: var(--general-padding);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title"
+    "details "
+    "sermons";
+  }
+
+  .series-graphic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .sermon {
+    grid-template-columns: 1fr 30px;
+    grid-template-areas: "title download";
+  }
+
+  .sermon-series h1 {
+    font-size: 1.4em;
+  }
+
+  .sermon-passage {
+    display: none;
+  }  
 }
 
 .music-release-list {
