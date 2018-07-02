@@ -228,13 +228,13 @@ nav #close-menu-icon:active {
 
 @media only screen and (min-width: 900px) {
   #menu-content {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 900px) {
   #menu-content {
-      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -342,8 +342,8 @@ section.full-bleed {
   grid-template-columns: auto 600px auto;
   grid-template-rows: 100px 200px auto;
   grid-template-areas: ". . ."
-  ". overlay ."
-  ". . .";
+    ". overlay ."
+    ". . .";
   border-bottom: 0px;
   box-shadow: var(--standard-shadow);
 }
@@ -360,7 +360,7 @@ section.full-bleed {
     grid-template-columns: auto;
     grid-template-rows: 50px auto;
     grid-template-areas: "."
-    "overlay";
+      "overlay";
   }
 }
 
@@ -372,7 +372,7 @@ section.full-bleed .overlay {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "caption caption"
-  "button-left button-right";
+    "button-left button-right";
   grid-column-gap: var(--general-padding);
   justify-items: center;
 }
@@ -396,7 +396,7 @@ section.full-bleed .overlay {
 }
 
 .caption-overlay {
-grid-area: caption;
+  grid-area: caption;
 }
 
 @media only screen and (max-width: 640px) {
@@ -531,14 +531,14 @@ section.person {
   grid-template-columns: 1fr 1.618fr;
   grid-template-rows: auto auto;
   grid-template-areas: "photo title"
-  "photo bio";
+    "photo bio";
   justify-items: center;
   align-items: center;
 }
 
 section.person:nth-of-type(even) {
   grid-template-areas: "title photo"
-  "bio photo";
+    "bio photo";
   grid-template-columns: 1.618fr 1fr;
 }
 
@@ -562,7 +562,7 @@ section.people {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title title title title"
-  ". . . .";
+    ". . . .";
 }
 
 section.people h1 {
@@ -623,15 +623,15 @@ section.people img {
   grid-column-gap: var(--general-padding);
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
-  "details details"
-  "image sermons";
+    "details details"
+    "image sermons";
 }
 
 .sermon-series:nth-of-type(even) {
   grid-template-columns: 5fr 1fr;
   grid-template-areas: "title title"
-  "details details"
-  "sermons image";
+    "details details"
+    "sermons image";
 }
 
 .series-heading {
@@ -758,8 +758,8 @@ section.people img {
     grid-column-gap: var(--general-padding);
     grid-template-rows: auto auto auto;
     grid-template-areas: "title"
-    "details "
-    "sermons";
+      "details "
+      "sermons";
   }
 
   .series-graphic {
@@ -788,7 +788,7 @@ section.people img {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title"
-  ". .";
+    ". .";
   grid-row-gap: 100px;
 }
 
@@ -798,15 +798,15 @@ section.people img {
   grid-column-gap: calc(var(--general-padding) * 3);
   grid-row-gap: var(--general-padding);
   grid-template-areas: ". title"
-  "cover details"
-  ". links";
+    "cover details"
+    ". links";
 }
 
 .music-release:nth-of-type(even) {
   grid-template-columns: 1.618fr 1fr;
   grid-template-areas: "title ."
-  "details cover"
-  "links .";
+    "details cover"
+    "links .";
 }
 
 .music-service-link  {
@@ -870,8 +870,8 @@ section.people img {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "title"
-    "cover"
-    "links";
+      "cover"
+      "links";
   }
 
   .music-release-description {
@@ -942,17 +942,17 @@ section.findus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title title"
-  "address tube"
-  "directions directions";
+    "address tube"
+    "directions directions";
 }
 
 @media only screen and (max-width: 640px) {
   section.findus {
     grid-template-columns: 1fr;
     grid-template-areas: "title"
-    "address"
-    "tube"
-    "directions";
+      "address"
+      "tube"
+      "directions";
   }
 }
 
