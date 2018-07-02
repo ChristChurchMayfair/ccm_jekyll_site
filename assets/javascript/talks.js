@@ -13,17 +13,14 @@ function showPodcastLink() {
     }
 }
 
-function updatePageWithSermons(sermon_data) {
-  addSermonSeries(sermon_data);
-}
-
 function gotoPage(pageNumber) {
   loadPage(pageNumber,mainQuery(seriesPerPage,pageNumber));
 }
 
-function drawPageLinks(data) {
-  var numberOfSeries = data.data._allSeriesMeta.count;
+function drawPageLinks(seriesCountData) {
+  var numberOfSeries = seriesCountData.data._allSeriesMeta.count;
   var numberOfPages = Math.ceil(numberOfSeries / seriesPerPage);
+
   document.querySelectorAll('.pagelinks').forEach(function(pageLinksDiv) {
     var pageNumber;
     for (pageNumber = 1; pageNumber <= numberOfPages; pageNumber++) {
@@ -36,38 +33,51 @@ function drawPageLinks(data) {
 
 }
 
-function addSermonSeries(sermon_data) {
-  console.log(sermon_data);
+function updatePageWithSermons(sermon_data) {
+
   var sermonSeriesSection = document.getElementById("sermon-series-list");
 
   var sermonSeriesTemplate = document.getElementById('sermon_series_template');
   var sermonTemplate = document.getElementById('sermon_template');
-  var series;
   
+  var series;
   for (series of sermon_data.data.allSeries) {
 
-    var sermonsForSeries = series.sermons
-
+    //Instantiate a series template.
     var sermonSeriesDiv = document.importNode(sermonSeriesTemplate.content, true);
     
+    //Determine if all sermons in this series relate to the same event.
+    var sermonEvents = Array.from(new Set(series.sermons.map(sermon => sermon.event.name)));
+    var event = null;
+    if (sermonEvents.length == 1) {
+      event = sermonEvents[0];
+    } else {
+      event = "Various Events";
+    }
 
+    //Fill in series data.
     sermonSeriesDiv.querySelector(".series-title").textContent = series.name;
-    sermonSeriesDiv.querySelector(".series-book").textContent = "No Book"
-    //sermonSeriesDiv.querySelector(".series-service").textContent = series.service;
+    if (series.subtitle && series.subtitle != series.name) {
+      sermonSeriesDiv.querySelector(".series-book").textContent = series.subtitle;
+    }
+    sermonSeriesDiv.querySelector(".series-service").textContent = event;
     sermonSeriesDiv.querySelector(".series-graphic").setAttribute("style",`background-image: url(${series.image3x2Url});`);
 
     var sermonList = sermonSeriesDiv.querySelector(".sermon-list");
     
     var sermon;
-    for (sermon of sermonsForSeries) {
+    for (sermon of series.sermons) {
+      //Instantiate a sermon template.
       var sermonDiv = document.importNode(sermonTemplate.content, true);
 
+      //Parse the date string and format it nicely to be just a date.
       var dateString = new Date(Date.parse(sermon.preachedAt)).toLocaleDateString();
 
-      sermonDiv.querySelector(".sermon-title").textContent = sermon.name;
+      //Fill in sermon data.
+      sermonDiv.querySelector(".sermon-title").textContent   = sermon.name;
       sermonDiv.querySelector(".sermon-speaker").textContent = sermon.speakers[0].name;
-      sermonDiv.querySelector(".sermon-passage").innerHTML = `<a href="https://www.biblegateway.com/passage/?search=${sermon.passage}&version=NIVUK">${sermon.passage}</a>`;
-      sermonDiv.querySelector(".sermon-date").textContent = dateString;
+      sermonDiv.querySelector(".sermon-passage").innerHTML   = `<a href="https://www.biblegateway.com/passage/?search=${sermon.passage}&version=NIVUK">${sermon.passage}</a>`;
+      sermonDiv.querySelector(".sermon-date").textContent    = dateString;
       sermonDiv.querySelector(".sermon-download").setAttribute("href",sermon.url);
       sermonDiv.querySelector(".sermon-player").setAttribute("src",sermon.url);
 
@@ -78,30 +88,31 @@ function addSermonSeries(sermon_data) {
   }
 }
 function queryGraphCool(url, query) {
-  // Default options are marked with *
   return fetch(url, {
-    body: JSON.stringify(query), // must match 'Content-Type' header
-    headers: {
-      'content-type': 'application/json'
-    },
+    body: JSON.stringify(query),
+    headers: {'content-type': 'application/json'},
     method: 'POST'
   })
-  .then(response => response.json()) // parses response to JSON
+  .then(response => response.json());
 }
 
-var seriesPerPage = 4;
+var seriesPerPage = 5;
 
 function mainQuery(pageSize,pageNumber) {
   return { "query" :
   `query {
     allSeries(first: ${pageSize} skip: ${(pageNumber - 1) * pageSize}) {
       name
+      subtitle
       image3x2Url
       sermons(orderBy: preachedAt_ASC) {
         name
         preachedAt
         url
         passage
+        event {
+          name
+        }
         speakers {
           name
         }
@@ -113,9 +124,9 @@ function mainQuery(pageSize,pageNumber) {
 var serviceID = "cjhoh936q44gz0181840a6nlj";
 var graphCoolURL = `https://api.graph.cool/simple/v1/${serviceID}`;
 
-function getSeriesCountFromGraphCool() {
-  var q = {"query":"query {_allSeriesMeta {count}}"};
-  queryGraphCool(graphCoolURL,q)
+function setupPaginationLinks() {
+  var seriesCountQuery = {"query":"query {_allSeriesMeta {count}}"};
+  queryGraphCool(graphCoolURL,seriesCountQuery)
   .then(drawPageLinks)
   .catch(function(rejection){
     console.log(rejection);
@@ -155,54 +166,43 @@ function sleep (time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-function clearDiv() {
-  document.getElementById("sermon-series-list").innerHTML = "";
-  // document.querySelectorAll('.pagelinks').forEach(function(pageLinksDiv) {
-  //   pageLinksDiv.innerHTML = "";
-  // });
+function clearDivById(id) {
+  document.getElementById(id).innerHTML = "";
 }
 
-function setCurrentPage(pageNumber) {
-  console.log(pageNumber);
-  //remove class from old one.
+function setCurrentPageCSSClass(newCurrentPageNumber) {
+  //remove "current" class from old page link.
   document.querySelectorAll(".current-pagelink").forEach(function(pagelinkDiv) {
     pagelinkDiv.className = "pagelink";
   });
+
+  //Iterate over all page links
   document.querySelectorAll(".pagelink").forEach(function(pagelinkDiv) {
     var links = pagelinkDiv.getElementsByTagName('a');
-    var link = links.length ? links[0] : null;
-    if (link) {
-      console.log(link.textContent);
-      if (parseInt(link.textContent) == pageNumber) {
-        console.log("Got matching pagelink!");
-        pagelinkDiv.className = "pagelink current-pagelink";
-      }
+    if (links[0] && parseInt(links[0].textContent) == newCurrentPageNumber) {
+      pagelinkDiv.className = "pagelink current-pagelink";
     }
   });
 }
 
 function loadPage(pageNumber,query) {
-  console.log("----");
-  console.log(query);
-  console.log("----");
-  clearDiv()
+  //clear out the old content before we load new stuff in.
+  clearDivById("sermon-series-list");
   showLoading();
+
   sleep(50).then(() => {
     getTalksFromGraphCool(query,pageNumber,seriesPerPage);
-    setCurrentPage(pageNumber);
+    setCurrentPageCSSClass(pageNumber);
   });
-}
-
-function setupPaginationLinks(){
-  getSeriesCountFromGraphCool();
 }
 
 //Do things when the DOM content has loaded so that we can safely manipulate the DOM.
 document.addEventListener("DOMContentLoaded", function() {
+  
   showPodcastLink();
-  var startingPage = 1;
   setupPaginationLinks();
-  var q = mainQuery(seriesPerPage,startingPage);
-  console.log(q);
-  loadPage(startingPage,q);
+
+  var initialPage = 1;
+  loadPage(initialPage,mainQuery(seriesPerPage,initialPage));
+  setCurrentPageCSSClass(initialPage);
 });
