@@ -691,6 +691,8 @@ section.people img {
   padding: var(--general-padding);
   height: 30px;
   justify-content: center;
+
+  align-items: center;
   /* border: 1px;
   border-style: solid;
   border-color: black; */
@@ -731,6 +733,9 @@ section.people img {
 .sermon-passage {
   grid-area: passage;
   display: inline-block;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sermon-date {
@@ -821,13 +826,28 @@ section.people img {
 .music-release {
   display: grid;
   grid-template-columns: 1fr 1.618fr;
-  grid-template-areas: "cover details";
+  grid-column-gap: calc(var(--general-padding) * 3);
+  grid-row-gap: var(--general-padding);
+  grid-template-areas: ". title"
+  "cover details"
+  ". links";
 }
 
 .music-release:nth-of-type(even) {
   grid-template-columns: 1.618fr 1fr;
-  grid-template-areas: "details cover";
+  grid-template-areas: "title ."
+  "details cover"
+  "links .";
 }
+
+.music-service-link  {
+  display:inline-block;
+  overflow:hidden;
+  width:158px;
+  height:45px;
+}
+
+
 
 .music-release-cover {
   grid-area: cover;
@@ -836,10 +856,36 @@ section.people img {
   border-color: var(--dark-colour);
   border-style: solid;
   border-width: 1px;
-  justify-self: center
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
 }
 
-.music-release-details {
+.music-release-title {
+  grid-area: title;
+}
+
+.music-service-links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "apple-music spotify";
+  grid-column-gap: var(--general-padding);
+}
+
+.spotify-link {
+  grid-area: spotify;
+  background: url(/assets/images/Listen_on_spotify.svg) no-repeat;
+  ajustify-self: start;
+}
+
+.apple-music-link {
+  grid-area: apple-music;
+  background: url(https://tools.applemusic.com/assets/shared/badges/en-us/music-lrg.svg) no-repeat;
+  justify-self: end;
+}
+
+.music-release-description {
   grid-area: details;
 }
 
@@ -847,6 +893,34 @@ section.people img {
   font-size: 0.8em;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 860px) {
+  .music-release,
+  .music-release:nth-of-type(even) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title"
+    "cover"
+    "links";
+  }
+
+  .music-release-description {
+    display: none;
+  }
+
+  .music-service-link {
+    width:40px;
+    height:40px;
+  }
+
+  .apple-music-link {
+    background: url(https://tools.applemusic.com/embed/v1/app-icon.svg) no-repeat;
+  }
+
+  .spotify-link {
+    background: url(../images/spotify_small.svg) no-repeat;
+  }
 }
 
 #vimeo-container {
@@ -926,6 +1000,7 @@ section.findus {
   grid-area: directions;
   width: 400px;
   justify-content: center;
+  align-content: center;
 }
 
 section.findus h1 {

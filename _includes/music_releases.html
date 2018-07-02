@@ -4,18 +4,18 @@
   <div class="music-release-list">
 {% assign releases = site.music_releases | sort: 'date' | reverse %}
 {% for release in releases %}
-<div class="music-release release-{{release.type}}">
+<div class="music-release">
   <img class="music-release-cover" src="{{ release.coverImage }}"/>
-  <div class="music-release-details">
-    <h2>{{ release.title }}</h2>
-    <p>{{ release.content }}</p>
-    {% if release.spotifyLink %}
-    <a href="{{ release.spotifyLink }}" style="display:inline-block;overflow:hidden;background:url(/assets/images/Listen_on_spotify.svg) no-repeat;width:158px;height:45px;"></a>
-    {% endif %}
-    {% if release.appleMusicLink %}
-    <a href="{{ release.appleMusicLink }}" style="display:inline-block;overflow:hidden;background:url(https://tools.applemusic.com/assets/shared/badges/en-us/music-lrg.svg) no-repeat;width:158px;height:45px;"></a>
-    {% endif %}
-  </div>
+    <h2 class="music-release-title">{{ release.title }}</h2>
+    <div class="music-release-description">{{ release.content }}</div>
+    <div class="music-service-links">
+      {% if release.spotifyLink %}
+      <a class="music-service-link spotify-link" href="{{ release.spotifyLink }}"></a>
+      {% endif %}
+      {% if release.appleMusicLink %}
+      <a class="music-service-link apple-music-link" href="{{ release.appleMusicLink }}"></a>
+      {% endif %}
+    </div>
 </div>
 {% endfor %}
 </div>
