@@ -38,7 +38,7 @@ function updatePageWithSermons(sermon_data) {
   var sermonSeriesSection = document.getElementById("sermon-series-list");
 
   var sermonSeriesTemplate = document.getElementById('sermon_series_template');
-  var sermonTemplate = document.getElementById('sermon_template');
+  var sermonTemplate = document.getElementById('sermon-template');
   
   var series;
   for (series of sermon_data.data.allSeries) {

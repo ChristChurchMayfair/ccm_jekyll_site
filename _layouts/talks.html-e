@@ -77,7 +77,7 @@ layout: default
 <section id="sermons">
 </section>
 
-<template id="sermon-template">
+<template id="sermon_template">
   <div class="sermon">
     <div class="sermon-title"></div>
     <div class="sermon-speaker"></div>

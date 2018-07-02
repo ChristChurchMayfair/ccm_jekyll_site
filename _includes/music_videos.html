@@ -8,12 +8,12 @@
   </div>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <h2>Playlist</h2>
-  <div class="music_videos">
+  <div class="music-videos">
   {% for video in site.music_videos %}
-  <div class="music_video">
-    <span class="video_index">{{ forloop.index }})</span>
-    <span class="video-title">{{ video.title }}</span>
-    <a class="video-play-link" href="https://player.vimeo.com/video/{{ video.vimeoId }}">Play</a>
+  <div class="music-video">
+    <span class="music-video-index">{{ forloop.index }})</span>
+    <span class="music-video-title">{{ video.title }}</span>
+    <a class="music-video-play-link" href="https://player.vimeo.com/video/{{ video.vimeoId }}">Play</a>
   </div>
   {% endfor %}
   </div>

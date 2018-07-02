@@ -417,11 +417,11 @@ section p {
   grid-column: 1/-1;
 }
 
-section.music-release {
+section.music_release {
   height: 40vh;
 }
 
-.music-resource {
+.music_resource {
   display: grid;
   grid-template-columns: 1fr 1.618fr;
   grid-template-areas: "title resources";
@@ -430,11 +430,11 @@ section.music-release {
   border-style: solid;
 }
 
-.music-resource h2 {
+.music_resource h2 {
   grid-area: title;
 }
 
-.music-resource .downloads {
+.music_resource .downloads {
   display: grid;
   grid-template-columns: auto;
   border-width: 1px;
@@ -442,7 +442,7 @@ section.music-release {
   border-style: solid;
 }
 
-.music-resource .downloads .download {
+.music_resource .downloads .download {
   display: block;
 }
 
@@ -892,31 +892,31 @@ section.people img {
   }
 }
 
-.music-videos {
+.music_videos {
   display: grid;
   margin-top: var(--general-padding);
 }
 
-.music-video {
+.music_video {
   display: grid;
   grid-template-columns: 20px auto 20px;
   grid-template-areas: "index title link";
   padding: var(--general-padding);
 }
 
-.music-video:nth-of-type(even) {
+.music_video:nth-of-type(even) {
   background-color: var(--alternate-tabular-highlight);
 }
 
-.music-video .music-video-index {
+.music_video .music_video_index {
   grid-area: index;
 }
 
-.music-video .music-video-title {
+.music_video .video-title {
   grid-area: title;
 }
 
-.music-video .music-video-play-link {
+.music_video .video-play-link {
   grid-area: link;
 }
 
