@@ -84,6 +84,14 @@ body:after{
   transform:rotate(-45deg);
 }
 
+#viewsizedebug {
+  position: fixed;
+  right:0px;
+  bottom:0;
+  background-color: red;
+  color: white;
+}
+
 body {
   margin:0;
   width: 100vw;
