@@ -11,7 +11,7 @@ layout: default
 </section>
   
 {% assign events = site.events | where: "status", "live" %}
-{% assign services = site.services %}
+{% assign services = site.services | where_exp: "item", "item.type != 'service'"  %}
 
 <a name="services"></a>
 {%- include services.html -%}
