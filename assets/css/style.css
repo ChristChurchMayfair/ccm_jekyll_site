@@ -25,6 +25,7 @@
   --button-width: 200px;
   --button-colour: var(--highlight-colour);
   --button-text-colour: var(--light-colour);
+  --alternate-tabular-highlight: rgba(16, 14, 40,0.03);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
   --highlight-colour: rgb(244, 66, 92);
@@ -677,7 +678,7 @@ section.people img {
 }
 
 .sermon:nth-of-type(even) {
-  background: rgba(16, 14, 40,0.03);
+  background: var(--alternate-tabular-highlight);
 }
 
 /* .sermon-title,
@@ -766,6 +767,43 @@ section.people img {
   font-size: 0.8em;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+#vimeo-container {
+  /* display:none;
+  height: 0px; */
+  transition: height 2;
+}
+
+.music_videos {
+  display: grid;
+  margin-top: var(--general-padding);
+}
+
+.music_video {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: "index title link";
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: red; */
+  padding: var(--general-padding);
+}
+
+.music_video:nth-of-type(even) {
+  background-color: var(--alternate-tabular-highlight);
+}
+
+.music_video .music_video_index {
+  grid-area: index;
+}
+
+.music_video .video-title {
+  grid-area: title;
+}
+
+.music_video .video-play-link {
+  grid-area: link;
 }
 
 section.map {
