@@ -584,7 +584,7 @@ section.people img {
 #sermon-series-list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 100px;
+  grid-row-gap: 30px;
 }
 
 #loading {
@@ -603,6 +603,10 @@ section.people img {
 
 #loading-error {
   display: none;
+}
+
+.page-picker {
+  padding-top: calc(var(--general-padding) * 3);
 }
 
 .pagelink {
@@ -625,12 +629,14 @@ section.people img {
   grid-column-gap: var(--general-padding);
   grid-template-rows: auto auto;
   grid-template-areas: "title title"
+  "details details"
   "image sermons";
 }
 
 .sermon-series:nth-of-type(even) {
   grid-template-columns: 1fr 180px;
   grid-template-areas: "title title"
+  "details details"
   "sermons image";
 }
 
@@ -639,7 +645,12 @@ section.people img {
 }
 
 .series-info {
+  display: none;
   grid-area: details;
+}
+
+.series-info div {
+  display: none;
 }
 
 .series-graphic {
