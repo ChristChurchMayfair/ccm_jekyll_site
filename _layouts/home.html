@@ -13,7 +13,7 @@ layout: default
       <h1>{{ page.overlayCaption }}</h1>
     </div>
         
-    <a id="directions-button" class="button index-top-section-btn" href="#">
+    <a class="button index-top-section-btn" href="#findus">
       Find Us
     </a>
     <a id="services-button"   class="button index-top-section-btn" href="#services">
@@ -47,16 +47,32 @@ layout: default
 <h1>Our Sunday Services</h1>
 {%- include services.html -%}
   
-<h1> Find Us</h1>
-<section class="findus">
-  
-  <div>
-    <p>You can find us at: <address><img class="map-pin" src="assets/images/mappin.svg"/>Down Street, London, W1J 7AN.</address></p>
+
+<section id="findus" class="findus">
+  <h1> Find Us</h1>
+  <div id="address">
+    <p>Our address is:</p>
+    <p class="location-detail">
+  <svg id="map-pin" viewBox="0 0 100 100">
+    <use xlink:href="assets/images/mappin.svg#mappin" />
+  </svg>
+Down Street, London, W1J 7AN</p>
   </div>
-  <div>
+  <div id="tube">
   <p>Our closest tube stations are:</p>
-  <p><img class="tube-roundel" src="assets/images/roundel.svg"/><span class="tube-station">Green Park</span> and <img class="tube-roundel" src="assets/images/roundel.svg"/><span class="tube-station"></span>Hyde Park Corner</span>.</p>
+  <p class="location-detail">
+  <svg id="roundel" viewBox="0 0 100 100">
+    <use xlink:href="assets/images/roundel2.svg#roundel" />
+  </svg>
+<span class="tube-station">Green Park</span> and
+  <svg id="roundel" viewBox="0 0 100 100">
+    <use xlink:href="assets/images/roundel2.svg#roundel" />
+  </svg>
+<span class="tube-station"></span>Hyde Park Corner</span>.</p>
   </div>
+  <a id="directions-button" class="button index-top-section-btn" href="#">
+      Directions
+    </a>
 </section>
 <section class="map">
   <iframe
