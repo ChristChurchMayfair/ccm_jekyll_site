@@ -265,18 +265,21 @@ header {
   top: 0;
   left: 0;
   width: calc(100vw - calc(var(--horizontal-padding) * 2));
-  height: var(--header-height);
-  background-color: var(--header-background-colour);
+  height: calc(var(--header-height) + 50px);
 
   padding-top: var(--header-vertical-padding);
   padding-bottom: var(--header-vertical-padding);
   padding-left: var(--horizontal-padding);
   padding-right: var(--horizontal-padding);
 
+  align-content: start;
+
   display: grid;
   grid-template-columns: auto var(--menu-button-size);
   column-gap: var(--general-padding);
   align-items: center;
+
+  background: linear-gradient(var(--header-background-colour), rgba(0,0,0,0));
 }
 
 header .logo {
