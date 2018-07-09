@@ -1,4 +1,7 @@
 :root {
+
+  --section-columns: repeat(12, 1fr);
+
   --general-padding: 15px;
   --header-vertical-padding: var(--general-padding);
   --horizontal-padding: var(--general-padding);
@@ -14,28 +17,29 @@
   --footer-height: auto;
   --button-height: 30px;
 
-  --base-font-size: 20px;
+  --base-font-size: 28px;
 
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
   --dark-colour: rgb(16, 14, 40);
   --light-colour: rgb(246,246,255);
+  --knockout-background-colour: #656565;
   --header-background-colour: rgba(16,14,40,0.2);
   --navigation-background-colour: rgba(246,246,255, 0.95);
-  --button-width: 200px;
-  --button-colour: var(--highlight-colour);
+  /* --button-width: 200px; */
+  --button-colour: var(--dark-colour);
   --button-text-colour: var(--light-colour);
   --alternate-tabular-highlight: rgba(16, 14, 40,0.03);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
-  --highlight-colour: rgb(244, 66, 92);
+  --highlight-colour: #59A0BC;
 
   --menu-transition-time: 0.2s;
 
   --beta-banner-colour: rgba(244,66,92,0.5);
 
-  --heading-font: 'Klinic Slab';
-  --body-font: 'Nunito';
+  --heading-font: 'Franchise';
+  --body-font: 'Klinic Slab';
 }
 
 @font-face {
@@ -44,22 +48,8 @@
 }
 
 @font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUYevN.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
+  font-family: 'Franchise';
+  src: url(../fonts/franchise-bold-webfont.ttf);
 }
 
 body:after{
@@ -73,7 +63,7 @@ body:after{
   left: -35px;
   text-align: center;
   font-size: 13px;
-  font-family: sans-serif;
+  font-family: Kl;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--light-colour);
@@ -103,12 +93,7 @@ body {
   display: grid;
   background-color: var(--light-colour);
   grid-template-rows: auto var(--footer-height);
-}
-
-@media only screen and (min-width: 640px) {
-  body {
-    text-align: center;
-  }
+  text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -131,12 +116,10 @@ a:hover {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0;
-  padding-left: var(--horizontal-padding);
-  padding-right: var(--horizontal-padding);
-  width: calc(100vw - calc(var(--horizontal-padding) * 2));
+  width: calc(100vw - calc(var(--body-margin) * 2));
   height: var(--nav-height);
 
   background-color: var(--navigation-background-colour);
@@ -155,7 +138,7 @@ nav {
   column-gap: 15px;
   grid-row-gap: 15px;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   z-index: 2;
 
@@ -190,7 +173,7 @@ nav .logo {
 }
 
 header svg{
-  fill: var(--light-colour);
+  fill: var(--dark-colour);
 }
 
 nav #close-menu-icon {
@@ -211,10 +194,10 @@ nav #close-menu-icon:active {
 }
 
 #menu-content {
-  font-size: 1.2em;
+  font-size: 0.6em;
   color: var(--dark-colour);
   grid-area: menu-content;
-  width: calc(100vw - calc(var(--general-padding) * 2));
+  /* width: calc(100vw - calc(var(--general-padding) * 2)); */
   justify-items: center;
 
   margin-top: var(--general-padding);
@@ -228,7 +211,7 @@ nav #close-menu-icon:active {
 
 @media only screen and (min-width: 900px) {
   #menu-content {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -261,10 +244,10 @@ nav #close-menu-icon:active {
 
 header {
   z-index: 3;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: calc(100vw - calc(var(--horizontal-padding) * 2));
+  width: calc(100vw - calc(var(--body-margin) * 2));
   height: calc(var(--header-height) + 50px);
 
   padding-top: var(--header-vertical-padding);
@@ -309,6 +292,10 @@ main {
 section {
   padding: var(--general-padding);
   /* These settings are only for making the sections visible! */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+
   background-color: var(--light-colour);
   border-bottom: 1px;
   border-left: 0px;
@@ -320,7 +307,7 @@ section {
 }
 
 @media only screen and (min-width: 640px) {
-  section {
+  section, header, nav{
     padding-left: var(--body-margin);
     padding-right: var(--body-margin);
   }
@@ -334,28 +321,25 @@ section {
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
   padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
+  background-position: 0 -100px;
+}
+
+section.intro {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "text text text text text text . . . . . ."
+  "leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . .";
+}
+.intro .text {
+  grid-area: text;
 }
 
 section.full-bleed {
   background-size:cover;
   background-repeat: no-repeat;
-  height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding));
-  padding-bottom: var(--general-padding);
-  display: grid;
-  grid-template-columns: auto 600px auto;
-  grid-template-rows: 100px 200px auto;
-  grid-template-areas: ". . ."
-    ". overlay ."
-    ". . .";
-  border-bottom: 0px;
-  box-shadow: var(--standard-shadow);
-}
-
-@media only screen and (min-width: 640px) {
-  section.full-bleed {
-    padding-bottom: var(--general-padding);
-    height: calc(100vh - var(--header-height) - calc(var(--header-vertical-padding) * 2) - var(--general-padding) - var(--general-padding) - var(--next-section-peek));
-  }
+  height: 60vh;
 }
 
 @media only screen and (max-width: 640px) {
@@ -367,17 +351,11 @@ section.full-bleed {
   }
 }
 
-section.full-bleed .overlay {
-  grid-area: overlay;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "caption caption"
-    "button-left button-right";
-  grid-column-gap: var(--general-padding);
+section.full-bleed h1 {
   justify-items: center;
+  color: var(--light-colour);
+  font-size: 4em;
+  text-align: left;
 }
 
 
@@ -449,19 +427,79 @@ section.music-release {
   display: block;
 }
 
-section.service {
+section.services {
   height: auto;
+  grid-template-areas: "title title title title title title title title title title title title"
+  "left left left left left left right right right right right right";
+  grid-auto-rows: auto auto;
+  background-color: var(--highlight-colour);
 }
 
-section.day-service {
-  background-color: var(--light-colour);
-  color: var(--dark-colour);
+.services>h1 {
+  color: var(--light-colour);
+  padding-bottom: 30px;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: var(--light-colour);
+  border-style: solid;
 }
 
-section.evening-service {
-  background-color: var(--dark-colour);
+.service {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "image"
+  "title"
+  "time"
+  "info";
+}
+
+.service>h1, .service>h2 {
+  font-family: var(--body-font);
+}
+
+.service>h1 {
+  font-size: 1.5em;
   color: var(--light-colour);
 }
+
+.service>h2 {
+  font-size: 1.2em;
+}
+
+.service:nth-of-type(1) {
+  grid-area: left;
+}
+
+.service:nth-of-type(2) {
+  grid-area: right;
+}
+
+.services h1 {
+  grid-area: title;
+}
+
+.service .photo {
+    grid-area: image;
+    background: yellow;
+    height: 300px;
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+
+}
+
+.service .title {
+  grid-area: title;
+}
+
+.service .time {
+  grid-area: time;
+}
+
+.service .info {
+  grid-area: info;
+}
+
 
 footer {
   display: grid;
@@ -485,30 +523,28 @@ address {
   display: block;
   color: var(--button-text-colour);
   background-color: var(--button-colour);
-  min-width: 100px;
+  /* min-width: 100px; */
   padding-left: var(--general-padding);
   padding-right: var(--general-padding);
   height: var(--button-height);
   padding-top: 4px;
   padding-bottom: 4px;
-  border-radius: 3px;
   align-content: center;
   justify-content: center;
-  font-family: var(--heading-font);
-  font-size: 1.5em;
+  font-family: var(--body-font);
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
   line-height: var(--button-height);
   transition: transform 0.05s, background-color 0.05s;
   -webkit-transition: transform 0.05s, background-color 0.05s;
-  box-shadow: var(--standard-shadow);
 }
 
-@media only screen and (min-width: 640px) {
+/* @media only screen and (min-width: 640px) {
   .button {
     min-width: 200px;
   }
-}
+} */
 
 .button:hover {
   transform: scale(1.05);
@@ -521,11 +557,11 @@ address {
 }
 
 .index-top-section-btn:nth-of-type(1) {
-  grid-area: button-left;
+  grid-area: leftbutton;
 }
 
 .index-top-section-btn:nth-of-type(2) {
-  grid-area: button-right;
+  grid-area: rightbutton;
 }
 
 section.person {
@@ -923,10 +959,11 @@ section.people img {
   grid-area: link;
 }
 
-section.map {
+.map {
   margin-left: 0px;
   margin-right: 0px;
   padding: 0px;
+  grid-area: map;
 }
 
 @media only screen and (max-width: 640px) {
@@ -935,18 +972,28 @@ section.map {
   }
 }
 
-section.map iframe {
+.map iframe {
   width: 100%;
   height: 50vh;
   border: 0;
 }
 
 section.findus {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "title title"
-    "address tube"
-    "directions directions";
+  background-color: var(--knockout-background-colour);
+  grid-template-areas: "title title title title title title title title title title title title"
+    "address address address address address address map map map map map map";
+}
+
+.findus h1 {
+  color: var(--light-colour);
+  grid-area: title;
+}
+
+.findus .location {
+  grid-area: address;
+  background-color: var(--light-colour);
+  display: block;
+  padding: var(--general-padding);
 }
 
 @media only screen and (max-width: 640px) {
