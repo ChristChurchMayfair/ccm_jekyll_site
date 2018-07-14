@@ -2,29 +2,32 @@
 
   --section-columns: repeat(12, 1fr);
 
-  --general-padding: 15px;
+  --logo-width: 270px;
+
+  --general-padding: 16px;
   --header-vertical-padding: var(--general-padding);
   --horizontal-padding: var(--general-padding);
   --ios-bottom-furniture-padding: 140px; /*This is tuned for iPhone X only!*/
 
   --next-section-peek: 175px;
 
-  --body-margin: 15vw;
+  --body-margin: 11vw;
 
-  --menu-button-size: 40px;
+  --menu-button-size: 55px;
   --header-height: var(--menu-button-size);
   --nav-height: auto;
   --footer-height: auto;
   --button-height: 30px;
 
-  --base-font-size: 28px;
+  --base-font-size: 22px;
 
   --standard-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 
-  --dark-colour: rgb(16, 14, 40);
-  --light-colour: rgb(246,246,255);
+  --dark-colour: #2F2F2F;
+  --light-colour: white;
   --knockout-background-colour: #656565;
   --header-background-colour: rgba(16,14,40,0.2);
+  --header-background-colour: rgba(255,255,255,0.25);
   --navigation-background-colour: rgba(246,246,255, 0.95);
   /* --button-width: 200px; */
   --button-colour: var(--dark-colour);
@@ -101,9 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-top: 1em;
-  margin-bottom: 0.3em;
+  font-size: 3em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -114,6 +117,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* NAVIGATION */
 
 nav {
   position: absolute;
@@ -155,8 +160,8 @@ nav svg {
 .logo {
   display: inline-block;
   position: relative;
-  height: 40px;
-  width: 180px;
+  /* height: 40px; */
+  width: var(--logo-width);
   transition: transform 0.1s;
 }
 
@@ -170,10 +175,6 @@ nav svg {
 
 nav .logo {
   grid-area: logo;
-}
-
-header svg{
-  fill: var(--dark-colour);
 }
 
 nav #close-menu-icon {
@@ -194,7 +195,7 @@ nav #close-menu-icon:active {
 }
 
 #menu-content {
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: var(--dark-colour);
   grid-area: menu-content;
   /* width: calc(100vw - calc(var(--general-padding) * 2)); */
@@ -242,6 +243,8 @@ nav #close-menu-icon:active {
   font-style: normal;
 }
 
+/* HEADER */
+
 header {
   z-index: 3;
   position: absolute;
@@ -269,6 +272,10 @@ header .logo {
   grid-column: 1;
 }
 
+header svg{
+  fill: var(--dark-colour);
+}
+
 header #open-menu {
   width: calc(var(--menu-button-size) - 10px);
   grid-column: 2;
@@ -294,7 +301,7 @@ section {
   /* These settings are only for making the sections visible! */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 16px;
+  grid-column-gap: var(--general-padding);
 
   background-color: var(--light-colour);
   border-bottom: 1px;
@@ -307,9 +314,11 @@ section {
 }
 
 @media only screen and (min-width: 640px) {
-  section, header, nav{
+  section, header, nav, footer {
     padding-left: var(--body-margin);
     padding-right: var(--body-margin);
+    padding-top: var(--general-padding);
+    padding-bottom: var(--general-padding);
   }
 }
 
@@ -321,12 +330,18 @@ section {
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
   padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
-  background-position: 0 -100px;
+  background-position: 0 -10vh;
+  background-color: magenta;
+}
+
+section:first-of-type h1 {
+  align-self: end;
+  margin-bottom: 0px;
 }
 
 section.intro {
   display: grid;
-  grid-column-gap: 16px;
+  grid-column-gap: var(--general-padding);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "text text text text text text . . . . . ."
@@ -334,12 +349,13 @@ section.intro {
 }
 .intro .text {
   grid-area: text;
+  font-size: 1.4em;
 }
 
 section.full-bleed {
   background-size:cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 450px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -437,7 +453,7 @@ section.services {
 
 .services>h1 {
   color: var(--light-colour);
-  padding-bottom: 30px;
+  padding-bottom: 0.1em;
   border-width: 0px;
   border-bottom-width: 2px;
   border-color: var(--light-colour);
@@ -461,10 +477,15 @@ section.services {
 .service>h1 {
   font-size: 1.5em;
   color: var(--light-colour);
+  margin-bottom: 0.1em;
+  line-height: 1.1;
 }
 
 .service>h2 {
   font-size: 1.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.2em;
+  line-height: 1em;
 }
 
 .service:nth-of-type(1) {
@@ -506,7 +527,6 @@ footer {
   grid-template-columns: 1fr;
   color: var(--light-colour);
   background-color: var(--dark-colour);
-  padding: var(--general-padding);
   font-size: 0.7em;
 }
 
@@ -614,14 +634,25 @@ section.people img {
   width: 200px;
 }
 
+section.sermons {
+  grid-template-areas: "pg pg pg pg pg pg pg pg pg pg pg pg"
+  "ct ct ct ct ct ct ct ct ct ct ct ct "
+  "pg2 pg2 pg2 pg2 pg2 pg2 pg2 pg2 pg2 pg2 pg2 pg2"
+}
+
 #sermon-series-list {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 30px;
 }
 
+.sermon-container {
+  grid-area: ct;
+}
+
 #loading {
   display: none;
+  grid-template-columns: 1 / 12;
 }
 
 #loading svg {
@@ -640,6 +671,13 @@ section.people img {
 
 .page-picker {
   padding-top: calc(var(--general-padding) * 3);
+}
+.page-picker:nth-of-type(1) {
+  grid-area: pg;
+}
+
+.page-picker:nth-of-type(2) {
+  grid-area: pg2;
 }
 
 .pagelink {
@@ -994,6 +1032,21 @@ section.findus {
   background-color: var(--light-colour);
   display: block;
   padding: var(--general-padding);
+
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  grid-template-areas: "address"
+  "button";
+}
+
+.location .button {
+  align-self: end;
+  grid-area: button;
+}
+
+.location .address {
+  grid-area: address;
 }
 
 @media only screen and (max-width: 640px) {
@@ -1004,13 +1057,6 @@ section.findus {
       "tube"
       "directions";
   }
-}
-
-#directions-button {
-  grid-area: directions;
-  width: 400px;
-  justify-content: center;
-  align-content: center;
 }
 
 section.findus h1 {
