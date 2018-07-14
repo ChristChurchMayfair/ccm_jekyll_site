@@ -6,7 +6,7 @@
 
   --general-padding: 16px;
   --header-vertical-padding: var(--general-padding);
-  --horizontal-padding: var(--general-padding);
+  
   --ios-bottom-furniture-padding: 140px; /*This is tuned for iPhone X only!*/
 
   --next-section-peek: 175px;
@@ -45,6 +45,13 @@
   --body-font: 'Klinic Slab';
 }
 
+@media screen and (max-width: 640px) {
+  :root {
+    --logo-width: 180;
+    --body-margin: var(--general-padding);
+  }
+}
+
 @font-face {
   font-family: 'Klinic Slab';
   src: url(../fonts/KlinicSlabMedium.otf);
@@ -52,14 +59,14 @@
 
 @font-face {
   font-family: 'Franchise';
-  src: url(../fonts/franchise-bold-webfont.ttf);
+  src: url(../fonts/Franchise-Bold-hinted.ttf);
 }
 
 body:after{
   content: "Work in Progress";
   position: fixed;
   z-index: 3;
-  width: 180px;
+  width: 180;
   height: 25px;
   background: var(--beta-banner-colour);
   top: 40px;
@@ -255,8 +262,8 @@ header {
 
   padding-top: var(--header-vertical-padding);
   padding-bottom: var(--header-vertical-padding);
-  padding-left: var(--horizontal-padding);
-  padding-right: var(--horizontal-padding);
+  padding-left: var(--body-margin);
+  padding-right: var(--body-margin);
 
   align-content: start;
 
@@ -296,8 +303,14 @@ main {
   grid-row: 1;
 }
 
+section, header, nav, footer {
+  padding-left: var(--body-margin);
+  padding-right: var(--body-margin);
+  padding-top: var(--general-padding);
+  padding-bottom: var(--general-padding);
+}
+
 section {
-  padding: var(--general-padding);
   /* These settings are only for making the sections visible! */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -313,12 +326,9 @@ section {
   /* end */
 }
 
-@media only screen and (min-width: 640px) {
-  section, header, nav, footer {
-    padding-left: var(--body-margin);
-    padding-right: var(--body-margin);
-    padding-top: var(--general-padding);
-    padding-bottom: var(--general-padding);
+@media only screen and (max-width: 640px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -443,12 +453,22 @@ section.music-release {
   display: block;
 }
 
+/* SERVICES */
+
 section.services {
   height: auto;
   grid-template-areas: "title title title title title title title title title title title title"
   "left left left left left left right right right right right right";
   grid-auto-rows: auto auto;
   background-color: var(--highlight-colour);
+}
+
+@media only screen and (max-width: 640px) {
+  section.services {
+    grid-template-areas: "title title title title"
+    "left left left left"
+    "right right right right";
+  }
 }
 
 .services>h1 {
@@ -537,6 +557,7 @@ footer div.item {
 
 address {
   font-style: unset;
+  display: inline;
 }
 
 .button {
@@ -633,6 +654,8 @@ section.people img {
   border-radius: 50%;
   width: 200px;
 }
+
+/* SERMONS/TALKS */
 
 section.sermons {
   grid-template-areas: "pg pg pg pg pg pg pg pg pg pg pg pg"
@@ -860,6 +883,8 @@ section.sermons {
   }  
 }
 
+/* MUSIC RELEASES */
+
 .music-release-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -892,8 +917,6 @@ section.sermons {
   width:158px;
   height:45px;
 }
-
-
 
 .music-release-cover {
   grid-area: cover;
@@ -969,6 +992,8 @@ section.sermons {
   }
 }
 
+/* MUSIC TRAINING VIDEOS */
+
 .music-videos {
   display: grid;
   margin-top: var(--general-padding);
@@ -997,24 +1022,9 @@ section.sermons {
   grid-area: link;
 }
 
-.map {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 0px;
-  grid-area: map;
-}
+/* FIND US */
 
-@media only screen and (max-width: 640px) {
-  section.map {
-    display:none;
-  }
-}
 
-.map iframe {
-  width: 100%;
-  height: 50vh;
-  border: 0;
-}
 
 section.find-us {
   background-color: var(--knockout-background-colour);
@@ -1022,9 +1032,22 @@ section.find-us {
     "address address address address address address map map map map map map";
 }
 
+@media screen and (max-width: 640px) {
+  section.find-us {
+    grid-template-areas: "title title title title"
+    "address address address address"
+  }
+}
+
 .find-us h1 {
   color: var(--light-colour);
   grid-area: title;
+
+  padding-bottom: 0.1em;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  border-color: var(--light-colour);
+  border-style: solid;
 }
 
 .find-us .location {
@@ -1038,6 +1061,10 @@ section.find-us {
   grid-template-columns: auto;
   grid-template-areas: "address"
   "button";
+}
+
+.find-us .address {
+  font-size: 1.5em;
 }
 
 .location .button {
@@ -1067,43 +1094,45 @@ section.find-us h1 {
   grid-area: address;
 }
 
-#tube {
-  grid-area: tube;
-}
-
-p.location-detail {
-  font-size: 1.3em;
-}
-
-svg#roundel {
-  display:inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -5%;
-  margin-right: 0.2em;
-  fill: var(--highlight-colour);
-  stroke: var(--highlight-colour);
-}
-
-svg#map-pin {
-  display:inline-block;
-  width: 30px;
-  height: 30px;
-  vertical-align: -15%;
-  margin-right: 0.2em;
-  fill: var(--highlight-colour);
+.map {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  grid-area: map;
 }
 
 @media only screen and (max-width: 640px) {
-  svg#map-pin,
-  svg#roundel {
-    display: none;
-  }
-  p.location-detail {
-    font-size: 1em;
-    display: inline;
+  .map {
+    display:none;
   }
 }
+
+.map iframe {
+  width: 100%;
+  height: 50vh;
+  border: 0;
+}
+
+/* FIND OUT MORE */
+
+section.find-out-more {
+  display: grid;
+  grid-template-areas: "title title title title title title title title title title title title "
+  "info info info info info info info info photo photo photo photo"
+}
+
+.find-out-more h1 {
+  grid-area: title
+}
+
+.find-out-more .info {
+  grid-area: info;
+}
+
+.find-out-more .photo {
+  grid-area: photo;
+}
+
 
 #home p {
   font-size: 1.4em;

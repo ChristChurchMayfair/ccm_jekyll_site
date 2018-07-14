@@ -1,25 +1,7 @@
 <footer>
-  <div class="item">You can email us: <a href="mailto:info@christchurchmayfair.org">info@christchurchmayfair.org</a></div>
-  <div class="item"><address>The church office is at: Lower Ground Floor, Interpark House, 7 Down Street, London, W1J 7AJ</address></div>
-  <div class="item">You can telephone us on: <a href="tel:+442076295885">020 7629 5885</a></div>
+  <div class="item"><address>The church office is at: <a href="{{ site.office_maps_link }}">{{ site.office_address }}</a></address>. You can telephone us on: <a href="tel:+442076295885">020 7629 5885</a></div>
   <div class="item">Christ Church Mayfair is a <a href="https://www.churchofengland.org">Church of England</a> church and a member of the <a href="https://co-mission.org">Co-Mission</a> church planting network</div>
-  <div class="item">"The Bible Talks" is a registered charity, charity number <a href="http://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithPartB.aspx?RegisteredCharityNumber=1092036&SubsidiaryNumber=0">1092036</a></div>
-  <div class="item">Read our <a href="privacy-policy.html">Privacy & Cookie Podivcy</a></div>
-  <div class="item">This website is © Copyright Christ Church Mayfair 2018. All Rights Reserved</div>
+  <div class="item">We're a registered charity, named "The Bible Talks", and our charity number is <a href="http://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithPartB.aspx?RegisteredCharityNumber={{ site.ccm_charity_number }}&SubsidiaryNumber=0">{{ site.ccm_charity_number }}</a></div>
+  <div class="item">This website is © Copyright Christ Church Mayfair 2018. All Rights Reserved. Read our <a href="privacy-policy.html">Privacy & Cookie Podivcy</a>. </div>
 </footer>
 
-<div id="viewsizedebug"></div>
-
-<script type="text/javascript">
-  function writeViewPortSize() {
-    var viewportwidth;
-    var viewportheight;
-    if (typeof window.innerWidth != 'undefined') {
-      viewportwidth = window.innerWidth;
-      viewportheight = window.innerHeight;
-    }
-    document.getElementById("viewsizedebug").textContent = 'Debug: w:'+viewportwidth+'px ⨉ h:'+viewportheight+'px'; 
-  }
-  window.addEventListener('resize',writeViewPortSize);
-  writeViewPortSize();
-</script>
