@@ -1121,7 +1121,18 @@ section.find-us h1 {
 section.find-out-more {
   display: grid;
   grid-template-areas: "title title title title title title title title title title title title "
-  "info info info info info info info info photo photo photo photo"
+  "info info info info info info info info photo photo photo photo";
+}
+
+@media screen and (max-width: 640px) {
+  section.find-out-more {
+    grid-template-areas: "title title title title"
+    "info info info info";
+  }
+
+  .find-out-more .photo {
+    display: none;
+  }
 }
 
 .find-out-more h1 {
