@@ -4,6 +4,8 @@
 
   --logo-height: 60px;
 
+  --hero-height:540px;
+
   --general-padding: 16px;
   --header-vertical-padding: var(--general-padding);
   
@@ -28,6 +30,7 @@
   --knockout-background-colour: #656565;
   --header-background-colour: rgba(16,14,40,0.2);
   --header-background-colour: rgba(255,255,255,0.25);
+  --header-background-colour: rgba(255,255,255,0.0);
   --navigation-background-colour: rgba(246,246,255, 0.95);
   /* --button-width: 200px; */
   --button-colour: var(--dark-colour);
@@ -109,6 +112,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+  text-transform: uppercase;
 }
 
 h1 {
@@ -283,7 +287,7 @@ header .logo {
 }
 
 header svg{
-  fill: var(--dark-colour);
+  fill: var(--light-colour);
 }
 
 header #open-menu {
@@ -306,7 +310,7 @@ main {
   grid-row: 1;
 }
 
-section, header, nav, footer {
+section, header, nav, footer, section.full-bleed>div {
   padding-left: var(--body-margin);
   padding-right: var(--body-margin);
   padding-top: var(--general-padding);
@@ -342,9 +346,16 @@ section {
 /* Special first one with padding to pull content below the header */
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
 section:first-of-type {
-  padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
-  background-position: 0 -10vh;
-  background-color: magenta;
+  padding: 0;
+}
+
+section.full-bleed {
+grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero"
+  "intro intro intro intro intro intro intro intro intro intro intro intro ";
+}
+
+.full-bleed .hero {
+  grid-area: hero;
 }
 
 section:first-of-type h1 {
@@ -352,7 +363,8 @@ section:first-of-type h1 {
   margin-bottom: 0px;
 }
 
-section.intro {
+.intro {
+  grid-area: intro;
   display: grid;
   grid-column-gap: var(--general-padding);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -360,34 +372,46 @@ section.intro {
   grid-template-areas: "text text text text text text . . . . . ."
   "leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . .";
 }
+
+@media screen and (max-width: 640px) {
+  .intro {
+    position: absolute;
+    bottom: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text text"
+    "leftbutton rightbutton";
+  }
+}
+
 .intro .text {
   grid-area: text;
   font-size: 1.4em;
 }
 
-section.full-bleed {
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 450px;
-}
-
-@media only screen and (max-width: 640px) {
-  section.full-bleed {
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto;
-    grid-template-areas: "."
-      "overlay";
+@media screen and (max-width: 640px) {
+  .intro .text {
+    font-size: 1em;
+    color: var(--light-colour);
   }
 }
 
-section.full-bleed h1 {
-  justify-items: center;
-  color: var(--light-colour);
-  font-size: 4em;
-  text-align: left;
+.hero {
+  padding-top: calc(var(--header-height) + calc(var(--header-vertical-padding) * 2) + var(--general-padding));
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: var(--hero-height);
 }
 
+.hero h1 {
+  color: var(--light-colour);
+  font-size: 5.6em;
+  text-align: left;
+  
+  position: absolute;
+  top: 400px;
+}
 
+/* PROMOTIONAL */
 
 .promotion {
   height: var(--next-section-peek);

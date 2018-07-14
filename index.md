@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Christ Church Mayfair
-mainImage: assets/images/vonecia-carswell-587758-unsplash.jpg
+mainImage: assets/images/alex_lucas_kg_bbq_cropped.jpg
 overlayCaption: welcome
 ---
 
