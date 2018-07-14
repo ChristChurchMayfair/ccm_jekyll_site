@@ -1016,18 +1016,18 @@ section.sermons {
   border: 0;
 }
 
-section.findus {
+section.find-us {
   background-color: var(--knockout-background-colour);
   grid-template-areas: "title title title title title title title title title title title title"
     "address address address address address address map map map map map map";
 }
 
-.findus h1 {
+.find-us h1 {
   color: var(--light-colour);
   grid-area: title;
 }
 
-.findus .location {
+.find-us .location {
   grid-area: address;
   background-color: var(--light-colour);
   display: block;
@@ -1050,7 +1050,7 @@ section.findus {
 }
 
 @media only screen and (max-width: 640px) {
-  section.findus {
+  section.find-us {
     grid-template-columns: 1fr;
     grid-template-areas: "title"
       "address"
@@ -1059,7 +1059,7 @@ section.findus {
   }
 }
 
-section.findus h1 {
+section.find-us h1 {
   grid-area: title;
 }
 
