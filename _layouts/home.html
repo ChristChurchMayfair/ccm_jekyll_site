@@ -6,21 +6,28 @@ layout: default
 
 {% assign services = site.services | where: "type", "service" %}
 
-<section class="full-bleed">
-  <div class="hero" style="background-image: url({{ page.mainImage }});">
-    <h1>{{ page.overlayCaption }}</h1>
+
+
+<section class="hero" responsive-background-image>
+  <img class="responsive-background" src="/images/test-1600.jpg"
+    sizes="
+      (min-width: 640px) 100vw,
+      (max-width: 640px) 100vw"
+    srcset="
+      {{ page.mainImage }} 3840w,
+      {{ page.mobileImage }} 2147w" >
+  <h1>{{ page.overlayCaption }}</h1>
+</section>
+<section class="intro">
+  <div class="text">
+    {{ content }}
   </div>
-  <div class="intro">
-    <div class="text">
-      {{ content }}
-    </div>
-    <a id="find-us-button" class="button index-top-section-btn" href="#find-us">
-      Find Us
-    </a>
-    <a id="services-button"   class="button index-top-section-btn" href="#services">
-      Our Meetings
-    </a>
-  </div>
+  <a id="find-us-button" class="button index-top-section-btn" href="#find-us">
+    Find Us
+  </a>
+  <a id="services-button"   class="button index-top-section-btn" href="#services">
+    Our Meetings
+  </a>
 </section>
 
 {%- if events.size > 0 -%}

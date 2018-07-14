@@ -4,7 +4,8 @@
 
   --logo-height: 60px;
 
-  --hero-height:540px;
+  --hero-height: 50vh;
+  --hero-font-size: 5.6em;
 
   --general-padding: 16px;
   --header-vertical-padding: var(--general-padding);
@@ -29,8 +30,8 @@
   --light-colour: white;
   --knockout-background-colour: #656565;
   --header-background-colour: rgba(16,14,40,0.2);
-  --header-background-colour: rgba(255,255,255,0.25);
-  --header-background-colour: rgba(255,255,255,0.0);
+  /* --header-background-colour: rgba(255,255,255,0.25);
+  --header-background-colour: rgba(255,255,255,0.0); */
   --navigation-background-colour: rgba(246,246,255, 0.95);
   /* --button-width: 200px; */
   --button-colour: var(--dark-colour);
@@ -38,7 +39,7 @@
   --alternate-tabular-highlight: rgba(16, 14, 40,0.03);
   --button-push-colour: rgb(200,200,200);
   --theme-colour: rgba(74,127,197,1);
-  --highlight-colour: #59A0BC;
+  --highlight-colour: rgb(65,150,190);
 
   --menu-transition-time: 0.2s;
 
@@ -50,9 +51,10 @@
 
 @media screen and (max-width: 640px) {
   :root {
-    --logo-width: 180;
     --body-margin: var(--general-padding);
-    --logo-height: 40px;
+    --logo-height: 15vw;
+    --hero-height: 55vh;
+    --hero-font-size: 4em;
   }
 }
 
@@ -130,6 +132,10 @@ a:hover {
   text-decoration: underline;
 }
 
+[responsive-background-image] img {
+  display: none;
+}
+
 /* NAVIGATION */
 
 nav {
@@ -191,6 +197,10 @@ nav .logo {
   grid-area: logo;
 }
 
+nav a {
+  color: var(--dark-colour);
+}
+
 nav #close-menu-icon {
   width: calc(var(--menu-button-size) - 10px);
   grid-area: menu-button;
@@ -210,7 +220,6 @@ nav #close-menu-icon:active {
 
 #menu-content {
   font-size: 0.8em;
-  color: var(--dark-colour);
   grid-area: menu-content;
   /* width: calc(100vw - calc(var(--general-padding) * 2)); */
   justify-items: center;
@@ -246,14 +255,12 @@ nav #close-menu-icon:active {
 
 #menu-content a {
   font-size: 1.3em;
-  color: var(--dark-colour);
   font-style: normal;
   display: block;
 }
 
 #menu-content a:visited {
   font-size: 1.3em;
-  color: var(--dark-colour);
   font-style: normal;
 }
 
@@ -273,13 +280,38 @@ header {
   padding-right: var(--body-margin);
 
   align-content: start;
-
   display: grid;
+  background: linear-gradient(var(--header-background-colour), rgba(0,0,0,0));
+}
+
+header.desktop-header {
+  
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "logo menu-content";
+}
+
+header.desktop-header a {
+  color: var(--light-colour);
+}
+
+header.mobile-header {
   grid-template-columns: auto var(--menu-button-size);
   column-gap: var(--general-padding);
   align-items: center;
+  
+}
 
-  background: linear-gradient(var(--header-background-colour), rgba(0,0,0,0));
+@media screen and (min-width: 640px) {
+  header.mobile-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header.desktop-header {
+    display: none;
+  }
 }
 
 header .logo {
@@ -345,13 +377,12 @@ section {
 
 /* Special first one with padding to pull content below the header */
 /* and padding to pull action buttons up so they are not hidden by iOS furniture!*/
-section:first-of-type {
+/* section:first-of-type {
   padding: 0;
-}
+} */
 
 section.full-bleed {
-grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero"
-  "intro intro intro intro intro intro intro intro intro intro intro intro ";
+  grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero";
 }
 
 .full-bleed .hero {
@@ -363,23 +394,15 @@ section:first-of-type h1 {
   margin-bottom: 0px;
 }
 
-.intro {
-  grid-area: intro;
-  display: grid;
-  grid-column-gap: var(--general-padding);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+section.intro {
   grid-template-areas: "text text text text text text . . . . . ."
   "leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . .";
 }
 
 @media screen and (max-width: 640px) {
-  .intro {
-    position: absolute;
-    bottom: 200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "text text"
-    "leftbutton rightbutton";
+  section.intro {
+    grid-template-areas: "text text text text"
+    "leftbutton leftbutton rightbutton rightbutton";
   }
 }
 
@@ -391,7 +414,6 @@ section:first-of-type h1 {
 @media screen and (max-width: 640px) {
   .intro .text {
     font-size: 1em;
-    color: var(--light-colour);
   }
 }
 
@@ -404,11 +426,13 @@ section:first-of-type h1 {
 
 .hero h1 {
   color: var(--light-colour);
-  font-size: 5.6em;
+  font-size: var(--hero-font-size);
   text-align: left;
+  line-height: 1em;
+  /* position: absolute;
+  /* This is lame and needs fixing! */
+  /* top: calc(var(--hero-height) - calc(var(--hero-font-size) / 3));*/
   
-  position: absolute;
-  top: 400px;
 }
 
 /* PROMOTIONAL */

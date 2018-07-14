@@ -2,6 +2,7 @@
 layout: home
 title: Christ Church Mayfair
 mainImage: assets/images/alex_lucas_kg_bbq_cropped.jpg
+mobileImage: assets/images/alex_lucas_kg_bbq_mobile_crop.jpg
 overlayCaption: welcome
 ---
 
