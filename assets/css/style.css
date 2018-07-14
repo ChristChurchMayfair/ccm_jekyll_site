@@ -2,7 +2,7 @@
 
   --section-columns: repeat(12, 1fr);
 
-  --logo-width: 270px;
+  --logo-height: 60px;
 
   --general-padding: 16px;
   --header-vertical-padding: var(--general-padding);
@@ -49,6 +49,7 @@
   :root {
     --logo-width: 180;
     --body-margin: var(--general-padding);
+    --logo-height: 40px;
   }
 }
 
@@ -164,19 +165,21 @@ nav svg {
   fill: var(--dark-colour);
 }
 
+.logo svg {
+  height: var(--logo-height);
+}
+
 .logo {
   display: inline-block;
   position: relative;
-  /* height: 40px; */
-  width: var(--logo-width);
   transition: transform 0.1s;
 }
 
-.logo:hover {
+.logo svg:hover {
   transform: scale(1.05);
 }
 
-.logo:active {
+.logo svg:active {
   transform: scale(0.9);
 }
 
