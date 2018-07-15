@@ -689,6 +689,16 @@ section.about-us {
   height: 70vh;
 }
 
+@media screen and (max-width:640px) {
+  section.about-us {
+    height:auto;
+  }
+
+  section.about-us h1 {
+    font-size: 3em;
+  }
+}
+
 section.dark {
   background-color: var(--dark-colour);
   color: var(--light-colour);
@@ -697,6 +707,18 @@ section.dark {
 section.image-right {
   grid-template-areas: ". text text text text text . image image image image image image image";
   padding: 0;
+}
+
+@media screen and (max-width:640px) {
+  section.image-right {
+    grid-template-areas: ". text text text text ."
+    ". image image image image .";
+}
+
+@media screen and (max-width:640px) {
+  section.fancy-overlay {
+    grid-template-areas: ". text text text text ."
+    ". image image image image .";
 }
 
 .about-us h1 {
@@ -720,9 +742,17 @@ section.full-bleed {
   background-size: cover;
 }
 
+@media screen and (max-width:640px) {
+  section.full-bleed {
+    grid-template-areas: ". text text text text .";
+  }
+}
+
 .full-bleed .text {
   grid-area: text;
 }
+
+/* STAFF */
 
 section.staff {
    background-color: var(--highlight-colour);
@@ -741,6 +771,8 @@ div.person {
   grid-column-gap: var(--general-padding);
   background-color: var(--light-colour);
 }
+
+div.person:nth-last-of-type(1)
 
 div.person:nth-of-type(even) {
   grid-column: 8 / span 6;

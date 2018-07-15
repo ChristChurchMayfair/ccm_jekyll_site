@@ -62,32 +62,3 @@ layout: default
   </div>
   {% endfor %}
 </section>
-  
-<section id="trainees" class="people">
-  <h1>Trainees</h1>
-  {% assign trainees = site.people | where: "type", "trainee" %}
-
-  {% for person in trainees %}
-  <div id="{{ person.name | replace: " ", "_" }}" class="person trainee">
-    <div class="title">
-      <h2>{{ person.name }}</h2>
-    </div>
-    <img src="assets/headshots/{{person.headshot}}">
-  </div>
-  {% endfor %}
-</section>
-
-<section id="elders" class="people">
-  <h1>Elders</h1>
-  {% assign elders = site.people | where: "type", "elder" %}
-
-  {% for person in elders %}
-  <div id="{{ person.name | replace: " ", "_" }}" class="person elder">
-    <div class="title">
-      <h2>{{ person.name }}</h2>
-    </div>
-    <img src="assets/headshots/{{person.headshot}}">
-  </div>
-  {% endfor %}
-
-</section>
