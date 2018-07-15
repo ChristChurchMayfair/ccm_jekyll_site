@@ -427,7 +427,7 @@ section.intro.wider {
 
 @media screen and (max-width: 640px) {
   section.intro {
-    grid-template-areas: ". text text text text ."
+    grid-template-areas: ". content content content content ."
     ". leftbutton leftbutton rightbutton rightbutton .";
   }
 }
