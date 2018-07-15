@@ -2,21 +2,21 @@
 layout: default
 ---
 <section class="hero" responsive-background-image>
-    <img class="responsive-background" src="/images/test-1600.jpg"
-      sizes="
-        (min-width: 640px) 100vw,
-        (max-width: 640px) 100vw"
-      srcset="
-        {{ page.mainImage }} 3840w,
-        {{ page.mobileImage }} 2147w" >
-    <h1>{{ page.overlayCaption }}</h1>
-  </section>
+  <img class="responsive-background" src="/images/test-1600.jpg"
+    sizes="
+      (min-width: 640px) 100vw,
+      (max-width: 640px) 100vw"
+    srcset="
+      {{ page.mainImage }} 3840w,
+      {{ page.mobileImage }} 2147w" >
+  <h1>{{ page.overlayCaption }}</h1>
+</section>
 
-  <section class="intro">
-    <div class="text">
-      {{ content }}
-    </div>
-  </section>
+<section class="intro">
+  <div class="text">
+    {{ content }}
+  </div>
+</section>
 
   <section class="about-us dark image-right">
     <div class="text"><h1>Speaking of Jesus</h1>

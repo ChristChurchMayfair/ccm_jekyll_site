@@ -1,26 +1,40 @@
 ---
 layout: default
 ---
-<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
-  <div class="overlay">
-    <div class="caption-overlay">
-      <h1>{{ page.overlayCaption }}</h1>
-    </div>
+<section class="hero centred" responsive-background-image>
+  <img class="responsive-background" src="/images/test-1600.jpg"
+    sizes="
+      (min-width: 640px) 100vw,
+      (max-width: 640px) 100vw"
+    srcset="
+      {{ page.mainImage }} 3840w,
+      {{ page.mobileImage }} 2147w" >
+  <h1>{{ page.overlayCaption }}</h1>
+</section>
+<section class="intro wider">
+  <div>
+  {{ content }}
   </div>
 </section>
-<section>
-  {{ content }}
+<section class="about-us dark image-right">
+  <div class="text"><h1>For all Ages</h1>
+    We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+  </div>
+  <img src="/assets/images/bella_bible_study_cropped.jpg"/>
 </section>
-{% assign childrenspages = site.pages | where: 'section', 'children' %}
-{% for subpage in childrenspages %}
-<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
-        <div class="overlay">
-          <div class="caption-overlay">
-            <h1>{{ subpage.overlayCaption }}</h1>
-          </div>
-        </div>
-      </section>
-<section>
-   {{ subpage.content }}
+
+<section class="about-us full-bleed" responsive-background-image>
+  <img src="/assets/images/von_cropped.jpg"/>
+  <div class="text">
+    <h1>Little Lambs</h1>
+    We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+  </div>
 </section>
-{% endfor %}
+<section class="bio">
+    <img src="/assets/images/von_cropped.jpg"/>
+    <div class="text">
+      <h1>James Kight</h1>
+      <h2>Children's Worker</h2>
+      We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+    </div>
+</section>

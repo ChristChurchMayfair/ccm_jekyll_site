@@ -417,8 +417,12 @@ section:first-of-type h1 {
 }
 
 section.intro {
-  grid-template-areas: ". text text text text text text . . . . . . ."
+  grid-template-areas: ". content content content content content content . . . . . . ."
   ". leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . . .";
+}
+
+section.intro.wider {
+  grid-template-areas: ". content content content content content content content content content . . . .";
 }
 
 @media screen and (max-width: 640px) {
@@ -429,7 +433,7 @@ section.intro {
 }
 
 .intro .text {
-  grid-area: text;
+  grid-area: content;
   font-size: 1.4em;
 }
 
@@ -444,7 +448,12 @@ section.intro {
   background-size:cover;
   background-repeat: no-repeat;
   height: var(--hero-height);
-  grid-template-areas: ". text text text . . . . . . . . . .";
+  grid-template-areas: ". text text text text . . . . . . . . .";
+}
+
+.hero.centred {
+  grid-template-areas: ". . . text text text text text text text text . . .";
+  justify-items: center
 }
 
 .hero h1 {

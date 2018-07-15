@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
-<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
-  <div class="overlay">
-    <div class="caption-overlay">
-      <h1>{{ page.overlayCaption }}</h1>
+<section class="hero" responsive-background-image>
+    <img class="responsive-background" src="/images/test-1600.jpg"
+      sizes="
+        (min-width: 640px) 100vw,
+        (max-width: 640px) 100vw"
+      srcset="
+        {{ page.mainImage }} 3840w,
+        {{ page.mobileImage }} 2147w" >
+    <h1>{{ page.overlayCaption }}</h1>
+  </section>
+  
+  <section class="intro wider">
+    <div class="text">
+      {{ content }}
     </div>
-  </div>
-</section>
-
-<section>
-  {{ content }}
-</section>
+  </section>
 
 <a name="releases"></a>
 {%- include music_releases.html -%}
