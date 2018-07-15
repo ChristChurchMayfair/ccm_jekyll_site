@@ -235,7 +235,8 @@ nav #close-menu-icon:active {
 
 @media only screen and (min-width: 900px) {
   #menu-content {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: var(--general-padding);
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 
