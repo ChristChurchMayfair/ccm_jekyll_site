@@ -4,7 +4,7 @@
 
   --logo-height: 60px;
 
-  --hero-height: 50vh;
+  --hero-height: 55vh;
   --hero-font-size: 5.6em;
 
   --general-padding: 16px;
@@ -154,7 +154,7 @@ nav {
   padding-bottom: var(--header-vertical-padding);
 
   grid-template-columns: auto var(--menu-button-size);
-  grid-template-rows: var(--header-height) auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "logo menu-button"
     "menu-content menu-content";
@@ -257,6 +257,24 @@ nav #close-menu-icon:active {
   font-size: 1.3em;
   font-style: normal;
   display: block;
+  line-height: 1em;
+  height: 1.2em;;
+}
+
+#menu-content a.current {
+  border-bottom-color: var(--light-colour);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+#menu-content a:hover {
+  font-size: 1.3em;
+  font-style: normal;
+  display: block;
+  text-decoration: none;
+  border-bottom-color: var(--light-colour);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
 }
 
 #menu-content a:visited {
@@ -342,7 +360,7 @@ main {
   grid-row: 1;
 }
 
-section, header, nav, footer, section.full-bleed>div {
+header, nav, footer {
   padding-left: var(--body-margin);
   padding-right: var(--body-margin);
   padding-top: var(--general-padding);
@@ -350,9 +368,12 @@ section, header, nav, footer, section.full-bleed>div {
 }
 
 section {
-  /* These settings are only for making the sections visible! */
+  padding-top: var(--general-padding);
+  padding-bottom: var(--general-padding);
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: calc(var(--body-margin) - var(--general-padding)) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(var(--body-margin) - var(--general-padding));
+  grid-template-areas: ". content content content content content content content content content content content content .";
   grid-column-gap: var(--general-padding);
 
   background-color: var(--light-colour);
@@ -365,9 +386,17 @@ section {
   /* end */
 }
 
+section div {
+  grid-area: content;
+}
+
+section.highlight {
+  background-color: var(--highlight-colour);
+}
+
 @media only screen and (max-width: 640px) {
   section {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0px 1fr 1fr 1fr 1fr 0px;
   }
 }
 
@@ -381,28 +410,20 @@ section {
   padding: 0;
 } */
 
-section.full-bleed {
-  grid-template-areas: "hero hero hero hero hero hero hero hero hero hero hero hero";
-}
-
-.full-bleed .hero {
-  grid-area: hero;
-}
-
 section:first-of-type h1 {
   align-self: end;
   margin-bottom: 0px;
 }
 
 section.intro {
-  grid-template-areas: "text text text text text text . . . . . ."
-  "leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . .";
+  grid-template-areas: ". text text text text text text . . . . . . ."
+  ". leftbutton leftbutton leftbutton rightbutton rightbutton rightbutton . . . . . . .";
 }
 
 @media screen and (max-width: 640px) {
   section.intro {
-    grid-template-areas: "text text text text"
-    "leftbutton leftbutton rightbutton rightbutton";
+    grid-template-areas: ". text text text text ."
+    ". leftbutton leftbutton rightbutton rightbutton .";
   }
 }
 
@@ -422,9 +443,11 @@ section.intro {
   background-size:cover;
   background-repeat: no-repeat;
   height: var(--hero-height);
+  grid-template-areas: ". text text text . . . . . . . . . .";
 }
 
 .hero h1 {
+  grid-area: text;
   color: var(--light-colour);
   font-size: var(--hero-font-size);
   text-align: left;
@@ -508,17 +531,17 @@ section.music-release {
 
 section.services {
   height: auto;
-  grid-template-areas: "title title title title title title title title title title title title"
-  "left left left left left left right right right right right right";
+  grid-template-areas: ". title title title title title title title title title title title title ."
+  ". left left left left left left right right right right right right .";
   grid-auto-rows: auto auto;
   background-color: var(--highlight-colour);
 }
 
 @media only screen and (max-width: 640px) {
   section.services {
-    grid-template-areas: "title title title title"
-    "left left left left"
-    "right right right right";
+    grid-template-areas: ". title title title title ."
+    ". left left left left ."
+    " .right right right right .";
   }
 }
 
@@ -632,12 +655,6 @@ address {
   -webkit-transition: transform 0.05s, background-color 0.05s;
 }
 
-/* @media only screen and (min-width: 640px) {
-  .button {
-    min-width: 200px;
-  }
-} */
-
 .button:hover {
   transform: scale(1.05);
   text-decoration: none;
@@ -656,15 +673,76 @@ address {
   grid-area: rightbutton;
 }
 
-section.person {
+/* ABOUT US */
+
+section.about-us {
+  height: 70vh;
+}
+
+section.dark {
+  background-color: var(--dark-colour);
+  color: var(--light-colour);
+}
+
+section.image-right {
+  grid-template-areas: ". text text text text text . image image image image image image image";
+  padding: 0;
+}
+
+.about-us h1 {
+  font-size: 6em;
+  line-height: 1em;
+}
+
+.about-us .text {
+  grid-area: text;
+}
+
+.image-right img {
+  grid-area: image;
+  width: 50vw;
+}
+
+section.full-bleed {
+  grid-template-areas: ". text text text text text . . . . . . . .";
+  padding: 0;
+  color: var(--light-colour);
+  background-size: cover;
+}
+
+.full-bleed .text {
+  grid-area: text;
+}
+
+section.staff {
+   background-color: var(--highlight-colour);
+}
+
+section.ministry {
+  grid-auto-rows: 300px;
+  grid-auto-flow: column;
+}
+
+div.person {
+  grid-column: 2 / span 6;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "photo text";
   grid-column-gap: var(--general-padding);
-  grid-template-columns: 1fr 1.618fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "photo title"
-    "photo bio";
-  justify-items: center;
-  align-items: center;
+  background-color: var(--light-colour);
+}
+
+div.person:nth-of-type(even) {
+  grid-column: 8 / span 6;
+}
+
+div.person .info {
+  grid-area: text;
+}
+
+div.person img {
+  grid-area: photo;
+  height: 100px;
 }
 
 section.person:nth-of-type(even) {
@@ -1079,14 +1157,14 @@ section.sermons {
 
 section.find-us {
   background-color: var(--dark-colour);
-  grid-template-areas: "title title title title title title title title title title title title"
-    "address address address address address address map map map map map map";
+  grid-template-areas: ". title title title title title title title title title title title title ."
+    ". address address address address address address map map map map map map .";
 }
 
 @media screen and (max-width: 640px) {
   section.find-us {
-    grid-template-areas: "title title title title"
-    "address address address address"
+    grid-template-areas: ". title title title title ."
+    ". address address address address .";
   }
 }
 
@@ -1127,7 +1205,7 @@ section.find-us {
   grid-area: address;
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   section.find-us {
     grid-template-columns: 1fr;
     grid-template-areas: "title"
@@ -1135,7 +1213,7 @@ section.find-us {
       "tube"
       "directions";
   }
-}
+} */
 
 section.find-us h1 {
   grid-area: title;
@@ -1168,14 +1246,14 @@ section.find-us h1 {
 
 section.find-out-more {
   display: grid;
-  grid-template-areas: "title title title title title title title title title title title title "
-  "info info info info info info info info photo photo photo photo";
+  grid-template-areas: ". title title title title title title title title title title title title ."
+  ". info info info info info info info info photo photo photo photo .";
 }
 
 @media screen and (max-width: 640px) {
   section.find-out-more {
-    grid-template-areas: "title title title title"
-    "info info info info";
+    grid-template-areas: ". title title title title ."
+    ". info info info info .";
   }
 
   .find-out-more .photo {

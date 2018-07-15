@@ -35,7 +35,7 @@ function drawPageLinks(seriesCountData) {
 
 function updatePageWithSermons(sermon_data) {
 
-  var sermonSeriesSection = document.getElementById("sermon-series-list");
+  var sermonSeriesSection = document.getElementById("sermon-container");
 
   var sermonSeriesTemplate = document.getElementById('sermon_series_template');
   var sermonTemplate = document.getElementById('sermon-template');
@@ -187,7 +187,7 @@ function setCurrentPageCSSClass(newCurrentPageNumber) {
 
 function loadPage(pageNumber,query) {
   //clear out the old content before we load new stuff in.
-  clearDivById("sermon-series-list");
+  clearDivById("sermon-container");
   showLoading();
 
   sleep(50).then(() => {

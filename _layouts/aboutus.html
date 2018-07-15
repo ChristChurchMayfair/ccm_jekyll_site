@@ -1,35 +1,67 @@
 ---
 layout: default
 ---
-<section class="full-bleed" style="background-image: url({{ page.mainImage }});">
-    <div class="overlay">
-      <div class="caption-overlay">
-        <h1>{{ page.overlayCaption }}</h1>
-      </div>
+<section class="hero" responsive-background-image>
+    <img class="responsive-background" src="/images/test-1600.jpg"
+      sizes="
+        (min-width: 640px) 100vw,
+        (max-width: 640px) 100vw"
+      srcset="
+        {{ page.mainImage }} 3840w,
+        {{ page.mobileImage }} 2147w" >
+    <h1>{{ page.overlayCaption }}</h1>
+  </section>
+
+  <section class="intro">
+    <div class="text">
+      {{ content }}
     </div>
   </section>
 
-<section>
-  {{ content }}
-</section>
+  <section class="about-us dark image-right">
+    <div class="text"><h1>Speaking of Jesus</h1>
+      We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+    </div>
+    <img src="/assets/images/bella_bible_study_cropped.jpg"/>
+  </section>
+
+  <section class="about-us full-bleed" responsive-background-image>
+    <img src="/assets/images/von_cropped.jpg"/>
+    <div class="text">
+      <h1>Growing Together</h1>
+      We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+    </div>
+  </section>
+
+  <section class="about-us fancy-overlay">
+    <!-- <img src="/assets/images/von_cropped.jpg"/> -->
+    <div class="text">
+      <h1>Serving Our City</h1>
+      We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+    </div>
+  </section>
 
 {% assign staff = site.people | where: "type", "staff" | sort: "order" %}
-<section>
-  <h1>Leadership, Staff and Trainees</h1>
+<section class="highlight">
+  <div>
+  <h1>Ministry Team</h1>
   Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
+  </div>
 </section>
 
+<section class="staff ministry">
 {% for person in staff %}
-<section id="{{ person.name | replace: " ", "_" }}" class="person staff">
-    <div class="title">
-  <h1>{{ person.name }}</h1>
-  <p class="role">{{ person.role }}</p>
-</div>
-  <img src="assets/headshots/{{person.headshot}}">
-  <a class="email" href="mailto:{{ person.email }}">Email</a>
-  <div class="bio">{{ person.content }}</div>
-  </section>
+  <div id="{{ person.name | replace: " ", "_" }}" class="person ministry">
+    <div class="info">
+      <h1>{{ person.name }}</h1>
+      <p class="role">{{ person.role }}</p>
+      <a class="email" href="mailto:{{ person.email }}">Email</a>
+    <div class="bio">{{ person.content }}</div>
+    </div>
+    <img src="assets/headshots/{{person.headshot}}">
+  </div>
   {% endfor %}
+</section>
   
 <section id="trainees" class="people">
   <h1>Trainees</h1>
