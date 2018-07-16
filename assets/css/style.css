@@ -713,12 +713,14 @@ section.image-right {
   section.image-right {
     grid-template-areas: ". text text text text ."
     ". image image image image .";
+  }
 }
 
 @media screen and (max-width:640px) {
   section.fancy-overlay {
     grid-template-areas: ". text text text text ."
     ". image image image image .";
+  }
 }
 
 .about-us h1 {
@@ -750,6 +752,33 @@ section.full-bleed {
 
 .full-bleed .text {
   grid-area: text;
+}
+
+section.bio {
+  grid-template-areas: ". name name name name name name name name name name name name ."
+  ". photo photo info info info info info info info info info info .";
+  grid-template-rows: auto, 100px;
+}
+
+@media screen and (max-width:640px) {
+  section.bio {
+    grid-template-areas: ". name name name name ."
+    ". photo photo info info .";
+  }
+}
+
+.bio img {
+  grid-area: photo;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bio .text {
+  grid-area: info;
+}
+
+.bio h1 {
+  grid-area: name;
 }
 
 /* STAFF */
