@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:tomduckering/ccm_jekyll_theme.git
+  revision: c2cfcf08c01ab23abfe0e2ad0843e4527542cdb8
+  specs:
+    ccm-2018 (0.1.0)
+      jekyll (~> 3.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -87,10 +94,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ccm-2018!
   html-proofer
   jekyll (~> 3.8.0)
   jekyll-feed (~> 0.6)
   tzinfo-data
 
 BUNDLED WITH
-   1.15.4
+   1.16.2
