@@ -554,8 +554,8 @@ section.services {
 @media only screen and (max-width: 768px) {
   section.services {
     grid-template-areas: ". title title title title ."
-    "left left left left left left"
-    "right right right right right right";
+    ". left left left left ."
+    ". right right right right .";
   }
 }
 
@@ -576,12 +576,6 @@ section.services {
   "title"
   "time"
   "info";
-}
-
-@media screen and (max-width:798px) {
-  .service {
-    padding: var(--general-padding);
-  }
 }
 
 .service>h1, .service>h2 {

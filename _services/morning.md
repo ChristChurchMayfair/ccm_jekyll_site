@@ -4,7 +4,7 @@ dayOfWeek: Sunday
 timeOfDay: day
 type: service
 time: "10:15am"
-image: assets/images/neonbrand-615710-unsplash.jpg
+image: assets/images/hand_in_the_air.jpg
 ---
 Relaxed family worship, childrens' teaching and sunday schools.
 

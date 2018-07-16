@@ -4,7 +4,7 @@ dayOfWeek: Sunday
 timeOfDay: evening
 type: service
 time: "6:00pm"
-image: assets/images/haley-rivera-540388-unsplash.jpg
+image: assets/images/behind_ben_slee.jpg
 ---
 Contemporary worship, serious Bible teaching, followed by socialising.
 
