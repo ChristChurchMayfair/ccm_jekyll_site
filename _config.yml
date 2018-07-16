@@ -26,8 +26,18 @@ github_username:  jekyll
 office_maps_link: https://www.google.com/maps/place/Interpark+House/@51.5053727,-0.1506296,17z/data=!3m1!4b1!4m5!3m4!1s0x4876052f699cfa11:0x474e34fb6ba3f010!8m2!3d51.5053727!4d-0.1484409
 ccm_charity_number: 1092036
 office_address: Lower Ground Floor, Interpark House, 7 Down Street, London, W1J 7AJ
+google_map_embedded_iframe_url: https://maps.google.com/maps?q=Christ%20Church%20Mayfair&t=&z=15&ie=UTF8&iwloc=&output=embed&z=14
+nearest_tube_stations:
+  - Green Park
+  - Hyde Park Corner
+church_address: |-2
+  Down Street
+  London
+  W1J 7AN
+
 
 collections:
+- about_us
 - people
 - events
 - services

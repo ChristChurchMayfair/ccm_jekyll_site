@@ -1,11 +1,13 @@
 ---
-title_role: Childrens Worker
+title_role: Assistant Minister
 roles:
   - staff
-  - childrens_worker
+  - minister
+  - student_worker
 type: staff
-name: James Kight
-email: james.kight@christchurchmayfair.org
-headshot: James.jpg
+name: Scott Fury
+email: scott@christchurchmayfair.org
+headshot: Scott.jpg
+order: 3
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.

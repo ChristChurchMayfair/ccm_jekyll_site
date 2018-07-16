@@ -3,10 +3,9 @@ title_role: Administrator
 roles:
   - staff
   - administrator
-name: Sharon Walsh
-email: sharon.walsh@christchurchmayfair.org
-headshot: genericheadshotfemale.jpg
-order: 5
+name: Ali Davies
+email: ali@christchurchmayfair.org
+headshot: Ali.jpg
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
 

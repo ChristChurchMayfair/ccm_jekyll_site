@@ -1,6 +1,8 @@
 ---
-role: Senior Minister
-type: staff
+title_role: Senior Minister
+roles:
+  - staff
+  - minister
 name: Matt Fuller
 email: matt.fuller@christchurchmayfair.org
 headshot: mattf_headshot.png

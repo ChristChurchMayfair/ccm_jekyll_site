@@ -1,6 +1,8 @@
 ---
-role: Associate Minister
-type: staff
+title_role: Associate Minister
+roles:
+  - staff
+  - minister
 name: Phil Allcock
 email: phil.allcock@christchurchmayfair.org
 headshot: genericheadshot.jpg
