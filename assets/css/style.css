@@ -49,7 +49,7 @@
   --body-font: 'Klinic Slab';
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   :root {
     --body-margin: var(--general-padding);
     --logo-height: 15vw;
@@ -318,16 +318,16 @@ header.mobile-header {
   grid-template-columns: auto var(--menu-button-size);
   column-gap: var(--general-padding);
   align-items: center;
-  
+  display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 768px) {
   header.mobile-header {
-    display: none;
+    display: grid;
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   header.desktop-header {
     display: none;
   }
@@ -342,7 +342,6 @@ header svg{
 }
 
 header #open-menu {
-  width: calc(var(--menu-button-size) - 10px);
   grid-column: 2;
   justify-content: right;
   margin: auto;
@@ -355,6 +354,11 @@ header #open-menu:hover {
 
 header #open-menu:active {
   transform: scale(0.9);
+}
+
+header #open-menu svg {
+  width: calc(var(--menu-button-size) - 10px);
+  height: calc(var(--menu-button-size) - 10px);
 }
 
 main {
@@ -395,7 +399,7 @@ section.highlight {
   background-color: var(--highlight-colour);
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   section {
     grid-template-columns: 0px 1fr 1fr 1fr 1fr 0px;
   }
@@ -425,7 +429,7 @@ section.intro.wider {
   grid-template-areas: ". content content content content content content content content content . . . .";
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   section.intro {
     grid-template-areas: ". content content content content ."
     ". leftbutton leftbutton rightbutton rightbutton .";
@@ -437,7 +441,7 @@ section.intro.wider {
   font-size: 1.4em;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .intro .text {
     font-size: 1em;
   }
@@ -480,7 +484,7 @@ section.intro.wider {
   font-size: 1.5em;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .promotion {
     text-align: center;
   }
@@ -490,7 +494,7 @@ section.intro.wider {
   grid-area: caption;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .caption-overlay {
     display: none;
   }
@@ -547,11 +551,11 @@ section.services {
   background-color: var(--highlight-colour);
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   section.services {
     grid-template-areas: ". title title title title ."
-    ". left left left left ."
-    " .right right right right .";
+    "left left left left left left"
+    "right right right right right right";
   }
 }
 
@@ -572,6 +576,12 @@ section.services {
   "title"
   "time"
   "info";
+}
+
+@media screen and (max-width:798px) {
+  .service {
+    padding: var(--general-padding);
+  }
 }
 
 .service>h1, .service>h2 {
@@ -685,16 +695,17 @@ address {
 
 /* ABOUT US */
 
-section.about-us {
+section.info-panel {
   height: 70vh;
+  padding: 0;
 }
 
-@media screen and (max-width:640px) {
-  section.about-us {
+@media screen and (max-width:768px) {
+  section.info-panel {
     height:auto;
   }
 
-  section.about-us h1 {
+  section.info-panel h1 {
     font-size: 3em;
   }
 }
@@ -706,35 +717,46 @@ section.dark {
 
 section.image-right {
   grid-template-areas: ". text text text text text . image image image image image image image";
-  padding: 0;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   section.image-right {
     grid-template-areas: ". text text text text ."
-    ". image image image image .";
+    "image image image image image image";
   }
 }
 
-@media screen and (max-width:640px) {
+section.fancy-overlay {
+  grid-template-areas: "image image image image image image image text text text text text text .";
+}
+
+@media screen and (max-width:768px) {
   section.fancy-overlay {
     grid-template-areas: ". text text text text ."
-    ". image image image image .";
+    "image image image image image image";
   }
 }
 
-.about-us h1 {
+.info-panel h1 {
   font-size: 6em;
   line-height: 1em;
 }
 
-.about-us .text {
+.info-panel .text {
   grid-area: text;
 }
 
-.image-right img {
+.info-panel .photo {
   grid-area: image;
-  width: 50vw;
+  display: block;
+  width: 100%;
+  height: 70vh;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.info-panel .photo img {
+  height: 100%;
 }
 
 section.full-bleed {
@@ -744,7 +766,7 @@ section.full-bleed {
   background-size: cover;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   section.full-bleed {
     grid-template-areas: ". text text text text .";
   }
@@ -760,17 +782,22 @@ section.bio {
   grid-template-rows: auto, 100px;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   section.bio {
     grid-template-areas: ". name name name name ."
     ". photo photo info info .";
   }
 }
 
-.bio img {
+.bio .photo {
   grid-area: photo;
   object-fit: cover;
-  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.bio .photo img {
+  height: 100%;
 }
 
 .bio .text {
@@ -1067,7 +1094,7 @@ section.sermons {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 
   .sermon {
     grid-template-columns: 1fr 30px;
@@ -1232,7 +1259,7 @@ section.find-us {
     ". address address address address address address map map map map map map .";
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   section.find-us {
     grid-template-areas: ". title title title title ."
     ". address address address address .";
@@ -1276,7 +1303,7 @@ section.find-us {
   grid-area: address;
 }
 
-/* @media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 768px) {
   section.find-us {
     grid-template-columns: 1fr;
     grid-template-areas: "title"
@@ -1301,7 +1328,7 @@ section.find-us h1 {
   grid-area: map;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .map {
     display:none;
   }
@@ -1321,7 +1348,7 @@ section.find-out-more {
   ". info info info info info info info info photo photo photo photo .";
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   section.find-out-more {
     grid-template-areas: ". title title title title ."
     ". info info info info .";
