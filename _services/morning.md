@@ -6,6 +6,8 @@ type: service
 time: "10:15am"
 image: assets/images/hand_in_the_air.jpg
 ---
-Relaxed family worship, childrens' teaching and sunday schools.
+Mornings at CCM are an informal, family friendly time with Bible teaching for everyone, whether young or old and both traditional and contemporary worship, 
 
-Link to [children's work](/children.html).
+We enjoy time all together as a church family and then our children gather in age-specific groups to learn about Jesus for themselves.
+
+We look forward to spending time with each other after the service; making new friends and catching up over coffee.

@@ -6,4 +6,4 @@ style_classes:
 image: /assets/images/bella_bible_study_cropped.jpg
 order: 1
 ---
-We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+As a church, we are whole-heartedly committed to teaching everyone the good news about Jesus Christ and believe that the Bible is the source of all truth about him. We love to meet together both on Sundays but also throughout the week, opening the bible to get to know Jesus better and learn about how we can live for him. 

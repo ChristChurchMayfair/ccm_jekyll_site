@@ -6,7 +6,6 @@ type: service
 time: "6:00pm"
 image: assets/images/behind_ben_slee.jpg
 ---
-Contemporary worship, serious Bible teaching, followed by socialising.
+Evenings at CCM are a vibrant mix of Bible teaching and lively, contemporary worship. We’re home to all kinds of people from across London’s, including many young professionals and students.
 
-
-Link to [student work](/students.html).
+We understand that living life in London can be challenging, especially if you are new. Many of us enjoy time socialising together, before and after the service, to connect with each other and enjoy being a community.
