@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tomduckering/ccm_jekyll_theme.git
-  revision: 7afdd3ea8f42323d268c37be3948c5483f8c497d
+  revision: da2c25030ec12c7fde8c01867a90044dd2ccddcd
   specs:
     ccm-2018 (0.1.0)
       jekyll (~> 3.8)

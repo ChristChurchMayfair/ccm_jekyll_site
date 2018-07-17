@@ -28,3 +28,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem 'ccm-2018', :git => 'https://github.com/tomduckering/ccm_jekyll_theme.git'
+#gem 'ccm-2018', :path => '../ccm-2018'

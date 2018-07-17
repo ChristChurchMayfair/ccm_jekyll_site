@@ -30,11 +30,11 @@ google_map_embedded_iframe_url: https://maps.google.com/maps?q=Christ%20Church%2
 nearest_tube_stations:
   - Green Park
   - Hyde Park Corner
-church_address: |-2
-  Down Street
-  London
-  W1J 7AN
-
+church_address:
+  - Christ Church Mayfair
+  - Down Street
+  - London
+  - W1J 7AN
 
 collections:
 - about_us
