@@ -2,7 +2,6 @@
 title_role: Administrator
 roles:
   - staff
-  - administrator
 name: Ali Davies
 email: ali@christchurchmayfair.org
 headshot: Ali.jpg

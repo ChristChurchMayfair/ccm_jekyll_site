@@ -3,7 +3,7 @@ title_role: Womens Worker
 roles:
   - staff
   - womens_worker
-  - childrens_worker
+  - littlelambs
 type: staff
 name: Sarah Farrar-Bell
 email: sarah.farrarbell@christchurchmayfair.org
