@@ -1,5 +1,5 @@
 ---
-title: Midweek
+title: Our Life Midweek
 layout: midweek
 image: /assets/images/phobe_leading.jpg
 ---
