@@ -1,10 +1,12 @@
 ---
 title: Serving Our City
 style_classes:
-  - fancy-overlay
+  - image-left
 mainImage: assets/images/jonathan-chng-701178-unsplash.jpg
 mobileImage: assets/images/jonathan-chng-701178-unsplash-mobile.jpg
 order: 3
+image_alignment_classes:
+  - centre
 ---
 In Matthew’s Gospel Jesus tells us to “go and make disciples of all nations” (28:19).
 

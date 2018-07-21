@@ -2,6 +2,8 @@
 title: Our Life Midweek
 layout: midweek
 image: /assets/images/phobe_leading.jpg
+image_alignment_classes:
+  - right
 ---
 We believe that following Jesus defines the way we live life. We therefore gather in a number midweek groups. We meet either in the church building or in people’s homes across the city, to encourage each other to live for Jesus through the week. 
 
