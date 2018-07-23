@@ -4,7 +4,7 @@ dayOfWeek: Sunday
 timeOfDay: day
 type: service
 time: "10:15am"
-image: assets/images/hand_in_the_air.jpg
+image: /assets/images/hand_in_the_air.jpg
 ---
 Mornings at CCM are an informal, family friendly time with Bible teaching for everyone, whether young or old and both traditional and contemporary worship, 
 

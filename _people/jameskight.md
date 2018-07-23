@@ -6,6 +6,6 @@ roles:
 type: staff
 name: James Kight
 email: james.kight@christchurchmayfair.org
-headshot: James.jpg
+headshot: /assets/headshots/James.jpg
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.

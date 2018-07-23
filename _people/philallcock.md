@@ -5,7 +5,7 @@ roles:
   - minister
 name: Phil Allcock
 email: phil.allcock@christchurchmayfair.org
-headshot: Phil.jpg
+headshot: /assets/headshots/Phil.jpg
 order: 2
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.

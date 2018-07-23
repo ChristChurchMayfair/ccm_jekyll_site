@@ -6,6 +6,6 @@ roles:
 type: staff
 name: Loz Oliphant
 email: loz@christchurchmayfair.org
-headshot: Loz.jpg
+headshot: /assets/headshots/Loz.jpg
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.

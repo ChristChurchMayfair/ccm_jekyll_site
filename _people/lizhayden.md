@@ -6,6 +6,6 @@ roles:
 type: staff
 name: Liz Hayden
 email: liz.hayden@christchurchmayfair.org
-headshot: Ali.jpg
+headshot: /assets/headshots/Ali.jpg
 ---
 Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
