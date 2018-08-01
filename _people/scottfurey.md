@@ -5,7 +5,7 @@ roles:
   - minister
   - student_worker
 type: staff
-name: Scott Fury
+name: Scott Furey
 email: scott@christchurchmayfair.org
 headshot: /assets/headshots/Scott.jpg
 order: 3
