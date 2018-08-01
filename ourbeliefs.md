@@ -1,6 +1,7 @@
 ---
 layout: textonly
 title: Our Beliefs
+showInFooter: true
 ---
 Christ Church Mayfair Statement of Faith
 ========================================

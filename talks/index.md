@@ -1,10 +1,16 @@
 ---
 layout: talks
 title: Talks
+showInFooter: true
 podcastURL: www.christchurchmayfair.org/our-talks/podcast/
-mainImage: /assets/images/preaching.jpg
+mainImage: /assets/images/phil_preaching_cropped.jpg
 overlayCaption: Talks
+headerColour: light
 ---
-Here you can find a selection of talks. Great if you want to find out about what we believe, you want to catch one you've missed or just listen again.
+The Bible is the main way we can hear God speak today.
 
-You can listen to them here, but the best way you can keep up with the preaching at CCM is to subscribe to our podcast.
+Every Sunday we hear from the Bible and have it explained, working our way through books of the Bible, continually discovering God's word is as relevant as ever!
+
+The best way to hear these talks is in person, but we record many of them so that you can get an idea of what we teach.
+
+You can also keep up to date via talks podcast, great for listening to on the tube.

@@ -8,7 +8,7 @@ order: 3
 image_alignment_classes:
   - centre
 ---
-In Matthew’s Gospel Jesus tells us to “go and make disciples of all nations” (28:19).
+In Matthew’s Gospel Jesus tells us to “*go and make disciples of all nations*” (28:19).
 
 At CCM we take this command seriously. We understand that there are many people in London who will never hear about Jesus unless we go out and tell them. As a church we actively look for ways to share Jesus with people around us, wherever we are.
 

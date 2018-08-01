@@ -1,10 +1,14 @@
 ---
 layout: basic
-title: For All Ages
+title: SKG
 section: students
-mainImage: /assets/images/girl_with_ball.jpg
-mobileImage: /assets/images/girl_with_ball-mobile.jpg
+mainImage: /assets/images/students_on_the_beach.jpg
+mobileImage: /assets/images/students_on_the_beach.jpg
 image_alignment_classes:
   - right
 ---
-We are a church who seek to engage heart and mind, as we learn from the Bible of what God is like, we look after one another in community and reach out to those around us and tell them about Jesus.
+Every Tuesday we meet for SKG (Students' Knowing God). Each week there's a talk, a cooked meal, and then we study the Bible in small groups.
+
+This is where deep friendships are made and church begins to feel like a family.
+
+Whether you want to find out about Jesus for the first time or you're already keen to join a church that will help you live for him through your time studying, we would love to welcome you into our church family.

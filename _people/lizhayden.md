@@ -3,6 +3,7 @@ title_role: Womens Worker
 roles:
   - staff
   - womens_worker
+  - student_worker
 type: staff
 name: Liz Hayden
 email: liz.hayden@christchurchmayfair.org

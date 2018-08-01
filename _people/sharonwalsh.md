@@ -4,7 +4,8 @@ roles:
   - staff
   - administrator
 name: Sharon Walsh
-email: sharon.walsh@christchurchmayfair.org
+email: sharon@christchurchmayfair.org
+phonenumber: +44 (0)‭ 207 629 6018‬
 headshot: /assets/headshots/Ali.jpg
 order: 5
 ---

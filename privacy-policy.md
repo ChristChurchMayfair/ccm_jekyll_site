@@ -1,6 +1,7 @@
 ---
 layout: textonly
 title: Privacy Policy
+showInFooter: true
 ---
 Christ Church Mayfair General Privacy Notice
 ============================================

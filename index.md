@@ -1,9 +1,13 @@
 ---
 layout: home
 title: Christ Church Mayfair
-mainImage: /assets/images/alex_lucas_kg_bbq_cropped.jpg
-mobileImage: /assets/images/alex_lucas_kg_bbq_mobile_crop.jpg
-overlayCaption: welcome
----
+mainImage: /assets/images/blueheader_cropped.jpg
+mobileImage: /assets/images/blueheader_cropped.jpg
+overlayCaption: welcome to ccm
+headerColour: light
+findOutMoreText: |-2
+  If you want to find out more, come along and meet us or get in touch with our admin team.
 
+  They'd love to hear from you and answer any questions you might have.
+---
 We are a dynamic Central London church family committed to making disciples for Jesus Christ.

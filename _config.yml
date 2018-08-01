@@ -14,7 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Christ Church Mayfair
-email: your-email@example.com
+email: info@christchurchmayfair.org
+office_phone_number: +44 (0) 207 629 5885
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -25,7 +26,12 @@ twitter_username: jekyllrb
 github_username:  jekyll
 office_maps_link: https://www.google.com/maps/place/Interpark+House/@51.5053727,-0.1506296,17z/data=!3m1!4b1!4m5!3m4!1s0x4876052f699cfa11:0x474e34fb6ba3f010!8m2!3d51.5053727!4d-0.1484409
 ccm_charity_number: 1092036
-office_address: Lower Ground Floor, Interpark House, 7 Down Street, London, W1J 7AJ
+office_address:
+  - Lower Ground Floor
+  - Interpark House
+  - 7 Down Street
+  - London
+  - W1J 7AJ
 google_map_embedded_iframe_url: https://maps.google.com/maps?q=Christ%20Church%20Mayfair&t=&z=15&ie=UTF8&iwloc=&output=embed&z=14
 nearest_tube_stations:
   - Green Park
@@ -35,6 +41,11 @@ church_address:
   - Down Street
   - London
   - W1J 7AN
+footer:
+  smallprint:
+    - Christ Church Mayfair is a Church of England church and a member of the Co-Mission church planting network.
+    - We're a registered charity, named "The Bible Talks", and our charity number is 1092036
+    - This website is © Copyright Christ Church Mayfair 2018. All Rights Reserved.
 
 collections:
 - about_us
@@ -56,6 +67,11 @@ defaults:
       type: people
     values:
       order: 999
+  - scope:
+      path: ""
+      type: pages
+    values:
+      showInFooter: false
 
 
 theme: ccm-2018
