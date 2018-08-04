@@ -4,6 +4,7 @@ title: Little Lambs
 showInFooter: true
 section: children
 mainImage: /assets/images/childrenplaceholder.jpg
+mobileImage: /assets/images/childrenplaceholder.jpg
 overlayCaption: Little Lambs, parent and child group.
 findOutMoreText: |-2
   If you want to find out more about Little Lambs Sarah can help you out.

@@ -4,7 +4,7 @@ style_classes:
   - full-bleed
   - darken
 mainImage: /assets/images/von_cropped.jpg
-mobileImage: /assets/images/von_cropped-mobile.jpg
+mobileImage: /assets/images/von_cropped.jpg
 order: 2
 image_alignment_classes:
   - centre

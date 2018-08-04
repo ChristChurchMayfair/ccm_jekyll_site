@@ -4,6 +4,7 @@ title: Talks
 showInFooter: true
 podcastURL: www.christchurchmayfair.org/our-talks/podcast/
 mainImage: /assets/images/phil_preaching_cropped.jpg
+mobileImage: /assets/images/phil_preaching_cropped.jpg
 overlayCaption: Talks
 headerColour: light
 ---

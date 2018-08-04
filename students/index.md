@@ -3,8 +3,9 @@ layout: students
 title: Students
 showInFooter: true
 mainImage: /assets/images/StudentBanner.jpg
+mobileImage: /assets/images/StudentBanner.jpg
 overlayCaption: Welcome Students!
-headerColour: black
+headerColour: light
 findOutMoreText: |-2
   Moving to London to study, or looking for a new church to call home?.
 

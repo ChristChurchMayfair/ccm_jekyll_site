@@ -3,7 +3,7 @@ layout: music
 title: Music
 showInFooter: true
 mainImage: /assets/images/behind_ben_slee_cropped.jpg
-mobileImage: /assets/images/behind_ben_slee-mobile.jpg
+mobileImage: /assets/images/behind_ben_slee_cropped.jpg
 overlayCaption: Music at CCM
 headerColour: light
 findOutMoreText: If you have any questions about music at CCM Ben is the person to get in touch with.

@@ -3,6 +3,7 @@ layout: basic
 title: Youth at CCM
 section: children
 mainImage: /assets/images/youth_cropped.jpg
+mobileImage: /assets/images/youth_cropped.jpg
 image_alignment_classes:
   - right
 ---

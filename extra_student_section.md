@@ -1,6 +1,6 @@
 ---
 layout: basic
-title: SKG
+title: Midweek
 section: students
 mainImage: /assets/images/students_on_the_beach.jpg
 mobileImage: /assets/images/students_on_the_beach.jpg

@@ -4,7 +4,7 @@ style_classes:
   - dark
   - image-right
 mainImage: /assets/images/phil_wide_arms_cropped.jpg
-mobileImage: /assets/images/bella_bible_study_cropped-mobile.jpg
+mobileImage: /assets/images/phil_wide_arms_cropped.jpg
 image_alignment_classes:
   - right
 order: 1
