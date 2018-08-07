@@ -3,6 +3,7 @@ layout: talks
 title: Talks
 showInFooter: true
 podcastURL: /our-talks/podcast/
+iosAppStoreLink: https://itunes.apple.com/gb/app/ccm-sermons/id909799295?mt=8&at=10l6Xd
 mainImage: /assets/images/phil_preaching_cropped.jpg
 mobileImage: /assets/images/phil_preaching_cropped.jpg
 overlayCaption: Talks
@@ -14,4 +15,4 @@ Every Sunday we hear from the Bible and have it explained, working our way throu
 
 The best way to hear these talks is in person, but we record many of them so that you can get an idea of what we teach.
 
-You can also keep up to date via talks podcast, great for listening to on the tube.
+You can also keep up to date via talks our podcast feed or our sermons app, great for listening on your commute.
