@@ -73,7 +73,8 @@ defaults:
     values:
       showInFooter: false
 
-
+include:
+  - _redirects
 theme: ccm-2018
 
 # Exclude from processing.
