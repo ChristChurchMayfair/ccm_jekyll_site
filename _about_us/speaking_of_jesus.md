@@ -9,6 +9,6 @@ image_alignment_classes:
   - right
 order: 1
 ---
-At CCM our greatest priority is to tell people about Jesus Christ.
+At CCM our greatest priority is to tell people about Jesus.
 
-We believe the Bible is reliable and true, and contains everything we need to know about him. So you’ll find that we spend time learning from the Bible whenever we can.
+We believe the Bible is reliable, true and God’s living Word for us.  Bible reading and preaching are central to church life because they are the clearest, most direct way of hearing God speak.
