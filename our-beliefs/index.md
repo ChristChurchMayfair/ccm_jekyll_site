@@ -2,6 +2,7 @@
 layout: textonly
 title: Our Beliefs
 showInFooter: true
+headerColour: dark
 ---
 Christ Church Mayfair Statement of Faith
 ========================================

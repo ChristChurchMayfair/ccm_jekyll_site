@@ -2,6 +2,7 @@
 layout: textonly
 title: Privacy Notice
 showInFooter: true
+headerColour: dark
 ---
 Christ Church Mayfair General Privacy Notice
 ============================================
@@ -138,7 +139,7 @@ If we wish to use your personal data for a new purpose, not covered by this Noti
 Changes to this notice
 ----------------------
 
-We keep this Privacy Notice under regular review and we will place any updates on our website christchurchmayfair.org/privacy-notice/.  If we make a significant change, we will notify you. This Notice was last updated in April 2018.
+We keep this Privacy Notice under regular review and we will place any updates on our website <http://christchurchmayfair.org/privacy-notice/>.  If we make a significant change, we will notify you. This Notice was last updated in April 2018.
 
 Contact Details
 ---------------
@@ -147,11 +148,11 @@ Please contact us if you have any questions about this Privacy Notice or the inf
 
 The Data Controller, Christ Church Mayfair, Down Street, London, W1J 7AN
 
-Email: info@christchurchmayfair.org
+Email: <mailto:info@christchurchmayfair.org>
 
-You can contact the Information Commissioners Office on 0303 123 1113 or via email https://ico.org.uk/global/contact-us/email/ or at the Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF.
+You can contact the Information Commissioners Office on 0303 123 1113 or via email <https://ico.org.uk/global/contact-us/email/> or at the Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF.
 
 Use of Cookies
 --------------
 
-A cookie consists of information sent by a web server to a web browser, and stored by the browser. The information is then sent back to the server each time the browser requests a page from the server. This enables the web server to identify and track the web browser. We may use “session” cookies on the website. We will use the session cookies to: keep track of you whilst you navigate the website. Session cookies will be deleted from your computer when you close your browser. We use Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users’ computers. The information generated relating to our website is used to create reports about the use of the website. Google will store this information. Google’s privacy policy is available at: http://www.google.com/privacypolicy.html. Most browsers allow you to reject all cookies, whilst some browsers allow you to reject just third party cookies. For example, in Internet Explorer you can refuse all cookies by clicking “Tools”, “Internet Options”, “Privacy”, and selecting “Block all cookies” using the sliding selector. Blocking all cookies will, however, have a negative impact upon the usability of many websites.
+A cookie consists of information sent by a web server to a web browser, and stored by the browser. The information is then sent back to the server each time the browser requests a page from the server. This enables the web server to identify and track the web browser. We may use “session” cookies on the website. We will use the session cookies to: keep track of you whilst you navigate the website. Session cookies will be deleted from your computer when you close your browser. We use Google Analytics to analyse the use of this website. Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users’ computers. The information generated relating to our website is used to create reports about the use of the website. Google will store this information. Google’s privacy policy is available at: <http://www.google.com/privacypolicy.html>. Most browsers allow you to reject all cookies, whilst some browsers allow you to reject just third party cookies. For example, in Internet Explorer you can refuse all cookies by clicking “Tools”, “Internet Options”, “Privacy”, and selecting “Block all cookies” using the sliding selector. Blocking all cookies will, however, have a negative impact upon the usability of many websites.
