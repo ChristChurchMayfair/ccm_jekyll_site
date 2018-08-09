@@ -2,6 +2,8 @@
 layout: students
 title: Students
 showInFooter: true
+showInMenu: true
+menuOrder: 2
 mainImage: /assets/images/StudentBanner.jpg
 mobileImage: /assets/images/StudentBanner.jpg
 overlayCaption: Welcome Students!

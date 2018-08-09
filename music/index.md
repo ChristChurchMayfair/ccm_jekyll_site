@@ -2,6 +2,8 @@
 layout: music
 title: Music
 showInFooter: true
+showInMenu: true
+menuOrder: 4
 mainImage: /assets/images/behind_ben_slee_cropped.jpg
 mobileImage: /assets/images/behind_ben_slee_cropped.jpg
 overlayCaption: Music at CCM

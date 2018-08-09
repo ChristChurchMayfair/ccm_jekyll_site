@@ -2,6 +2,8 @@
 layout: aboutus
 title: About Us
 showInFooter: true
+showInMenu: true
+menuOrder: 1
 mainImage: /assets/images/debbie_jo_fred_cropped.jpg
 mobileImage: /assets/images/debbie_jo_fred_mobile_crop.jpg
 overlayCaption: About Us

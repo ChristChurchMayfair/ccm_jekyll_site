@@ -1,7 +1,9 @@
 ---
 layout: children
-title: Children & Youth
+title: Children
 showInFooter: true
+showInMenu: true
+menuOrder: 3
 mainImage: /assets/images/children_looking_up_cropped.jpg
 mobileImage: /assets/images/children_looking_up_mobile_crop.jpg
 firstIntroImage: /assets/images/children_with_toy_cropped.jpg

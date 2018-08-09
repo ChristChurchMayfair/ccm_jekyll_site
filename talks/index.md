@@ -2,6 +2,8 @@
 layout: talks
 title: Talks
 showInFooter: true
+showInMenu: true
+menuOrder: 5
 podcastURL: /our-talks/podcast/
 iosAppStoreLink: https://itunes.apple.com/gb/app/ccm-sermons/id909799295?mt=8&at=10l6Xd
 mainImage: /assets/images/phil_preaching_cropped.jpg

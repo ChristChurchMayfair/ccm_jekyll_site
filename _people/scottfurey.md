@@ -10,4 +10,4 @@ email: scott@christchurchmayfair.org
 headshot: /assets/headshots/Scott.jpg
 order: 3
 ---
-Lorem ipsum dolor sit amet, sea ne nibh facilisi aliquando. Id his cibo ludus fastidii. Pro ad homero insolens cu.
+Scott oversees our student's ministry and midweek Home Groups. He comes to us from Oak Hill Bible college having formerly been at Christ Church Cambridge. We're delighted to welcome Scott, Sharon and baby Callum to CCM.
