@@ -6,31 +6,31 @@ require 'pp'
 require 'rubygems/package'
 require 'zlib'
 
-module Include_Files
+module Include_Github_Release_Files
   class Generator < Jekyll::Generator
     safe true
     priority :highest
 
     def generate(site)
-      puts "In Include Files plugin..."
+      puts "Running Include Github Release Files plugin..."
       config = site.config['include_github_release_files']
       if !config
+        puts "No config for plugin: 'include_github_release_files'"
         return
       end
+
       if !config.kind_of?(Array)
         config = [config]
       end
-      puts "About to loop..."
       config.each do |d|
         api_url = "https://api.github.com/repos/#{d['repo']}/releases/latest"
         puts "Getting github release data from: #{api_url}"
         api_data = JSON.parse(open(api_url).read)
         file_url = api_data['assets'].select {|asset_data| asset_data['name'] == d['filename']}.map {|d| d['browser_download_url']}.first
         
-        target_dir = d['target_dir']
+        target_dir = File.join(site.dest,d['target_dir'])
         FileUtils.mkdir_p(target_dir) unless File.directory?(target_dir)
-        puts target_dir
-        puts Dir.getwd
+        puts "Archive will be unpacked to: #{target_dir}"
         file_name = File.basename(file_url)
         target_file = File.join(target_dir,file_name)
 
