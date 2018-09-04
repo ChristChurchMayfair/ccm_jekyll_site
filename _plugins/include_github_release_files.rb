@@ -28,8 +28,11 @@ module Include_Github_Release_Files
         api_data = JSON.parse(open(api_url).read)
         file_url = api_data['assets'].select {|asset_data| asset_data['name'] == d['filename']}.map {|d| d['browser_download_url']}.first
         
-        target_dir = File.join(site.dest,d['target_dir'])
-        FileUtils.mkdir_p(target_dir) unless File.directory?(target_dir)
+        target_dir = File.join(site.source,d['target_dir'])
+        unless File.directory?(target_dir)
+          puts "Target directory was missing...making it"
+          FileUtils.mkdir_p(target_dir)
+        end
         puts "Archive will be unpacked to: #{target_dir}"
         file_name = File.basename(file_url)
         target_file = File.join(target_dir,file_name)
@@ -57,9 +60,8 @@ module Include_Github_Release_Files
 
           if entry.file?
             puts "Writing File:       #{extract_location}"
-            File.write(extract_location,entry.read)
+            File.write(extract_location, entry.read)
           end
-          # puts entry.read
         end
         tar_extract.close
 
