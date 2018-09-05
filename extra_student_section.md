@@ -2,8 +2,8 @@
 layout: basic
 title: Midweek
 section: students
-mainImage: /assets/images/students_on_the_beach.jpg
-mobileImage: /assets/images/students_on_the_beach.jpg
+mainImage: /assets/images/desktop/students_on_the_beach.jpg
+mobileImage: /assets/images/mobile/students_on_the_beach.jpg
 image_alignment_classes:
   - right
 ---

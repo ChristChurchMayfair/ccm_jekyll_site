@@ -4,8 +4,8 @@ title: Music
 showInFooter: true
 showInMenu: true
 menuOrder: 4
-mainImage: /assets/images/behind_ben_slee_cropped.jpg
-mobileImage: /assets/images/behind_ben_slee_cropped.jpg
+mainImage: /assets/images/desktop/behind_ben_slee_cropped.jpg
+mobileImage: /assets/images/mobile/behind_ben_slee_cropped.jpg
 overlayCaption: Music at CCM
 headerColour: light
 findOutMoreText: If you have any questions about music at CCM Ben is the person to get in touch with.

@@ -4,8 +4,8 @@ title: Students
 showInFooter: true
 showInMenu: true
 menuOrder: 2
-mainImage: /assets/images/StudentBanner.jpg
-mobileImage: /assets/images/StudentBanner.jpg
+mainImage: /assets/images/desktop/StudentBanner.jpg
+mobileImage: /assets/images/mobile/StudentBanner.jpg
 overlayCaption: Welcome Students!
 headerColour: light
 findOutMoreText: |-2

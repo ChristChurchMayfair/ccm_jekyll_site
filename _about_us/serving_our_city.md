@@ -2,8 +2,8 @@
 title: Serving Our City
 style_classes:
   - image-left
-mainImage: /assets/images/jonathan-chng-701178-unsplash.jpg
-mobileImage: /assets/images/jonathan-chng-701178-unsplash.jpg
+mainImage: /assets/images/desktop/jonathan-chng-701178-unsplash.jpg
+mobileImage: /assets/images/mobile/jonathan-chng-701178-unsplash.jpg
 order: 3
 image_alignment_classes:
   - centre

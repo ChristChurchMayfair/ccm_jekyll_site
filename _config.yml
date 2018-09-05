@@ -61,12 +61,36 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-compress-images
+
+compress_images:
+  images_path: "assets/images/originals/*.{gif,png,jpg,jpeg}"
+  imageoptim:
+    pngout: true
+    svgo: false
+    verbose: true
 
 include_github_release_files:
   - repo: ChristChurchMayfair/ccm-talks-react-app
     version: latest
     filename: ccm-talks-reactjs.tar.gz
     target_dir: assets/javascript/reacttalksapp
+
+mini_magick:
+  mobile:
+    source: assets/images/originals
+    destination: assets/images/mobile
+    resize: 600x
+    format: jpg
+    depth: 8
+    quality: 75
+  desktop:
+    source: assets/images/originals
+    destination: assets/images/desktop
+    resize: 3000x
+    depth: 8
+    format: jpg
+    quality: 75
 
 defaults:
   - scope:

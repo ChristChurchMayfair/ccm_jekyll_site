@@ -3,8 +3,8 @@ title: Speaking of Jesus
 style_classes:
   - dark
   - image-right
-mainImage: /assets/images/phil_wide_arms_cropped.jpg
-mobileImage: /assets/images/phil_wide_arms_cropped.jpg
+mainImage: /assets/images/desktop/phil_wide_arms_cropped.jpg
+mobileImage: /assets/images/mobile/phil_wide_arms_cropped.jpg
 image_alignment_classes:
   - right
 order: 1

@@ -3,8 +3,8 @@ title: Growing As Disciples
 style_classes:
   - image-right
   - dark
-mainImage: /assets/images/bella_bible_study.jpg
-mobileImage: /assets/images/bella_bible_study.jpg
+mainImage: /assets/images/desktop/bella_bible_study.jpg
+mobileImage: /assets/images/mobile/bella_bible_study.jpg
 order: 4
 image_alignment_classes:
   - centre
