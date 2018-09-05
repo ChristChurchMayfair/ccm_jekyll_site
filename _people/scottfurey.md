@@ -10,4 +10,6 @@ email: scott@christchurchmayfair.org
 headshot: /assets/headshots/Scott.jpg
 order: 3
 ---
-Scott oversees our student's ministry and midweek Home Groups. He comes to us from Oak Hill Bible college having formerly been at Christ Church Cambridge. We're delighted to welcome Scott, Sharon and baby Callum to CCM.
+Scott grew up in a Christian home in Northern Ireland and at the age of 13 understood that Jesus had died for him. It wasn't until he left school that he really read the Bible for himself and even longer before he grasped the wonder of God's grace.
+
+Since then Scott has had the privilege of sharing that grace with others, through time working for Christ Church Cambridge and then at Oak Hill College. Scott has grown to love London, through exploring it with his wife Sharon and is looking forward to showing his son Callum all it has to offer. He loves swimming in the sea, a good novel and any form of cake! Scott oversees our student ministry and midweek Home Groups.
