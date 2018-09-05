@@ -7,7 +7,7 @@ roles:
 type: staff
 name: Scott Furey
 email: scott@christchurchmayfair.org
-headshot: /assets/headshots/Scott.jpg
+headshot: /assets/headshots/compressed/Scott.jpg
 order: 3
 ---
 Scott grew up in a Christian home in Northern Ireland and at the age of 13 understood that Jesus had died for him. It wasn't until he left school that he really read the Bible for himself and even longer before he grasped the wonder of God's grace.

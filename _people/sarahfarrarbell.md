@@ -7,7 +7,7 @@ roles:
 type: staff
 name: Sarah Farrar-Bell
 email: sarah.farrarbell@christchurchmayfair.org
-headshot: /assets/headshots/Ali.jpg
+headshot: /assets/headshots/compressed/Ali.jpg
 ---
 Sarah cannot remember a time when she has not known the Lord Jesus as someone real and part of family life when growing up, but she does remember aged eight asking her mother if they could pray together to ask Him to be her own Saviour and Lord. A great encouragement and help in getting to know the Lord better was going to Christian holiday parties as a teenager where she was encouraged to learn to rely on God’s word and to see that living with Christ and for His glory is indeed a life with joy and purpose.
 

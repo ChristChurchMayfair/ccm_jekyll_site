@@ -91,6 +91,12 @@ mini_magick:
     depth: 8
     format: jpg
     quality: 75
+  headshots:
+    source: assets/headshots/originals
+    destination: assets/headshots/compressed
+    resize: 500x
+    format: jpg
+    quality: 75
 
 defaults:
   - scope:
