@@ -7,7 +7,7 @@ mobileImage: /assets/images/mobile/students_on_the_beach.jpg
 image_alignment_classes:
   - right
 ---
-Every Tuesday we meet for SKG (Students' Knowing God). Each week there's a talk, a cooked meal, and then we study the Bible in small groups.
+Students meet every Tuesday evening to hear a talk, enjoy a cooked meal, and then study the Bible in small groups.
 
 This is where deep friendships are made and church begins to feel like a family.
 
