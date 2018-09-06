@@ -1,5 +1,5 @@
 ---
-title: Growing As Disciples
+title: Growing Disciples
 style_classes:
   - image-right
   - dark
