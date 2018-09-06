@@ -10,9 +10,9 @@ overlayCaption: Welcome Students!
 captionPosition: bottom-left
 headerColour: light
 findOutMoreText: |-2
-  Moving to London to study, or looking for a new church to call home?.
+  Are you moving to London to study, or looking for a new church to call home?
 
-  Get in touch with our Student team - they would love to answer your questions and welcome you at a Sunday service.
+  Get in touch with Scott, Liz or Loz. They would love to answer your questions and welcome you at a Sunday service or midweek group.
   
 ---
 Welcome to the student work at CCM! Our church is home to students from universities and colleges all over London and we would love for you to join us.
