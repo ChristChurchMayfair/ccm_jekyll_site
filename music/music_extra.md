@@ -5,7 +5,7 @@ mobileImage: /assets/images/mobile/brian_keyboard.jpg
 image_alignment_classes:
   - right
 ---
-We’re glad to have many excellent musicians who serve us each week.
+We’re really grateful for the many excellent musicians who serve us each week.
 
 Over the past few years they have written and recorded their own songs to help us, and other churches, sing the good news about Jesus Christ.
 
