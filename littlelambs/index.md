@@ -7,7 +7,7 @@ mainImage: /assets/images/desktop/childrenplaceholder.jpg
 mobileImage: /assets/images/mobile/childrenplaceholder.jpg
 overlayCaption: Little Lambs, parent and child group.
 findOutMoreText: |-2
-  If you want to find out more about Little Lambs Sarah can help you out.
+  If you want to find out more about Little Lambs Sarah would love to hear from you.
 ---
 Little Lambs is our midweek haven for pre school children and their caregivers.
 
