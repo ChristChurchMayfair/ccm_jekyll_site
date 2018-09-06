@@ -10,4 +10,4 @@ image_alignment_classes:
 ---
 We understand that there are many people in London who would never hear about Jesus unless we go out and tell them.
 
-As a church we actively look for ways to share Jesus with people around us, wherever we are.  That could be our workplace, our friends, our courses or it might be alongside the homeless projects or Tamar ministry to trafficked women, that we’re involved in.
+As a church we actively look for ways to share Jesus with people around us, wherever we are. That could be in our workplace, in the playground, amongst our friends, or with people on our course. We are also committed to sharing the love of Jesus within our community, supporting a number of homeless projects in London and the Tamar ministry to trafficked women in Westminster.
