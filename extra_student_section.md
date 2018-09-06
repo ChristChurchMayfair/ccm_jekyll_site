@@ -11,4 +11,4 @@ Every Tuesday we meet for SKG (Students' Knowing God). Each week there's a talk,
 
 This is where deep friendships are made and church begins to feel like a family.
 
-Whether you want to find out about Jesus for the first time or you're already keen to join a church that will help you live for him through your time studying, we would love to welcome you into our church family.
+Whether you are wanting to find out about Jesus for the first time or you're already keen to join a church family, we would love to welcome you.
