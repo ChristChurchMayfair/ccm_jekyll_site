@@ -15,5 +15,3 @@ The group runs from 10.00-11.30 every Thursday morning during term time and meet
 
 Please do pop in and join us, no booking required. We very much look forward can’t wait to welcome you.
 
-Little Lambs will start again on Thursday September 6th 2018. 
-
