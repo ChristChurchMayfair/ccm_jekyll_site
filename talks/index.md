@@ -8,7 +8,7 @@ podcastURL: rss.christchurchmayfair.org
 iosAppStoreLink: https://itunes.apple.com/gb/app/ccm-sermons/id909799295?mt=8&at=10l6Xd
 mainImage: /assets/images/desktop/phil_preaching_cropped.jpg
 mobileImage: /assets/images/mobile/phil_preaching_cropped.jpg
-overlayCaption: Talks
+overlayCaption: Talks at CCM
 captionPosition: bottom-left
 headerColour: light
 ---
