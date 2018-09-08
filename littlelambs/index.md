@@ -3,8 +3,8 @@ layout: basic
 title: Little Lambs
 showInFooter: true
 section: children
-mainImage: /assets/images/desktop/childrenplaceholder.jpg
-mobileImage: /assets/images/mobile/childrenplaceholder.jpg
+mainImage: /assets/images/desktop/AdobeStock_210993913.jpg
+mobileImage: /assets/images/mobile/AdobeStock_210993913.jpg
 overlayCaption: Little Lambs, parent and child group.
 findOutMoreText: |-2
   If you want to find out more about Little Lambs Sarah would love to hear from you.
