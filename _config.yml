@@ -62,6 +62,9 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+exclude:
+  - "assets/images/originals"
+
 include_github_release_files:
   - repo: ChristChurchMayfair/ccm-talks-react-app
     version: latest

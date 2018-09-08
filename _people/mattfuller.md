@@ -4,8 +4,8 @@ roles:
   - staff
   - minister
 name: Matt Fuller
-email: matt.fuller@christchurchmayfair.org
-headshot: /assets/headshots/Matt.jpg
+email: matt@christchurchmayfair.org
+headshot: /assets/headshots/compressed/Matt.jpg
 order: 1
 ---
 Matt became a Christian during his time at university through the faithful lifestyle and witness of some friends. He met his wife Ceri there, although it took 7 years before he finally ground her down and she agreed to marry him. They are very grateful to God for their son, Nathan.

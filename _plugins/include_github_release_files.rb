@@ -15,7 +15,7 @@ module Include_Github_Release_Files
     config = site.config['include_github_release_files']
     if !config
       puts "No config for plugin: 'include_github_release_files'"
-      return
+      config = []
     end
 
     if !config.kind_of?(Array)

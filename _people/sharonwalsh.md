@@ -5,8 +5,8 @@ roles:
   - administrator
 name: Sharon Walsh
 email: sharon@christchurchmayfair.org
-phonenumber: +44 (0)‭ 207 629 6018‬
-headshot: /assets/headshots/Ali.jpg
+phonenumber: +44 (0)‭ 207 629 5885
+headshot: /assets/headshots/compressed/Ali.jpg
 order: 5
 ---
 Sharon was brought up going to church, but it was only in her first year of work post-university that the Holy Spirit opened her eyes to see that being good wasn’t going to get her into heaven and that it was only possible through the death of the Lord Jesus, which was, and still is, a big relief and great joy.

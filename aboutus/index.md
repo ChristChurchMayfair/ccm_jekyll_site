@@ -4,8 +4,8 @@ title: About Us
 showInFooter: true
 showInMenu: true
 menuOrder: 1
-mainImage: /assets/images/debbie_jo_fred_cropped.jpg
-mobileImage: /assets/images/debbie_jo_fred_mobile_crop.jpg
+mainImage: /assets/images/desktop/debbie_jo_fred_cropped.jpg
+mobileImage: /assets/images/mobile/debbie_jo_fred_mobile_crop.jpg
 overlayCaption: About Us
 headerColour: dark
 ---

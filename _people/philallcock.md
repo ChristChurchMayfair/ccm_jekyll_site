@@ -4,8 +4,8 @@ roles:
   - staff
   - minister
 name: Phil Allcock
-email: phil.allcock@christchurchmayfair.org
-headshot: /assets/headshots/Phil.jpg
+email: phil@christchurchmayfair.org
+headshot: /assets/headshots/compressed/Phil.jpg
 order: 2
 ---
 Phil grew up in a Christian home and is forever grateful to his parents for teaching him to trust in Jesus from an early age. However, it took him a very long time to learn that obeying God was the best and fullest way to live.

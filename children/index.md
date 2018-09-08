@@ -1,16 +1,16 @@
 ---
 layout: children
-title: Children
+title: Families
 showInFooter: true
 showInMenu: true
 menuOrder: 3
-mainImage: /assets/images/children_looking_up_cropped.jpg
-mobileImage: /assets/images/children_looking_up_mobile_crop.jpg
-firstIntroImage: /assets/images/children_with_toy_cropped.jpg
-firstIntroMobileImage: /assets/images/children_with_toy_cropped.jpg
-secondIntroImage: /assets/images/small_child_and_parents_park_cropped.jpg
-secondIntroMobileImage: /assets/images/small_child_and_parents_park_cropped.jpg
-overlayCaption: Kids at CCM
+mainImage: /assets/images/desktop/children_looking_up_cropped.jpg
+mobileImage: /assets/images/mobile/children_looking_up_mobile_crop.jpg
+firstIntroImage: /assets/images/desktop/children_with_toy_cropped.jpg
+firstIntroMobileImage: /assets/images/mobile/children_with_toy_cropped.jpg
+secondIntroImage: /assets/images/desktop/small_child_and_parents_park_cropped.jpg
+secondIntroMobileImage: /assets/images/mobile/small_child_and_parents_park_cropped.jpg
+overlayCaption: Families at CCM
 captionPosition: bottom-left
 headerColour: light
 findOutMoreText: |-2

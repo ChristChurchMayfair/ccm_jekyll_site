@@ -4,8 +4,6 @@ title: People
 showInFooter: true
 headerColour: dark
 ---
-Christ Church Mayfair runs thanks to the service of many people - not least the staff, who set a great example for us all.
+Christ Church Mayfair runs thanks to the service of many people but we are also fortunate to have a wonderful staff team.
 
-You'll see some of them leading and teaching the Bible. Others are busy behind the scenes keeping things running.
-
-Here are some words from each of them so that you can get an idea of the kind of people we are.
+Here are some words about each of them so that you can get an idea of the kind of people we are.
