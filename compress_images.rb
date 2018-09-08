@@ -21,11 +21,11 @@ config = {
 
 filename = "*.jpg"
 
-config.each do |source,config|
-    basedir = File.join(source,config['source'])
+config.each do |source,source_config|
+    basedir = File.join(source,source_config['source'])
     original_images = Dir.glob(File.join(basedir, filename))
 
-    config['targets'].each do |target_name,target_config|
+    source_config['targets'].each do |target_name,target_config|
 
         puts "Optimising images for #{target_name}"
 
