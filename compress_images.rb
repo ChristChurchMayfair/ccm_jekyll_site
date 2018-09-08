@@ -16,6 +16,16 @@ config = {
                 "-quality" => "50"
             }
         }
+    },
+    "assets/headshots" =>
+    {
+        "source" => "originals",
+        "targets" => {
+            "compressed" => {
+                "-resize" => "600x",
+                "-quality" => "50"
+            }
+        }
     }
 }
 
