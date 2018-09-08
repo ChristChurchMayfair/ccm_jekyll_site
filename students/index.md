@@ -8,7 +8,7 @@ mainImage: /assets/images/desktop/StudentBanner.jpg
 mobileImage: /assets/images/mobile/StudentBanner.jpg
 overlayCaption: Welcome Students!
 captionPosition: bottom-left
-headerColour: light
+headerColour: black
 findOutMoreText: |-2
   Are you moving to London to study, or looking for a new church to call home?
 
