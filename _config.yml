@@ -61,13 +61,15 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-compress-images
 
-# include_github_release_files:
-#   - repo: ChristChurchMayfair/ccm-talks-react-app
-#     version: latest
-#     filename: ccm-talks-reactjs.tar.gz
-#     target_dir: assets/javascript/reacttalksapp
+exclude:
+  - "assets/images/originals"
+
+include_github_release_files:
+  - repo: ChristChurchMayfair/ccm-talks-react-app
+    version: latest
+    filename: ccm-talks-reactjs.tar.gz
+    target_dir: assets/javascript/reacttalksapp
 
 defaults:
   - scope:
