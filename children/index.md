@@ -6,8 +6,8 @@ showInMenu: true
 menuOrder: 3
 mainImage: /assets/images/desktop/children_looking_up_cropped.jpg
 mobileImage: /assets/images/mobile/children_looking_up_mobile_crop.jpg
-firstIntroImage: /assets/images/desktop/children_with_toy_cropped.jpg
-firstIntroMobileImage: /assets/images/mobile/children_with_toy_cropped.jpg
+firstIntroImage: /assets/images/desktop/sunday_school_fun.jpg
+firstIntroMobileImage: /assets/images/mobile/sunday_school_fun.jpg
 secondIntroImage: /assets/images/desktop/small_child_and_parents_park_cropped.jpg
 secondIntroMobileImage: /assets/images/mobile/small_child_and_parents_park_cropped.jpg
 overlayCaption: Families at CCM

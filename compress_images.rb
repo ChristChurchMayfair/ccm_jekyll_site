@@ -50,9 +50,24 @@ config.each do |source,source_config|
             file_name = File.basename(original_image_path)
             target_file = File.join(target_directory,file_name)
 
-            command = "convert #{original_image_path} #{options} #{target_file}"
-            puts command
-            `#{command}`
+            skip = false
+
+            if File.exist?(target_file)
+                info = `magick identify -verbose #{target_file}`.split("\n").map {|line| line.strip }
+                geometry = info.select{|line| line.start_with?("Geometry: ")}.first.split(": ")
+                quality = info.select{|line| line.start_with?("Quality: ")}.first.split(": ")
+                
+                if geometry[1].include?(target_config['-resize']) && quality[1].include?(target_config['-quality'])
+                    puts "Image already has these settings"
+                    skip = true
+                end
+            end
+
+            if ! skip
+                command = "convert #{original_image_path} #{options} #{target_file}"
+                puts command
+                `#{command}`
+            end
 
         end
     end
