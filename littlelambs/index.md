@@ -1,11 +1,12 @@
 ---
-layout: basic
+layout: littlelambs
 title: Little Lambs
 showInFooter: true
+headerColour: black
 section: children
 mainImage: /assets/images/desktop/AdobeStock_210993913.jpg
 mobileImage: /assets/images/mobile/AdobeStock_210993913.jpg
-overlayCaption: Little Lambs, parent and child group.
+overlayCaption: Little Lambs
 findOutMoreText: |-2
   If you want to find out more about Little Lambs Sarah would love to hear from you.
 ---
