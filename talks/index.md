@@ -18,4 +18,4 @@ Every Sunday we hear from the Bible because we believe that when the Scriptures 
 
 The best way to hear these talks is in person, but we record many of them so that you can get an idea of what we teach.
 
-You can also keep up to date via talks our podcast feed or our sermons app, great for listening on your commute.
+You can also keep up to date via our podcast feed or our sermons app, great for listening on your commute.
