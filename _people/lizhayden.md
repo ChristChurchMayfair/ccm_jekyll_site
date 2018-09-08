@@ -7,7 +7,7 @@ roles:
 type: staff
 name: Liz Hayden
 email: liz@christchurchmayfair.org
-headshot: /assets/headshots/compressed/Ali.jpg
+headshot: /assets/headshots/compressed/LizH.jpg
 ---
 University was a significant turning point in Liz’s life; although she’d grown up going to church it was through meeting the Christian Union at the Glasgow School of Art that she discovered the fullness of life Jesus brings. Liz graduated and moved to London, joining the Christ Church family in 2011. She left London a year later to experience life in the much more hectic city of Beijing.
 

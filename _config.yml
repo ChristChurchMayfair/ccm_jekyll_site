@@ -64,6 +64,7 @@ plugins:
 
 exclude:
   - "assets/images/originals"
+  - "assets/headshots/originals"
 
 include_github_release_files:
   - repo: ChristChurchMayfair/ccm-talks-react-app
