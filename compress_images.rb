@@ -37,7 +37,7 @@ config.each do |source,source_config|
 
     source_config['targets'].each do |target_name,target_config|
 
-        puts "Optimising images for #{target_name}"
+        puts "Optimising images in #{basedir} for #{target_name}"
 
         target_directory = File.join(source,target_name)
 
@@ -53,17 +53,18 @@ config.each do |source,source_config|
             skip = false
 
             if File.exist?(target_file)
-                info = `magick identify -verbose #{target_file}`.split("\n").map {|line| line.strip }
-                geometry = info.select{|line| line.start_with?("Geometry: ")}.first.split(": ")
-                quality = info.select{|line| line.start_with?("Quality: ")}.first.split(": ")
-                
-                if geometry[1].include?(target_config['-resize']) && quality[1].include?(target_config['-quality'])
-                    puts "Image already has these settings"
+                compressed_file_mtime = File.mtime(target_file)
+                original_file_mtime = File.mtime(original_image_path)
+
+                if original_file_mtime < compressed_file_mtime
                     skip = true
+                    puts "Original image is older - skipping"
+                else
+                    puts "Original is newer than compressed - re-compressing"
                 end
             end
 
-            if ! skip
+            unless skip
                 command = "convert #{original_image_path} #{options} #{target_file}"
                 puts command
                 `#{command}`
