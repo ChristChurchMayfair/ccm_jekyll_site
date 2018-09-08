@@ -27,5 +27,11 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-gem 'ccm-2018', :git => 'https://github.com/tomduckering/ccm_jekyll_theme.git'
-#gem 'ccm-2018', :path => '../ccm-2018'
+if File.directory?("../ccm_jekyll_theme")
+  puts "Using local version of the theme"
+  gem 'ccm-2018', :path => '../ccm_jekyll_theme'
+else
+  puts "Using github version of jekyll theme"
+  gem 'ccm-2018', :git => 'https://github.com/tomduckering/ccm_jekyll_theme.git'
+end
+
