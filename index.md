@@ -1,8 +1,8 @@
 ---
 layout: home
 title: Christ Church Mayfair
-mainImage: /assets/images/desktop/blueheader_cropped.jpg
-mobileImage: /assets/images/mobile/blueheader_cropped.jpg
+mainImage: /assets/images/desktop/super-row.jpg
+mobileImage: /assets/images/mobile/super-row.jpg
 overlayCaption: welcome to ccm
 headerColour: light
 findOutMoreText: |-2
