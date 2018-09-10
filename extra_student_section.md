@@ -7,7 +7,7 @@ mobileImage: /assets/images/mobile/students_on_the_beach.jpg
 image_alignment_classes:
   - right
 ---
-Students meet every Tuesday evening to hear a talk, enjoy a cooked meal, and then study the Bible in small groups.
+Students meet every Tuesday evening from 6pm to hear a talk, enjoy a cooked meal, and then study the Bible in small groups.
 
 This is where deep friendships are made and church begins to feel like a family.
 

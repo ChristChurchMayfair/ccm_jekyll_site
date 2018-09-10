@@ -1,5 +1,5 @@
 ---
-title_role: Women’s & Families Worker
+title_role: Pastoral Staff
 roles:
   - staff
   - womens_worker

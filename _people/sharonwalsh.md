@@ -1,5 +1,5 @@
 ---
-title_role: Administrator
+title_role: Operations Manager
 roles:
   - staff
   - administrator
