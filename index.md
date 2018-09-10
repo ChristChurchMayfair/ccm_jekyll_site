@@ -7,7 +7,7 @@ carouselImages:
     position: center
   - mainImage: /assets/images/desktop/brian-laughing.jpg
     position: top
-  - mainImage: /assets/images/desktop/true-worship.jpg
+  - mainImage: /assets/images/desktop/homegroup-discussion.jpg
     position: center
 
 
