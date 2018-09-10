@@ -6,7 +6,7 @@ showInMenu: true
 menuOrder: 2
 mainImage: /assets/images/desktop/StudentBanner.jpg
 mobileImage: /assets/images/mobile/StudentBanner.jpg
-overlayCaption: Welcome Students!
+overlayCaption: Students at CCM
 captionPosition: bottom-left
 headerColour: black
 findOutMoreText: |-2
