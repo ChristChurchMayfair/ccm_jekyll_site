@@ -3,8 +3,9 @@ title: Growing Together
 style_classes:
   - full-bleed
   - darken
+  - mobile-height-fix
 mainImage: /assets/images/desktop/von_cropped.jpg
-mobileImage: /assets/images/mobile/von_cropped.jpg
+mobileImage: 
 order: 2
 image_alignment_classes:
   - centre
