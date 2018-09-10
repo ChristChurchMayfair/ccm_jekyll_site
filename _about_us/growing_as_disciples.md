@@ -1,5 +1,5 @@
 ---
-title: Growing Disciples
+title: Making Disciples
 style_classes:
   - image-right
   - dark
