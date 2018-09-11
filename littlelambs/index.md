@@ -2,10 +2,10 @@
 layout: littlelambs
 title: Little Lambs
 showInFooter: true
-headerColour: black
+headerColour: light
 section: children
-mainImage: /assets/images/desktop/AdobeStock_131681919.jpg
-mobileImage: /assets/images/mobile/AdobeStock_131681919.jpg
+mainImage: /assets/images/desktop/AdobeStock_131681919_nogradient.jpg
+mobileImage: /assets/images/mobile/AdobeStock_131681919_nogradient.jpg
 overlayCaption: Little Lambs
 findOutMoreText: |-2
   If you want to find out more about Little Lambs Sarah would love to hear from you.
