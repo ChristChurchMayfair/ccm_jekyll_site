@@ -14,7 +14,7 @@ headerColour: light
 ---
 We want to hear God speak to us!
 
-Every Sunday we hear from the Bible because we believe that when the Scriptures are faithfully taught then God is at work by His Spirit.  We tend to work our way through books of the Bible, continually discovering God’s word is powerful and relevant as ever!
+Every Sunday we hear from the Bible because we believe that when the Scriptures are faithfully taught then God is at work by His Spirit.  We tend to work our way through books of the Bible, continually discovering God’s word is as powerful and relevant as ever!
 
 The best way to hear these talks is in person, but we record many of them so that you can get an idea of what we teach.
 
