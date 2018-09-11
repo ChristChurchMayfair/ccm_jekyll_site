@@ -3,10 +3,10 @@ layout: home
 title: Christ Church Mayfair
 
 carouselImages:
-  - mainImage: /assets/images/desktop/super-row.jpg
-    position: center
   - mainImage: /assets/images/desktop/brian-laughing.jpg
     position: top
+  - mainImage: /assets/images/desktop/super-row.jpg
+    position: center
   - mainImage: /assets/images/desktop/homegroup-discussion.jpg
     position: center
 
