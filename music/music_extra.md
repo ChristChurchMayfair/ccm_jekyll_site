@@ -1,5 +1,6 @@
 ---
 title: Dwell Richly
+sitemap: false
 mainImage: /assets/images/desktop/brian_keyboard.jpg
 mobileImage: /assets/images/mobile/brian_keyboard.jpg
 image_alignment_classes:

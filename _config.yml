@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: "http://www.christchurchmayfair.org"
 googleAnalyticsTrackingID: UA-39016872-2
 title: Christ Church Mayfair
 email: info@christchurchmayfair.org
@@ -22,7 +23,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 office_maps_link: https://www.google.com/maps/place/Interpark+House/@51.5053727,-0.1506296,17z/data=!3m1!4b1!4m5!3m4!1s0x4876052f699cfa11:0x474e34fb6ba3f010!8m2!3d51.5053727!4d-0.1484409
@@ -62,6 +62,8 @@ collections:
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-sitemap
 
 exclude:
   - "assets/images/originals"

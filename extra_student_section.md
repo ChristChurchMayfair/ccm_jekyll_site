@@ -1,5 +1,6 @@
 ---
 layout: basic
+sitemap: false
 title: Midweek
 section: students
 mainImage: /assets/images/desktop/students_on_the_beach.jpg

@@ -1,5 +1,6 @@
 ---
 title: Resources
+sitemap: false
 layout: none
 mainImage: none
 overlayCaption: 

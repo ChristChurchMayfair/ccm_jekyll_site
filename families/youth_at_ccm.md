@@ -1,5 +1,6 @@
 ---
 layout: basic
+sitemap: false
 title: Youth at CCM
 section: children
 mainImage: /assets/images/desktop/youth_cropped.jpg

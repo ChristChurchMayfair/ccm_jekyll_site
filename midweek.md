@@ -1,5 +1,6 @@
 ---
 title: Our Life Midweek
+sitemap: false
 layout: midweek
 image: /assets/images/desktop/kg_bbq_cropped.jpg
 image_alignment_classes:
