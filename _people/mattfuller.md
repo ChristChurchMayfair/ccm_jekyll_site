@@ -4,7 +4,6 @@ roles:
   - staff
   - minister
 name: Matt Fuller
-email: matt@christchurchmayfair.org
 headshot: /assets/headshots/compressed/Matt.jpg
 order: 1
 ---
