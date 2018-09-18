@@ -4,16 +4,15 @@ title: Christ Church Mayfair
 
 carouselImages:
   - mainImage: /assets/images/desktop/brian-laughing.jpg
+    mobileImage: /assets/images/mobile/brian-laughing.jpg
     position: top
   - mainImage: /assets/images/desktop/super-row.jpg
+    mobileImage: /assets/images/mobile/super-row.jpg
     position: center
   - mainImage: /assets/images/desktop/homegroup-discussion.jpg
+    mobileImage: /assets/images/mobile/homegroup-discussion.jpg
     position: center
 
-
-mainImage: /assets/images/desktop/super-row.jpg
-nextMainImage: /assets/images/desktop/brian-laughing.jpg
-mobileImage: /assets/images/mobile/super-row.jpg
 overlayCaption: welcome to ccm
 headerColour: light
 findOutMoreText: |-2

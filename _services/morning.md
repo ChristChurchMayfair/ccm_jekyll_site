@@ -4,7 +4,8 @@ dayOfWeek: Sunday
 timeOfDay: day
 type: service
 time: "10:15am"
-image: /assets/images/desktop/CCM_morning_church_lunch.jpg
+mainImage: /assets/images/desktop/CCM_morning_church_lunch.jpg
+mobileImage: /assets/images/mobile/CCM_morning_church_lunch.jpg
 ---
 Mornings at CCM are an informal, family friendly time with Bible teaching for everyone, with both traditional and contemporary worship. We enjoy time all together as a church family and then our children gather in age-specific groups to learn about Jesus for themselves.
 
