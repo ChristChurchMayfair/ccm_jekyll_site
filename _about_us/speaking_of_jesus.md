@@ -3,10 +3,10 @@ title: Speaking of Jesus
 style_classes:
   - dark
   - image-right
-mainImage: /assets/images/desktop/phil_wide_arms_cropped.jpg
-mobileImage: /assets/images/mobile/phil_wide_arms_cropped.jpg
+mainImage: /assets/images/desktop/matt-preaching-2.jpg
+mobileImage: /assets/images/mobile/matt-preaching-2.jpg
 image_alignment_classes:
-  - right
+  - top-center
 order: 1
 ---
 At CCM our greatest priority is to tell people about Jesus.
