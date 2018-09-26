@@ -2,7 +2,7 @@
 title: Our Life Midweek
 sitemap: false
 layout: midweek
-image: /assets/images/desktop/kg_bbq_cropped.jpg
+image: /assets/images/desktop/DG-busy.jpg
 image_alignment_classes:
   - right
 ---
