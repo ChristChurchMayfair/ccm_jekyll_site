@@ -3,7 +3,7 @@ title: Morning
 dayOfWeek: Sunday
 timeOfDay: day
 type: service
-time: "10:15am"
+time: "10.15am"
 mainImage: /assets/images/desktop/CCM_morning_church_lunch.jpg
 mobileImage: /assets/images/mobile/CCM_morning_church_lunch.jpg
 ---

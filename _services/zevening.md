@@ -3,7 +3,7 @@ title: Evening
 dayOfWeek: Sunday
 timeOfDay: evening
 type: service
-time: "6:00pm"
+time: "6.00pm"
 mainImage: /assets/images/desktop/hand_in_the_air.jpg
 mobileImage: /assets/images/mobile/hand_in_the_air.jpg
 ---
