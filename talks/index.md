@@ -4,6 +4,7 @@ title: Talks
 showInFooter: true
 showInMenu: true
 menuOrder: 5
+itunesPodcastURL: https://itunes.apple.com/gb/podcast/christ-church-mayfair-podcast/id1437327420?mt=2#
 podcastURL: rss.christchurchmayfair.org
 iosAppStoreLink: https://itunes.apple.com/gb/app/ccm-sermons/id909799295?mt=8
 playStoreLink: https://play.google.com/store/apps/details?id=org.christchurchmayfair&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1
