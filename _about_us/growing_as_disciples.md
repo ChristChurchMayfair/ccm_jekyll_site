@@ -3,8 +3,8 @@ title: Making Disciples
 style_classes:
   - image-right
   - dark
-mainImage: /assets/images/desktop/bella_bible_study.jpg
-mobileImage: /assets/images/mobile/bella_bible_study.jpg
+mainImage: /assets/images/desktop/intense-study.jpg
+mobileImage: /assets/images/mobile/intense-study.jpg
 order: 4
 image_alignment_classes:
   - centre
