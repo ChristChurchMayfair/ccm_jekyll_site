@@ -6,9 +6,6 @@ carouselImages:
   - mainImage: /assets/images/desktop/brian-laughing.jpg
     mobileImage: /assets/images/mobile/brian-laughing.jpg
     position: top
-  - mainImage: /assets/images/desktop/intense-study.jpg
-    mobileImage: /assets/images/mobile/intense-study.jpg
-    position: top
   - mainImage: /assets/images/desktop/super-row.jpg
     mobileImage: /assets/images/mobile/super-row.jpg
     position: center
