@@ -35,8 +35,4 @@ tracks:
   files:
   - name: Sheet Music (G)
     url: /assets/music_resources/Wonderful - Lead Sheet.pdf
-    
-    
-
 ---
-Some music resources blurb!
