@@ -9,8 +9,8 @@ mobileImage: /assets/images/mobile/behind_ben_slee_cropped.jpg
 overlayCaption: Music at CCM
 captionPosition: bottom-left
 headerColour: light
-findOutMoreText: If you have any questions about music at CCM Ben is the person to get in touch with.
-
+findOutMoreText: |-2
+  If you have any questions about music at CCM Ben is the person to get in touch with.
 ---
 Worshipping God in song is an essential part of our Sunday services.
 
