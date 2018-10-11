@@ -36,5 +36,5 @@ tracks:
   - name: Lead Sheet (G)
     url: /assets/music_resources/Wonderful - Lead Sheet.pdf
 ---
-We'd be delighted for you to sing these songs at your church and these resources are free for you to use.
+We'd be delighted for you to sing these songs at your church. These resources are free to help you do that.
 
