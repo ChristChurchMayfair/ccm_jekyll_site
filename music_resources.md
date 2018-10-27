@@ -5,8 +5,8 @@ tracks:
   files:
   - name: Lead Sheet (D)
     url: /assets/music_resources/Creator God (D).pdf
-  - name: Lead Sheet (C Maj)
-    url: /assets/music_resources/Creator God (C major).pdf
+  - name: Lead Sheet (C)
+    url: /assets/music_resources/Creator God (C).pdf
 - title: Where, O Grave, Is Your Victory?
   files:
   - name: Lead Sheet
