@@ -1,5 +1,5 @@
 ---
-name: Christmas!
+name: Christmas
 status: live
 overlayCaption: Join us for seasonal lessons and carols.
 backgroundColour: rgb(96, 12, 12);
