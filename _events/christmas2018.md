@@ -34,6 +34,15 @@ events:
       - weekend
       - evening
       - contemporary
+  - title: Carols by Candlelight
+    description: Choir, candles and atmosphere aplenty.
+    date: Wednesday 12th
+    time: 7.30PM
+    expires: "2018-12-12T21:00:00Z"
+    tags:
+      - weekday
+      - evening
+      - traditional
   - title: Carols and Nativity
     description: Nativity play, brass band and talk for listeners of all ages.
     date: Sunday 16th
