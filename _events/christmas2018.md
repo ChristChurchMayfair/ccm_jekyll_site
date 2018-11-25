@@ -82,4 +82,4 @@ events:
       - morning
       - traditional
 ---
-Christmas at CCM is a special time of celebration and we would love to welcome you to one of our carol services.
+Christmas at CCM is a special time of celebration and we would love to welcome you to one of our carol services this December.
