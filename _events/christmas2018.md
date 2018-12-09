@@ -6,6 +6,25 @@ backgroundColour: rgb(96, 12, 12);
 textColour: rgb(237, 206, 30);
 eventType: carols
 events:
+  - title: Carols Round the tree and kids Christmas party
+    description: Fun, singing and games for familes with small children.
+    date: Saturday 8th
+    time: 10.30AM
+    expires: "2018-12-08T13:00:00Z"
+    tags:
+      - good for children
+      - weekend
+      - morning
+  - title: Carol Service
+    description: Traditional carols, mince pies and mulled wine.
+    date: Sunday 9th
+    time: 10.15AM
+    expires: "2018-12-09T13:00:00Z"
+    tags:
+      - good for children
+      - weekend
+      - morning
+      - traditional
   - title: Contemporary Carols
     description: A contemporary take on traditional Christmas carols.
     date: Sunday 9th
