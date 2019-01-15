@@ -27,3 +27,5 @@ It's a series of evenings exploring the purpose of life from a Christian perspec
 **Venue:** Crussh, 1 Curzon St, W1J 5HD
 
 **Time:** 7.15 for food, 9pm finish.
+
+<a class="button" href="http://christchurchmayfair.org/honest">Sign up here</a>
