@@ -1,6 +1,6 @@
 ---
 name: Honest Questions
-status: live
+status: defunct
 eventType: honest_questions
 events:
   - title: Is there meaning to life?
