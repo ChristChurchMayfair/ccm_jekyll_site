@@ -7,7 +7,7 @@ time: 7.15PM
 price: "Tickets: £10"
 signUpEmail: events+healthmatters@christchurchmayfair.org
 leader: |
-  how to be whole-person healthy admist the demands of London life.
+  how to be whole-person healthy amidst the demands of London life.
 people:
 - name: Matt Sellar
   title: Practising Physiotherapist and Personal trainer
