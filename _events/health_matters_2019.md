@@ -1,6 +1,6 @@
 ---
 name: health matters
-status: live
+status: cancelled
 eventType: health_matters
 eventDate: Saturday 23rd March
 time: 7.15PM
