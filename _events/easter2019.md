@@ -1,6 +1,6 @@
 ---
 name: Easter Family Fun
-status: live
+status: defunct 
 overlayCaption: Join us for seasonal lessons and carols.
 eventType: easter
 tagLine: A fun event for familes with children aged 0-11
