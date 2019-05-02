@@ -30,7 +30,7 @@ podcast:
   episodes:
   - title: Performance & Pressure
     person: Norman
-    blurb: Norman, a senior executive for an international power company, speaks about the performance culture of work place.
+    blurb: Norman, a senior executive for an international power company, speaks about the performance culture of the work place.
     imageUrl: /assets/images/londonliving/norman.png
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Norman-10mins_v3.1.mp3
     #videoEmbedUrl: https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0
