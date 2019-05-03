@@ -22,6 +22,8 @@ events:
   where: Christ Church Mayfair, Down St, W1J 7AN
 podcast:
   links:
+   - name: Apple
+     link: https://podcasts.apple.com/gb/podcast/christ-church-mayfair-london-living/id1462242037
    - name: Spotify
      link: https://open.spotify.com/show/2e9boaobJtY7rkgLLTmHjO
    - name: RSS Feed
