@@ -46,4 +46,4 @@ podcast:
 
 ***London:Living?*** is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
 
-You can find episodes on all good podcast services.
+You can find episodes on all good podcast services, or use our <a href="https://rss.christchurchmayfair.org/londonliving">RSS feed.</a>
