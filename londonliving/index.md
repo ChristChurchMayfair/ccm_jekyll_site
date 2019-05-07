@@ -35,13 +35,12 @@ podcast:
     blurb: Norman, a senior executive for an international energy company, speaks about the performance culture of the work place.
     imageUrl: /assets/images/londonliving/norman.png
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Norman-10mins_v3.1.mp3
-    #videoEmbedUrl: https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0
-#   - title: Control & Physical Safety
-#     person: Connie
-#     blurb: Norman, a senior executive for an international power company, speaks about the performance culture of work place.
-#     imageUrl: /assets/images/londonliving/fakenorman.png
-#     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Norman-10mins_v3.1.mp3
-#     videoEmbedUrl: https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0
+  - title: Control & Physical Safety
+    person: Connie
+    due: Thursday 9th May
+  - title: Self Fulfillment & Legacy
+    person: Jessie
+    due: Thursday 16th May
 ---
 
 ***London:Living?*** is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
