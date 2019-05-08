@@ -1,0 +1,11 @@
+{
+  "name": "ccmsite",
+  "version": "1.0.0",
+  "description": "This repository contains information pertinent to the rebuild of the CCM website.",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-watch": "^4.3.5"
+  }
+}
