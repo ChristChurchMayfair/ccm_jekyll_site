@@ -37,7 +37,9 @@ podcast:
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Norman-10mins_v3.1.mp3
   - title: Control & Physical Safety
     person: Connie
-    due: Thursday 9th May
+    blurb: Connie speaks about our desire for personal control and the impact of insecurity on mental health.
+    imageUrl: /assets/images/londonliving/connie.png
+    audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Connie-10mins_v2.mp3
   - title: Self Fulfillment & Legacy
     person: Jessie
     due: Thursday 16th May
