@@ -38,7 +38,7 @@ podcast:
   - title: Control & Physical Safety
     person: Connie
     blurb: Connie speaks about our desire for personal control and the impact of insecurity on mental health.
-    imageUrl: /assets/images/londonliving/Connie.png
+    imageUrl: /assets/images/londonliving/compressed/LL-connie-9486.jpg
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Connie-10mins_v2.mp3
   - title: Self Fulfillment & Legacy
     person: Jessie

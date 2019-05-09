@@ -26,6 +26,16 @@ config = {
                 "-quality" => "50"
             }
         }
+    },
+    "assets/images/londonliving" =>
+    {
+        "source" => "originals",
+        "targets" => {
+            "compressed" => {
+                "-resize" => "600x",
+                "-quality" => "50"
+            }
+        }
     }
 }
 
