@@ -41,7 +41,7 @@ podcast:
     imageUrl: /assets/images/londonliving/compressed/LL-connie-9486.jpg
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Connie-10mins_v2.mp3
   - title: Self Fulfillment & Legacy
-    person: Jessie
+    person: Jesse
     due: Thursday 16th May
 ---
 
