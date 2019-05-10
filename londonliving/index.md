@@ -1,12 +1,19 @@
 ---
 layout: londonliving
-title: "LondonLiving"
+title: "London:Living?"
 showInFooter: false
 showInMenu: false
 overlayCaption: "2018: New Testament-in-a-Year"
 captionPosition: bottom-left
 headerColour: light
 strapLine: How the Christian faith speaks hope to uncertainty
+og_data:
+  image:
+    url: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/LLpodcastartwork_small.jpg
+    width: 1500
+    height: 1500
+    alt: A motion blurred picture of a red London bus with a lone figure visible through the windows.
+  description: London Living is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
 events:
 - name: Street Food Market 
   bookingLink: https://ccmayfair.churchsuite.co.uk/events/3xpdyapc
