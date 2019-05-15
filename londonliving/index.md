@@ -40,17 +40,17 @@ podcast:
   - title: Performance & Pressure
     person: Norman
     blurb: Norman, a senior executive for an international energy company, speaks about the performance culture of the work place.
-    imageUrl: /assets/images/londonliving/norman.png
+    imageUrl: /assets/images/londonliving/LL-norman.jpg
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Norman-10mins_v3.1.mp3
   - title: Control & Physical Safety
     person: Connie
     blurb: Connie speaks about our desire for personal control and the impact of insecurity on mental health.
-    imageUrl: /assets/images/londonliving/compressed/LL-connie-9486.jpg
+    imageUrl: /assets/images/londonliving/LL-connie.jpg
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Connie-10mins_v2.mp3
   - title: Self Fulfillment & Legacy
     person: Jesse
     blurb: Jesse, entrepreneur and business owner, speaks on the desire for fulfillment through personal success.
-    imageUrl: /assets/images/londonliving/compressed/jesse.jpg
+    imageUrl: /assets/images/londonliving/LL-jesse.jpg
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Jesse-10mins_v2.mp3
 ---
 
