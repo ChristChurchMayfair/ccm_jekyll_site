@@ -49,7 +49,9 @@ podcast:
     audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Connie-10mins_v2.mp3
   - title: Self Fulfillment & Legacy
     person: Jesse
-    due: Thursday 16th May
+    blurb: Jesse, entrepreneur and business owner, speaks on the desire for fulfillment through personal success.
+    imageUrl: /assets/images/londonliving/compressed/jesse.jpg
+    audioUrl: https://s3-eu-west-1.amazonaws.com/media.christchurchmayfair.org/londonliving/Jesse-10mins_v2.mp3
 ---
 
 ***London:Living?*** is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
