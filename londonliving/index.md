@@ -16,13 +16,13 @@ og_data:
   description: London Living is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
 events:
 - name: Street Food Market 
-  bookingLink: https://ccmayfair.churchsuite.co.uk/events/3xpdyapc
+  bookingLink: mailto:info@christchurchmayfair.org
   flierImageUrl: /assets/images/LLEventStreetFoodMarket.jpg
   when: 19:30 Wednesday 22nd May
   price: £12 (£8 unwaged) includes food
   where: Christ Church Mayfair, Down St, W1J 7AN
 - name: Gin & Jazz
-  bookingLink: https://ccmayfair.churchsuite.co.uk/events/nwbd2uuc
+  bookingLink: mailto:info@christchurchmayfair.org
   flierImageUrl: /assets/images/LLEventGinJazz.jpg
   when: 19:30 Thursday 23rd May
   price: £15 includes food and one complimentary drink
