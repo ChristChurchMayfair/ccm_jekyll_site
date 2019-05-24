@@ -3,7 +3,6 @@ layout: londonliving
 title: "London:Living?"
 showInFooter: false
 showInMenu: false
-overlayCaption: "2018: New Testament-in-a-Year"
 captionPosition: bottom-left
 headerColour: light
 strapLine: How the Christian faith speaks hope to uncertainty
@@ -14,19 +13,6 @@ og_data:
     height: 1500
     alt: A motion blurred picture of a red London bus with a lone figure visible through the windows.
   description: London Living is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
-events:
-- name: Street Food Market 
-  bookingLink: mailto:info@christchurchmayfair.org
-  flierImageUrl: /assets/images/LLEventStreetFoodMarket.jpg
-  when: 19:30 Wednesday 22nd May
-  price: £12 (£8 unwaged) includes food
-  where: Christ Church Mayfair, Down St, W1J 7AN
-- name: Gin & Jazz
-  bookingLink: mailto:info@christchurchmayfair.org
-  flierImageUrl: /assets/images/LLEventGinJazz.jpg
-  when: 19:30 Thursday 23rd May
-  price: £15 includes food and one complimentary drink
-  where: Christ Church Mayfair, Down St, W1J 7AN
 podcast:
   links:
    - name: Apple
@@ -57,5 +43,7 @@ podcast:
 ---
 
 ***London:Living?*** is a series of a podcasts and events that look into the challenges we face as modern Londoners, and how the Christian faith speaks hope into uncertainty.
+
+Sadly the events have passed but you can still listen to the podcast.
 
 You can find episodes on all good podcast services, or use our <a href="https://rss.christchurchmayfair.org/londonliving">RSS feed.</a>
