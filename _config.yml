@@ -53,6 +53,12 @@ podcast:
   title: Christ Church Mayfair - Podcast
   url: https://rss.christchurchmayfair.org
 
+music_team_info_google_sheet:
+  id: 1BNfhAFMDq25GHh9KiPx0IYv7ktdooDW-LIR1uLSWv2w
+  morning_sheet_number: 1
+  evening_sheet_number: 2
+
+
 collections:
 - about_us
 - people
