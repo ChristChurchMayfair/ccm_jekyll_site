@@ -25,7 +25,16 @@ The PCC of Christ Church adopts the Safeguarding Policy Statement of the Church 
 
 * Responding to those that may pose a present risk to others.
 
-You can see the [Safeguarding Policy here](/assets/downloads/PromotingSaferChurchWeb.pdf).
+Safeguarding Policy
+-------------------
 
-If you would like more information or have any concerns please speak to a member of staff or contact our Safeguarding Officer, [Sharon Walsh](mailto:sharon@christchurchmayfair.org)
+You can see the [Safeguarding Policy Statement here](/assets/downloads/CCMSafeguardingPolicy.pdf).
+
+Contacts
+--------
+
+If you would like more information or have any concerns please speak to a member of staff or you can contact any of these people:
+* **Safeguarding Officer** - [Sharon Walsh](mailto:sharon@christchurchmayfair.org)
+* **Children's Champion** - [James Kight](mailto:james@christchurchmayfair.org)
+* **Churchwardens** - [Marc Doring & Dave Dye](mailto:churchwardens@christchurchmayfair.org).
 
