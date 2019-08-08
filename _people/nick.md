@@ -5,7 +5,7 @@ roles:
   - minister
 type: staff
 name: Nick Ashton
-email: nick@christchurchmayfair.org
+email: nick.ashton@christchurchmayfair.org
 headshot: /assets/headshots/compressed/Nick.jpg
 order: 4
 ---
