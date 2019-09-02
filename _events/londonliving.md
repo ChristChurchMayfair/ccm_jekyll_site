@@ -1,6 +1,6 @@
 ---
 name: London:Living?
-status: live 
+status: old 
 eventType: london-living
 backgroundColour: rgb(30, 30, 30);
 textColour: rgb(237, 206, 30);
