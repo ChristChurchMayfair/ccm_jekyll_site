@@ -12,6 +12,4 @@ We understand that there are many people in London who would never hear about Je
 
 As a church we actively look for ways to share Jesus with people around us. That could be in our workplace, in the playground, amongst our friends, or with people on our course.
 
-To serve the many international visitors to London we run [International Café](https://www.meetup.com/find/events/?keywords=International+Cafe+Mayfair), a weekly meetup during term time.
-
 We are also committed to sharing the love of Jesus within our local community, supporting a number of homeless projects in London and [Tamar](http://www.tamarwestminster.org), a ministry to trafficked women in Westminster.
