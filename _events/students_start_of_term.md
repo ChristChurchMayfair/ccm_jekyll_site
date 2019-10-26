@@ -1,6 +1,6 @@
 ---
 name: Students Start of Year
-status: live
+status: disabled
 overlayCaption: Hello Students!
 backgroundColour: rgb(96, 12, 12);
 textColour: rgb(237, 206, 30);
