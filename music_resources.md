@@ -7,18 +7,24 @@ tracks:
     url: /assets/music_resources/Creator God (D).pdf
   - name: Lead Sheet (C)
     url: /assets/music_resources/Creator God (C).pdf
+  - name: Piano Score (C)
+    url: /assets/music_resources/Creator God - Piano Score (C).pdf
+  - name: Piano Score (D)
+    url: /assets/music_resources/Creator God - Piano Score (D).pdf
 - title: Where, O Grave, Is Your Victory?
   files:
-  - name: Lead Sheet
+  - name: Lead Sheet (A♭)
     url: /assets/music_resources/Where O Grave - Lead Sheet.pdf
-  - name: Piano Score
+  - name: Piano Score (A♭)
     url: /assets/music_resources/Where O Grave - Full Score.pdf
-  - name: Trumpet Score (B♭)
+  - name: B♭ Trumpet Score
     url: /assets/music_resources/WhereOGrave_BbTrumpet.pdf
 - title: Day of Judgement
   files:
   - name: Lead Sheet (D)
-    url: /assets/music_resources/Day-of-Judgement.pdf
+    url: /assets/music_resources/Day of Judgement - Lead Sheet.pdf
+  - name: Piano Score (D)
+    url: /assets/music_resources/Day of Judgement - Piano Score.pdf
 - title: Come Thou Long Expected Jesus
   files:
   - name: Piano Score (F)
