@@ -17,7 +17,7 @@ var messages = {
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     process.env.DISABLE_GITHUB_PULL = "true";
-    return cp.spawn('jekyll', ['build', '--incremental'], {stdio: 'inherit'})
+    return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--incremental'], {stdio: 'inherit'})
         .on('close', done);
 });
 
