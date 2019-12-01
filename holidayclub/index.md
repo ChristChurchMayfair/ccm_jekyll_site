@@ -8,6 +8,11 @@ headerColour: holidayclub
 strapLine: The Greatest Show
 og_data:
   description: Christ Church Mayfair presents three days of amazing circus fun, games, challenges, crafts, quizzes and hearing about Jesus! This event is for school aged children 4–11 years.
+  image: 
+    url: https://christchurchmayfair.org/assets/images/holidayclub-ogimage.png
+    width: 1200
+    height: 676
+    alt: Promotional graphic showing a circus tent with signup information – Tuesday 18th - Thursday 20th February 2020 at a cost of £15 per child.
 ---
 
 Roll up, roll up! Christ Church Mayfair presents three days of amazing circus fun, games, challenges, crafts, quizzes and hearing about Jesus! This event is for school aged children 4–11 years.
