@@ -14,7 +14,7 @@ hiddenValue: "b_8d11078beae0391f6daae1927_b22e2cc459"
 Lent Daily Emails
 =============================
 
-The aim of these emails is to give us *40 things that the death of Jesus achieved*, so that we can meditate and feed on those truths as we go through Lent to Easter. Each day there will be a passage, some comments and then one of the Olney hymns written by William Cowper & John Newton (author of Amazing Grace). 
+The aim of these emails is to give us **40 things that the death of Jesus achieved**, so that we can meditate and feed on those truths as we go through Lent to Easter. Each day there will be a passage, some comments and then one of the Olney hymns written by William Cowper & John Newton (author of Amazing Grace). 
 
 How to get involved
 -------------------
