@@ -20,3 +20,7 @@ A trust in our Father will prevent a descent into the selfish hoarding of resour
 
 **3. There’s no place to be judgmental**.  Paul tells us that we must "*Accept the one whose faith is weak without quarrelling over disputable matters*."  (Romans 14:1).  There will be a range of opinions on the best approach to meeting up and my Biblical plea is that we accept one another's views without passing judgment.
 
+Matt Fuller
+
+*Senior Minister*
+
