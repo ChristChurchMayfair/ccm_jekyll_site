@@ -3,10 +3,6 @@ name: Regarding Coronavirus
 status: live 
 eventType: important-notice
 ---
-For those able to attend, Christ Church Mayfair will continue to meet as usual.
-
-We ask those displaying symptoms to not attend. For those who need to self isolate, services will be streamed online.
-
-Note that Little Lambs, our midweek group for preschool children, will not meet until further notice.
+*17:00, 16/03/20*: In light of government advice we're reviewing what will happen this Sunday, but with immediate effect all mid-week Bible study groups will meet remotely. All other mid-week groups will not meet until further notice. Further information will be posted as soon as we are able.
 
 Find more details and some comments on our response [here](/covid19/).
