@@ -8,7 +8,7 @@ In the light of Government advice, all Church meetings will now be online.
 
 Sunday services will be streamed: 
 
-**10:00am** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/uLnHwwUVQSM)
+**10:15am** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/uLnHwwUVQSM)
 
 **6:00pm** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/Yal1UMss6PI)
 
