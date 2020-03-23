@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: CCM Daily Blog
-showInFooter: false
+showInFooter: true
 headerColour: dark
 ---
 
