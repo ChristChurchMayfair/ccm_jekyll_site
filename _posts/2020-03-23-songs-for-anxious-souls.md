@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Songs of Comfort for Anxious Souls"
+author: Scott Furey
 ---
 
 This playlist, compiled by Brett McCracken of the Gospel Coalition, will help you fix your eyes on Jesus, strengthening your faith in him instead of giving way to fear.
