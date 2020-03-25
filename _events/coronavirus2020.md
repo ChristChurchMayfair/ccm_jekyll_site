@@ -14,6 +14,8 @@ Sunday services will be streamed:
 
 Midweek groups will be contacted by their leaders.
 
-Find more detailed comments [here](/covid19/).
+You can also check out our [blog](/blog/) for some daily encouragement.
 
-Updated: *16:00, 21/03/20*
+Find more detailed comments on the situation [here](/covid19/).
+
+Updated: *15:30, 25/03/20*
