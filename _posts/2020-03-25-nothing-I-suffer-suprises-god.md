@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nothing I Suffer Suprises God"
+title:  "Nothing I Suffer Surprises God"
 author: Scott Furey
 ---
 Vaneetha Rendall Risner reflects on our tendency to look for comfort in Google rather than in God.
