@@ -4,7 +4,7 @@ status: live
 eventType: easter2020
 order: 2
 events:
-- title: Good Friday
+- title: Good Friday Morning
   date: 10th April
   time: 10.15am
   description: Join us online for a time reflecting on the Cross.
