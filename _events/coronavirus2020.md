@@ -2,6 +2,7 @@
 name: Regarding Coronavirus
 status: live 
 eventType: important-notice
+order: 1
 ---
 
 In the light of Government advice, all Church meetings will now be online. 

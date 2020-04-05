@@ -2,7 +2,7 @@
 name: Easter
 status: live 
 eventType: easter2020
-order: 1
+order: 2
 events:
 - title: Good Friday
   date: 10th April
