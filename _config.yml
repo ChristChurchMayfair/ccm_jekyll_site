@@ -93,6 +93,11 @@ defaults:
       order: 999
   - scope:
       path: ""
+      type: events
+    values:
+      order: 999
+  - scope:
+      path: ""
       type: pages
     values:
       showInFooter: false
