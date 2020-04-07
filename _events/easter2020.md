@@ -17,7 +17,7 @@ events:
   description: Join us online for a family Easter celebration.
   links:
     facebook: https://www.facebook.com/christchurch.mayfair.1
-    youtube:https://youtu.be/Ajo3mTTkmEc
+    youtube: https://youtu.be/Ajo3mTTkmEc
 - title: Easter Sunday Evening
   date: 12th April
   time: 6.00pm
