@@ -43,6 +43,9 @@ church_address:
   - London
   - W1J 7AN
 footer:
+  extra_links:
+  - title: Blog
+    url: /blog
   smallprint:
     - Christ Church Mayfair is a Church of England church and a member of the Co-Mission church planting network.
     - We're a registered charitable company named "Christ Church Mayfair", and our charity number is 1152061.
