@@ -1,6 +1,6 @@
 ---
 name: Easter
-status: live 
+status: defunct 
 eventType: easter2020
 order: 2
 events:
