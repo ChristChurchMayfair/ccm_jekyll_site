@@ -23,6 +23,6 @@ Our two Sunday services will be streamed each week:
 
 **10:15am** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/8oxbSVhX3hE)
 
-**6:00pm** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/xGbZgK8Exhc)
+**6:00pm** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and [YouTube](https://youtu.be/fSR2e1fBJxQ)
 
 Midweek groups will be contacted by their leaders.
