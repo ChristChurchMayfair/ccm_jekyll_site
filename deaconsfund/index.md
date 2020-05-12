@@ -22,7 +22,7 @@ Here are some additional sources of help and advice:
 4. Some families may need to have **conversations with children about money**. The Money Advice Service has a [series of videos](https://www.moneyadviceservice.org.uk/en/videos/where-do-we-learn-money-habits-from) aimed at parents.
 5. Teenagers and young people under 25 can face particular challenges. One, secular site, that’s run by a charity and has a helpline and peer support is [The Mix](https://www.themix.org.uk). 
 6. Are you in crisis? Please don’t struggle alone. Talk to someone. If you need to, **The Samaritans** offer crisis support via their [website](https://www.samaritans.org)  or call [0116 123](tel:0116123).
-7. Are you afraid, or being hurt by someone close to you? If so, we encourage you to seek help. **The National Domestic Violence and Abuse Helpline** is 0808 2000 247. It is free and open 24h a day; helpline@womensaid.org.uk(Opens in new tab). Men can contact MenKind 01823 334244, weekdays 10-4. Childline’s number is 0800 1111.
+7. Are you afraid, or being hurt by someone close to you? If so, we encourage you to seek help. **The National Domestic Violence and Abuse Helpline** is [0808 2000 247](tel:08082000247). It is free and open 24h a day; [helpline@womensaid.org.uk](mailto:helpline@womensaid.org.uk). Men can contact MenKind [01823 334244](tel:01823334244), weekdays 10-4. Childline’s number is [0800 1111](tel:08001111).
 8. If you are in immedate danger call [999](tel:999).
 
 Help Us Help Others
