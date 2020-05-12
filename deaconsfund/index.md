@@ -7,7 +7,7 @@ headerColour: dark
 
 **THIS IS A DRAFT - PLEASE DO NOT SHARE THIS LINK YET**
 
-The Deacon’s Fund exists to care for financial needs of members of the church family experiencing hardship. You can read more about the Biblical principles and practicalities of the Deacon's Fund [here](./moreinfo.html).
+The Deacon’s Fund exists to care for financial needs of members of the church family experiencing hardship. You can read more about the Biblical principles and practicalities of the Deacon's Fund [here](/deaconsfund/moreinfo.html).
 
 Are you in need of help?
 ------------------------
