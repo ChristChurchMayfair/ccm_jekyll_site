@@ -21,9 +21,9 @@ In the light of Government advice, all Church meetings will now be online.
 
 Our two Sunday services will be streamed each week:
 
-**10:15am** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and <a id="youtube-stream-morning" href="https://youtu.be/oaH8hW2RlyI" data-service-date="2020-05-10">YouTube</a>
+**10:15am** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and <a id="youtube-stream-morning" href="https://youtu.be/oaH8hW2RlyI" data-service-date="2020-05-17">YouTube</a>
 
-**6:00pm** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and <a id="youtube-stream-evening" href="https://youtu.be/bX_l0fgUd5Y" data-service-date="2020-05-10">YouTube</a>
+**6:00pm** [Facebook Live](https://www.facebook.com/christchurch.mayfair.1) and <a id="youtube-stream-evening" href="https://youtu.be/bX_l0fgUd5Y" data-service-date="2020-05-17">YouTube</a>
 
 Midweek groups will be contacted by their leaders.
 
