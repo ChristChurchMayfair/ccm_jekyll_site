@@ -7,7 +7,7 @@ lastUpdated: 13:00 22 May 2020
 features:
   - title: Blog
     description: |
-      You can also check out our blog for some daily encouragement.
+      You can also check out our blog for some weekly encouragement every Friday.
     buttonText: CCM Blog
     buttonLink: "/blog/"
   - title: Some further comments
